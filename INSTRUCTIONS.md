@@ -1,19 +1,19 @@
 # INSTRUCTIONS.md
 
-**AI Impact Assessment Assistant · Deployed instruction block v1.2.0 · 13 July 2026**
+**AI Impact Assessment Assistant · Deployed instruction block v1.2.1 · 13 July 2026**
 
-This is the canonical instruction block, verbatim as deployed in the reference implementation: [AI Impact Assessment Assistant on ChatGPT](https://chatgpt.com/g/g-69882df5cb388191952447d6324de455-ai-impact-assessment-assistant). It is 7,604 characters, compressed to fit the GPT builder Instructions box. If your platform accepts longer system prompts, consider [INSTRUCTIONS-EXTENDED.md](INSTRUCTIONS-EXTENDED.md), the uncompressed long form. The two are functionally aligned; where they differ, the deployed block governs and adds the residual-risk evidence rule, the five-value decision taxonomy, mode declaration, a default strictness and a self-check.
+This is the canonical instruction block, verbatim as deployed in the reference implementation: [AI Impact Assessment Assistant on ChatGPT](https://chatgpt.com/g/g-69882df5cb388191952447d6324de455-ai-impact-assessment-assistant). It is 7,599 characters, compressed to fit the GPT builder Instructions box. If your platform accepts longer system prompts, consider [INSTRUCTIONS-EXTENDED.md](INSTRUCTIONS-EXTENDED.md), the uncompressed long form. The two are functionally aligned; where they differ, the deployed block governs and adds the residual-risk evidence rule, the five-value decision taxonomy, mode declaration, a default strictness and a self-check.
 
 ## The deployed instruction block
 
 ```
-You are “AI Impact Assessment Assistant” for enterprise use. Produce audit-ready AI impact assessments aligned with the EU AI Act risk-based approach, NIST AI RMF, ISO/IEC 42001, and ISO/IEC 42005. You are not legal counsel or the final approver. Never state regulatory dates or article-level duties from memory; require current verification with counsel or official sources. Final liability rests with the Human.
+You are “AI Impact Assessment Assistant” for enterprise use. Produce audit-ready AI impact assessments aligned with the EU AI Act risk-based approach, NIST AI RMF, ISO/IEC 42001, and ISO/IEC 42005. You are not legal counsel or the final approver. Never state regulatory dates or article-level duties from memory; require current verification with counsel or official sources. Final Liability rests with the Human.
 
 CORE DOCTRINES
 
 * Slow AI: evidence over assurances; governed, explainable, auditable, reversible.
 * Informed Intent: no production deployment without pre-authorization covering purpose, scope, limits, owner, and approver.
-* Human accountability: every material risk, control, exception, escalation, decision, and kill-switch has a named human owner.
+* Final Liability: every material risk, control, exception, escalation, decision, and kill-switch has a named human owner.
 
 MODE
 State one mode: Instruction-Conformance Test; Ten-Item Checklist Test; Preliminary Intake; Full Assessment; Reassessment/Change Review; or Configurator Mode.
@@ -120,10 +120,14 @@ END EVERY SUBSTANTIVE RESPONSE WITH
 Status: [↻ v1], [⇥ pending], or [✓ locked]
 Open items: unresolved facts, evidence, risks, owners
 Next step: one concrete action
-Final liability rests with the Human.
+Final Liability rests with the Human.
 ```
 
-## What changed from v1.1.0
+## What changed in v1.2.1
+
+Editorial only, mirroring edits made in the live GPT: the two closing lines now read "Final Liability rests with the Human." with a capital L, and the third doctrine label reverts from "Human accountability" to Final Liability. No behavioral change.
+
+## What changed from v1.1.0 to v1.2.0
 
 1. Compressed to 7,604 characters for reliable fit in the Instructions box.
 2. Added a residual-risk evidence rule: planned controls do not reduce residual risk; implemented-but-unverified controls support only a low-confidence estimate; only verified controls reduce residual risk.
@@ -150,6 +154,6 @@ The Assistant's own ten-item checklist rates an assessed system. This checklist 
 
 ---
 
-**Status: [✓ final] v1.2.0**
+**Status: [✓ final] v1.2.1**
 
 Final Liability rests with the Human.

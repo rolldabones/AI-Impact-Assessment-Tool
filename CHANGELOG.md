@@ -2,6 +2,15 @@
 
 All notable changes to this repository. Versions follow semantic versioning. Prior versions are superseded upon release of the next.
 
+## [1.2.1] - 2026-07-13
+
+### Changed
+- INSTRUCTIONS.md deployed block mirrors two editorial edits made in the live GPT: capital L in both "Final Liability rests with the Human." closing lines, and the third doctrine label reverted from "Human accountability" to Final Liability (block now 7,599 characters; no behavioral change)
+- README.md, BUILD-GUIDE.md and CROSSWALK.md versions aligned to 1.2.1
+
+### Superseded
+- v1.2.0 INSTRUCTIONS.md block
+
 ## [1.2.0] - 2026-07-13
 
 ### Added
@@ -20,6 +29,15 @@ All notable changes to this repository. Versions follow semantic versioning. Pri
 
 ### Superseded
 - v1.1.0 instruction block and acceptance checklist
+
+## [1.2.1] - 2026-07-13
+
+### Changed
+- INSTRUCTIONS.md deployed block mirrors two editorial edits made in the live GPT: capital L in both "Final Liability rests with the Human." closing lines, and the third doctrine label reverted from "Human accountability" to Final Liability (block now 7,599 characters; no behavioral change)
+- README.md, BUILD-GUIDE.md and CROSSWALK.md versions aligned to 1.2.1
+
+### Superseded
+- v1.2.0 INSTRUCTIONS.md block
 
 ## [1.2.0] - 2026-07-13
 
