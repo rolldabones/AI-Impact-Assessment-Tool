@@ -1,6 +1,6 @@
 # BUILD-GUIDE.md
 
-**How the AI Impact Assessment Assistant was built · v1.1.0 · 13 July 2026**
+**How the AI Impact Assessment Assistant was built · v1.2.0 · 13 July 2026**
 
 This is the build log, kept because the method is the product as much as the Assistant is. It shows how to bootstrap a professional-grade governance tool from public source material using an AI platform's builder, and how to iterate it. The steps below were run in OpenAI's GPT builder with GPT-5.2 Thinking; substitute your platform's equivalents freely. The current instruction block lives in [INSTRUCTIONS.md](INSTRUCTIONS.md); do not copy prompts from this file.
 
@@ -20,7 +20,7 @@ This is long, so I'll be curt.
 
 ## Phase 3: Configure and test
 
-7. Take the resulting prompt (the current, improved version is in [INSTRUCTIONS.md](INSTRUCTIONS.md)) and paste it into Instructions on the Configure page.
+7. Take the resulting prompt and paste it into Instructions on the Configure page. If it does not fit, compress: ask the model to preserve every rule while cutting prose, then verify behavior with the operator verification checklist. The deployed, compressed block is in [INSTRUCTIONS.md](INSTRUCTIONS.md); the uncompressed long form is in [INSTRUCTIONS-EXTENDED.md](INSTRUCTIONS-EXTENDED.md).
 8. Name it (for example "AI Impact Assessment Assistant") and describe it (for example: "Produces professional, audit-ready AI impact assessments that are jurisdiction-agnostic and aligned to the EU AI Act, NIST AI RMF, ISO/IEC 42001 and ISO/IEC 42005."). Add a profile picture if you like. Turn ON Code Interpreter. Choose a reasoning-capable model. I chose GPT-5.2 Thinking. Press Create.
 9. Test it: "Run five self-tests with mock data to confirm that you are operating properly."
 10. Ask it to introduce itself: "Provide a concise explanation of your capabilities" or "How can we begin our work together?"
@@ -29,8 +29,12 @@ This is long, so I'll be curt.
 
 11. Periodically go back into the Builder and, using the Create chat interface rather than the Configure page, ask: "How could this GPT be improved?" Decide whether to adopt its recommendations. Mine proposed, and I adopted: an up-front prohibited-use screen; a deterministic scoring rubric for the Threshold Gate; an Assumptions and Confidence section; evidence quality tags with a minimum-evidence-for-Go checklist; a system boundary and data flow narrative; a mini threat model for security; a vendor contract-controls checklist; SLI/SLO-driven monitoring; a Decision Record with RACI and explicit kill-switch authority; and an optional crosswalk appendix. All of these are now baked into the v1.1.0 instruction block rather than left as chat-level behavior.
 12. I then instructed: "Ask the User for preferred strictness and be able to provide responses appropriate to both the risk-averse enterprise and the move-fast-with-guardrails enterprise." It thought for a long time, probably because extended thinking was enabled. Fun to watch. It even kept going after an interim "Thank you." It finally completed the build-out.
-13. Update the custom GPT and re-test: "Please run ten extended self-tests using mock data, to confirm you are operating properly." Then run the [acceptance checklist](INSTRUCTIONS.md#acceptance-checklist), which replaces ad hoc self-tests with pass/fail criteria.
+13. Update the custom GPT and re-test: "Please run ten extended self-tests using mock data, to confirm you are operating properly." Then run the [Builder Conformance Checklist](INSTRUCTIONS.md#builder-conformance-checklist), which replaces ad hoc self-tests with pass/fail criteria.
 14. Here is my custom GPT: [AI Impact Assessment Assistant](https://chatgpt.com/g/g-69882df5cb388191952447d6324de455-ai-impact-assessment-assistant).
+
+## Phase 5: When the tool improves itself
+
+15. During v1.1.0 acceptance testing, the Assistant responded to a conformance test by drafting a full revision of its own instruction set: operating modes, a residual-risk rule, a five-outcome decision taxonomy, a self-conformance check. The draft was good and it was flawed in the same breath: nearly twice the character limit, doctrine names diluted, one mode declared but never specified, and two v1.1.0 features silently dropped. It was evaluated against these instructions, eight defects were corrected and the result shipped as v1.2.0 ([SPEC.md](SPEC.md) and [INSTRUCTIONS.md](INSTRUCTIONS.md)). The episode is the method in miniature: let the tool propose, never let it approve. The proposal was machine-made; the acceptance decision was not.
 
 ## The lesson
 
@@ -38,6 +42,6 @@ The key is to focus these tools. Don't put too much on one of them. Build multip
 
 ---
 
-**Status: [✓ final] v1.1.0**
+**Status: [✓ final] v1.2.0**
 
 Final Liability rests with the Human.

@@ -2,6 +2,39 @@
 
 All notable changes to this repository. Versions follow semantic versioning. Prior versions are superseded upon release of the next.
 
+## [1.2.0] - 2026-07-13
+
+### Added
+- SPEC.md: normative long-form operating specification, adopted from the deployed Assistant's self-proposed revision after correction of eight defects (D-1 to D-8)
+- Six operating modes, including test modes barring invented systems and facts during self-tests
+- Residual-risk rule (planned / implemented-unverified / implemented-verified), five-outcome decision taxonomy, conditions precedent vs subsequent, twelve-role RACI with "Unassigned - decision blocker", non-blocking strictness default, final self-conformance check
+- Builder Conformance Checklist in INSTRUCTIONS.md (tests the Assistant; distinct from the in-block System Acceptance Checklist, which tests the assessed system)
+
+### Changed
+- Instruction block compressed to 7,985 characters (the Assistant's draft ran roughly 14,000, over the 8,000-character field limit)
+- Doctrine name and closing line restored to canon: "Final Liability rests with the Human."
+- Configurator Mode specified (declared but undefined in the draft)
+- Threshold clause on impossible score products replaced: the bands 1-6 / 8-12 / 15-25 are exhaustive over achievable products of a 1-5 x 1-5 scale
+- Restored from v1.1.0: on-request framework crosswalk; provenance and watermarking coverage for generative AI
+- README.md, BUILD-GUIDE.md (new Phase 5) and CROSSWALK.md bumped in lockstep
+
+### Superseded
+- v1.1.0 instruction block and acceptance checklist
+
+## [1.2.0] - 2026-07-13
+
+### Added
+- INSTRUCTIONS-EXTENDED.md: uncompressed long form retained for platforms without the Instructions box limit
+
+### Changed
+- INSTRUCTIONS.md now carries the deployed production block verbatim (7,604 characters, compressed for the GPT builder): adds the residual-risk evidence rule (planned controls do not reduce residual risk), a five-value decision taxonomy with conditions precedent vs subsequent, MODE declaration across six modes, default strictness (risk-averse enterprise), precise four-status evidence definitions, expanded RACI with "Unassigned: decision blocker" and a pre-output self-check
+- Ten-item checklist split into two instruments: the Assistant's in-tool acceptance checklist (rates the assessed system) and the repo-side operator verification checklist (verifies the Assistant)
+- README.md and BUILD-GUIDE.md updated for the two-file instruction structure and compression step
+- CROSSWALK.md version aligned to 1.2.0 (content unchanged)
+
+### Superseded
+- v1.1.0 INSTRUCTIONS.md (long-form block as canonical)
+
 ## [1.1.0] - 2026-07-13
 
 ### Added

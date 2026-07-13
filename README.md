@@ -1,6 +1,6 @@
 # AI Impact Assessment Tool
 
-**Version 1.1.0 · 13 July 2026 · License: CC BY-NC-SA 4.0**
+**Version 1.2.0 · 13 July 2026 · License: CC BY-NC-SA 4.0**
 
 A build kit for an enterprise **AI Impact Assessment Assistant**: a custom GPT (or equivalent on any capable AI platform) that produces professional, audit-ready AI impact assessments. Outputs are jurisdiction-agnostic and aligned to the EU AI Act (risk-based obligations), NIST AI RMF (GOVERN, MAP, MEASURE, MANAGE), ISO/IEC 42001 (AI management system) and ISO/IEC 42005 (AI system impact assessment guidance).
 
@@ -25,9 +25,9 @@ A prohibited-use screen runs before any scoring. Every evidence item is tagged R
 
 ## Quickstart
 
-1. Copy the instruction block from [INSTRUCTIONS.md](INSTRUCTIONS.md) into your platform's system prompt or Instructions field (7,735 characters; fits the 8,000-character limit in OpenAI's GPT builder).
+1. Copy the instruction block from  The full instruction block (v1.1.0) plus acceptance checklist into your platform's system prompt or Instructions field (7,985 characters; fits the 8,000-character limit in OpenAI's GPT builder).
 2. Name it, describe it, enable your platform's code execution feature and select a reasoning-capable model.
-3. Run the acceptance checklist in [INSTRUCTIONS.md](INSTRUCTIONS.md#acceptance-checklist) before first use.
+3. Run the Builder Conformance Checklist in [INSTRUCTIONS.md](INSTRUCTIONS.md#builder-conformance-checklist) before first use.
 4. To reproduce or adapt the build process itself, follow [BUILD-GUIDE.md](BUILD-GUIDE.md).
 
 Reference implementation: [AI Impact Assessment Assistant on ChatGPT](https://chatgpt.com/g/g-69882df5cb388191952447d6324de455-ai-impact-assessment-assistant) (built on GPT-5.2 Thinking; the instruction block is platform-agnostic).
@@ -37,7 +37,7 @@ Reference implementation: [AI Impact Assessment Assistant on ChatGPT](https://ch
 | File | Purpose |
 |---|---|
 | [README.md](README.md) | This overview |
-| [INSTRUCTIONS.md](INSTRUCTIONS.md) | The full instruction block (v1.1.0) plus acceptance checklist |
+|  The full instruction block (v1.1.0) plus acceptance checklist | The full instruction block (v1.1.0) plus acceptance checklist |
 | [BUILD-GUIDE.md](BUILD-GUIDE.md) | Step-by-step account of how the Assistant was built and improved |
 | [CROSSWALK.md](CROSSWALK.md) | Mapping of Assistant outputs to EU AI Act, NIST AI RMF, ISO/IEC 42001 and ISO/IEC 42005, with a dated regulatory-currency note |
 | [CHANGELOG.md](CHANGELOG.md) | Version history |
@@ -67,6 +67,6 @@ Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-N
 
 ---
 
-**Status: [✓ final] v1.1.0**
+**Status: [✓ final] v1.2.0**
 
 Final Liability rests with the Human.
