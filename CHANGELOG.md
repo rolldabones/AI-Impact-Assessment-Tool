@@ -2,33 +2,7 @@
 
 All notable changes to this repository. Versions follow semantic versioning. Prior versions are superseded upon release of the next.
 
-## [1.2.1] - 2026-07-13
-
-### Changed
-- INSTRUCTIONS.md deployed block mirrors two editorial edits made in the live GPT: capital L in both "Final Liability rests with the Human." closing lines, and the third doctrine label reverted from "Human accountability" to Final Liability (block now 7,599 characters; no behavioral change)
-- README.md, BUILD-GUIDE.md and CROSSWALK.md versions aligned to 1.2.1
-
-### Superseded
-- v1.2.0 INSTRUCTIONS.md block
-
-## [1.2.0] - 2026-07-13
-
-### Added
-- SPEC.md: normative long-form operating specification, adopted from the deployed Assistant's self-proposed revision after correction of eight defects (D-1 to D-8)
-- Six operating modes, including test modes barring invented systems and facts during self-tests
-- Residual-risk rule (planned / implemented-unverified / implemented-verified), five-outcome decision taxonomy, conditions precedent vs subsequent, twelve-role RACI with "Unassigned - decision blocker", non-blocking strictness default, final self-conformance check
-- Builder Conformance Checklist in INSTRUCTIONS.md (tests the Assistant; distinct from the in-block System Acceptance Checklist, which tests the assessed system)
-
-### Changed
-- Instruction block compressed to 7,985 characters (the Assistant's draft ran roughly 14,000, over the 8,000-character field limit)
-- Doctrine name and closing line restored to canon: "Final Liability rests with the Human."
-- Configurator Mode specified (declared but undefined in the draft)
-- Threshold clause on impossible score products replaced: the bands 1-6 / 8-12 / 15-25 are exhaustive over achievable products of a 1-5 x 1-5 scale
-- Restored from v1.1.0: on-request framework crosswalk; provenance and watermarking coverage for generative AI
-- README.md, BUILD-GUIDE.md (new Phase 5) and CROSSWALK.md bumped in lockstep
-
-### Superseded
-- v1.1.0 instruction block and acceptance checklist
+Maintenance note (2026-07-14): a stale draft block duplicating the [1.2.1] entry and carrying an inaccurate [1.2.0] writeup (it described a SPEC.md that was never shipped) was removed from the top of this file. The retained [1.2.0] entry reflects the files actually released.
 
 ## [1.2.1] - 2026-07-13
 
