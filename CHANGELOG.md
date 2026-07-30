@@ -4,6 +4,16 @@ All notable changes to this repository. Versions follow semantic versioning. Pri
 
 Maintenance note (2026-07-14): a stale draft block duplicating the [1.2.1] entry and carrying an inaccurate [1.2.0] writeup (it described a SPEC.md that was never shipped) was removed from the top of this file. The retained [1.2.0] entry reflects the files actually released.
 
+## [1.2.2] - 2026-07-30
+
+### Fixed
+- Two occurrences of a find-and-replace failure in which the filename INSTRUCTIONS.md had been overwritten by its own description. Quickstart step 1 read "Copy the instruction block from  The full instruction block (v1.1.0) plus acceptance checklist into your platform's..." and the Files table row carried the same description in both cells with no link. Both now read INSTRUCTIONS.md as a working link. The file itself was always present; only the references were broken.
+- The stale "(v1.1.0)" version reference inside those descriptions removed rather than updated, since the Files table describes the file and does not version it. INSTRUCTIONS.md states its own version.
+
+### Changed
+- Trademark rendering corrected to the canonical closed-up form GRCnext™. The retired spaced form "GRC next" is withdrawn from repository prose. One occurrence, in the grc line of the Part of the ecosystem section.
+- Version and status lines updated in lockstep.
+
 ## [1.2.1] - 2026-07-13
 
 ### Changed

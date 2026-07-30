@@ -1,6 +1,6 @@
 # AI Impact Assessment Tool
 
-**Version 1.2.1 · 13 July 2026 · License: CC BY-NC-SA 4.0**
+**Version 1.2.2 · 30 July 2026 · License: CC BY-NC-SA 4.0**
 
 A build kit for an enterprise **AI Impact Assessment Assistant**: a custom GPT (or equivalent on any capable AI platform) that produces professional, audit-ready AI impact assessments. Outputs are jurisdiction-agnostic and aligned to the EU AI Act (risk-based obligations), NIST AI RMF (GOVERN, MAP, MEASURE, MANAGE), ISO/IEC 42001 (AI management system) and ISO/IEC 42005 (AI system impact assessment guidance).
 
@@ -25,7 +25,7 @@ A prohibited-use screen runs before any scoring. Every evidence item is tagged R
 
 ## Quickstart
 
-1. Copy the instruction block from  The full instruction block (v1.1.0) plus acceptance checklist into your platform's system prompt or Instructions field (7,985 characters; fits the 8,000-character limit in OpenAI's GPT builder).
+1. Copy the instruction block from [INSTRUCTIONS.md](INSTRUCTIONS.md) into your platform's system prompt or Instructions field (7,985 characters; fits the 8,000-character limit in OpenAI's GPT builder).
 2. Name it, describe it, enable your platform's code execution feature and select a reasoning-capable model.
 3. Run the Builder Conformance Checklist in [INSTRUCTIONS.md](INSTRUCTIONS.md#builder-conformance-checklist) before first use.
 4. To reproduce or adapt the build process itself, follow [BUILD-GUIDE.md](BUILD-GUIDE.md).
@@ -37,7 +37,7 @@ Reference implementation: [AI Impact Assessment Assistant on ChatGPT](https://ch
 | File | Purpose |
 |---|---|
 | [README.md](README.md) | This overview |
-|  The full instruction block (v1.1.0) plus acceptance checklist | The full instruction block (v1.1.0) plus acceptance checklist |
+| [INSTRUCTIONS.md](INSTRUCTIONS.md) | The full instruction block plus acceptance checklist |
 | [BUILD-GUIDE.md](BUILD-GUIDE.md) | Step-by-step account of how the Assistant was built and improved |
 | [CROSSWALK.md](CROSSWALK.md) | Mapping of Assistant outputs to EU AI Act, NIST AI RMF, ISO/IEC 42001 and ISO/IEC 42005, with a dated regulatory-currency note |
 | [CHANGELOG.md](CHANGELOG.md) | Version history |
@@ -52,7 +52,7 @@ The Assistant is deliberately jurisdiction-agnostic and instructed to verify dat
 This repository is one tool in a connected set. The canonical map is [ECOSYSTEM.md](https://github.com/rolldabones/rolldabones/blob/main/ECOSYSTEM.md) in the profile repository. Nearest neighbors:
 
 - [ai-governance-for-boards](https://github.com/rolldabones/ai-governance-for-boards): jurisdiction guides (EU, US, Korea, Vietnam, Australia) for the questions this Assistant flags to counsel
-- [grc](https://github.com/rolldabones/grc): the **GRC next** framework whose primitives (Services, Tolerances, Pipes, Switches, Exits) map to this Assistant's inventory, thresholds, data flows, kill switch and decommission controls
+- [grc](https://github.com/rolldabones/grc): the **GRCnext™** framework whose primitives (Services, Tolerances, Pipes, Switches, Exits) map to this Assistant's inventory, thresholds, data flows, kill switch and decommission controls
 - [slow-ai-kitchen](https://github.com/rolldabones/slow-ai-kitchen): the 12-step governed AI methodology within which impact assessment sits
 - [AI-Governance-Academy](https://github.com/rolldabones/AI-Governance-Academy): prompt templates for adjacent governance engagements
 - [the-ungoverned-channel](https://github.com/rolldabones/the-ungoverned-channel): a living case study of agentic risk of the kind this Assistant's agentic adaptation rules address
@@ -67,6 +67,6 @@ Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-N
 
 ---
 
-**Status: [✓ final] v1.2.1**
+**Status: [✓ final] v1.2.2**
 
 Final Liability rests with the Human.
