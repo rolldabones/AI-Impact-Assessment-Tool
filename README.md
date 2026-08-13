@@ -1,6 +1,6 @@
 # AI Impact Assessment Tool
 
-**Version 1.2.3 · 13 August 2026 · License: CC BY-NC-SA 4.0**
+**Version 1.2.4 · 13 August 2026 · License: CC BY-NC-SA 4.0**
 
 A build kit for an enterprise **AI Impact Assessment Assistant**: a custom GPT (or equivalent on any capable AI platform) that produces professional, audit-ready AI impact assessments. Outputs are jurisdiction-agnostic and aligned to the EU AI Act (risk-based obligations), NIST AI RMF (GOVERN, MAP, MEASURE, MANAGE), ISO/IEC 42001 (AI management system) and ISO/IEC 42005 (AI system impact assessment guidance).
 
