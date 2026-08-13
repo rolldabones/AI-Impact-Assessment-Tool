@@ -32,7 +32,7 @@ Notes. ISO/IEC 42005:2025 is the standard purpose-built for AI system impact ass
 The EU AI Act timeline has been amended by the Digital Omnibus on AI. Current position:
 
 - Legislative sequence: provisional political agreement 7 May 2026; European Parliament endorsement 16 June 2026; Council final approval 29 June 2026; **entry into force 27 July 2026**.
-- **Article 5 applies from 2 February 2025**, per Article 113, point (a), Article 5 sitting in Chapter II. Settled and unaffected by the Omnibus.
+- **Article 5 applies from 2 February 2025**, per **Article 113, third paragraph, point (a)** as replaced by Regulation (EU) 2026/1744, Article 5 sitting in Chapter II. **Except** Article 5(1), first subparagraph, points (ba) and (bb), and Article 5(1a) and (1b), which apply from **2 December 2026**. The general date is settled; the Omnibus-added prohibitions are deferred.
 - Annex III stand-alone high-risk obligations: deferred from 2 August 2026 to 2 December 2027.
 - Annex I product-embedded high-risk obligations: deferred from 2 August 2027 to 2 August 2028.
 - Article 50 transparency obligations: still apply from 2 August 2026 (Article 50(2) watermarking for systems already on the market by that date: 2 December 2026).
@@ -43,7 +43,7 @@ The EU AI Act timeline has been amended by the Digital Omnibus on AI. Current po
 
 Sources: the consolidated text of Regulation (EU) 2024/1689 on EUR-Lex, as at 13 August 2026; the European Commission AI Act Service Desk reproduction of the Official Journal text of 13 June 2024; Council of the EU and European Parliament materials on the Digital Omnibus on AI; and law firm analyses (Covington, Gibson Dunn, Sidley, White & Case, DLA Piper, May to July 2026).
 
-⧉ The amending regulation's own Official Journal text has not been read. Its renumbering of Article 113 is unconfirmed, so no pinpoint to a numbered subsection of Article 113 is given here. Cite the consolidated text of Regulation (EU) 2024/1689 on EUR-Lex with an as-at date, and verify before relying on any date in a client-facing or regulatory submission. This note will not be silently updated.
+**Citation.** The amending act is **Regulation (EU) 2026/1744** of the European Parliament and of the Council of 8 July 2026, OJ L, 2026/1744, 24.7.2026, ELI http://data.europa.eu/eli/reg/2026/1744/oj, in force 27 July 2026. Its Article 1, point (40) amends the **third paragraph of Article 113** of Regulation (EU) 2024/1689. **Article 113 has unnumbered paragraphs with lettered points, so the correct pinpoint form is "Article 113, third paragraph, point (c)", not "Article 113(3)".** Amended point (c) provides that Chapter III, Sections 1, 2 and 3, with the exception of Article 6(5), apply from (i) 2 December 2027 for AI systems classified as high-risk pursuant to Article 6(2) and Annex III, and (ii) 2 August 2028 for those classified pursuant to Article 6(1) and Annex I. A new point (d) provides that Articles 102 to 110 apply from 27 July 2026. Read against the consolidated text of Regulation (EU) 2024/1689 on EUR-Lex, as at 13 August 2026 (KST). This note will not be silently updated.
 
 ---
 
