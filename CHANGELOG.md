@@ -4,6 +4,15 @@ All notable changes to this repository. Versions follow semantic versioning. Pri
 
 Maintenance note (2026-07-14): a stale draft block duplicating the [1.2.1] entry and carrying an inaccurate [1.2.0] writeup (it described a SPEC.md that was never shipped) was removed from the top of this file. The retained [1.2.0] entry reflects the files actually released.
 
+## [1.2.3] - 2026-08-13
+
+Omnibus currency remediation. The Digital Omnibus on AI entered into force on 27 July 2026; notes that described Official Journal publication as pending are recast as operative law with dated amendment notes. The Article 5 application date of 2 February 2025 is stated as fact (Article 113, point (a), Article 5 sitting in Chapter II), resolving one of the standing counsel Unknowns. No pinpoint to a numbered subsection of Article 113 is given: the amending regulation's Official Journal text has not been read and its renumbering is unconfirmed, so the consolidated text is cited with an as-at date and the gap is flagged in the file.
+
+- README.md: regulatory currency paragraph recast with a dated amendment note; a scope paragraph added stating that the Assistant supports an impact assessment and does not perform a conformity assessment, issue a declaration of conformity or discharge any regulator-facing obligation.
+- CROSSWALK.md: regulatory currency note re-headed as at 13 August 2026 and recast; a coverage-boundary paragraph added on the same point; sources repointed to the consolidated text on EUR-Lex and the Commission AI Act Service Desk reproduction of the Official Journal text of 13 June 2024.
+- BUILD-GUIDE.md: broken link to SPEC.md repointed to INSTRUCTIONS-EXTENDED.md. SPEC.md does not exist in this repository.
+- INSTRUCTIONS.md unchanged. It is the production mirror of the deployed instruction set and is not edited outside a redeployment.
+
 ## [1.2.2] - 2026-07-30
 
 ### Fixed

@@ -34,7 +34,7 @@ This is long, so I'll be curt.
 
 ## Phase 5: When the tool improves itself
 
-15. During v1.1.0 acceptance testing, the Assistant responded to a conformance test by drafting a full revision of its own instruction set: operating modes, a residual-risk rule, a five-outcome decision taxonomy, a self-conformance check. The draft was good and it was flawed in the same breath: nearly twice the character limit, doctrine names diluted, one mode declared but never specified, and two v1.1.0 features silently dropped. It was evaluated against these instructions, eight defects were corrected and the result shipped as v1.2.0 ([SPEC.md](SPEC.md) and [INSTRUCTIONS.md](INSTRUCTIONS.md)). The episode is the method in miniature: let the tool propose, never let it approve. The proposal was machine-made; the acceptance decision was not.
+15. During v1.1.0 acceptance testing, the Assistant responded to a conformance test by drafting a full revision of its own instruction set: operating modes, a residual-risk rule, a five-outcome decision taxonomy, a self-conformance check. The draft was good and it was flawed in the same breath: nearly twice the character limit, doctrine names diluted, one mode declared but never specified, and two v1.1.0 features silently dropped. It was evaluated against these instructions, eight defects were corrected and the result shipped as v1.2.0 ([INSTRUCTIONS-EXTENDED.md](INSTRUCTIONS-EXTENDED.md) and [INSTRUCTIONS.md](INSTRUCTIONS.md)). The episode is the method in miniature: let the tool propose, never let it approve. The proposal was machine-made; the acceptance decision was not.
 
 ## The lesson
 

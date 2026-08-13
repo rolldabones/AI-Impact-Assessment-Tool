@@ -1,6 +1,6 @@
 # AI Impact Assessment Tool
 
-**Version 1.2.2 · 30 July 2026 · License: CC BY-NC-SA 4.0**
+**Version 1.2.3 · 13 August 2026 · License: CC BY-NC-SA 4.0**
 
 A build kit for an enterprise **AI Impact Assessment Assistant**: a custom GPT (or equivalent on any capable AI platform) that produces professional, audit-ready AI impact assessments. Outputs are jurisdiction-agnostic and aligned to the EU AI Act (risk-based obligations), NIST AI RMF (GOVERN, MAP, MEASURE, MANAGE), ISO/IEC 42001 (AI management system) and ISO/IEC 42005 (AI system impact assessment guidance).
 
@@ -45,7 +45,11 @@ Reference implementation: [AI Impact Assessment Assistant on ChatGPT](https://ch
 
 ## Standards and regulatory currency
 
-The Assistant is deliberately jurisdiction-agnostic and instructed to verify dates rather than recite them. As of 13 July 2026 the EU AI Act timeline has been amended by the Digital Omnibus on AI (provisional agreement 7 May 2026, Parliament endorsement 16 June 2026, Council approval 29 June 2026, Official Journal publication pending). Annex III high-risk obligations move to 2 December 2027 and Annex I product-embedded obligations to 2 August 2028, while Article 50 transparency obligations still apply from 2 August 2026 and a new prohibition on AI-generated non-consensual intimate imagery and CSAM applies from 2 December 2026. See [CROSSWALK.md](CROSSWALK.md) for the mapping and sources. Verify current status before relying on any date.
+The Assistant is deliberately jurisdiction-agnostic and instructed to verify dates rather than recite them.
+
+**Amendment note, 13 August 2026 (KST).** The Digital Omnibus on AI amending Regulation (EU) 2024/1689 **entered into force on 27 July 2026**. The deferred dates below are therefore operative law, not pending changes. This paragraph previously described publication as pending. Annex III stand-alone high-risk obligations are deferred to 2 December 2027 and Annex I product-embedded obligations to 2 August 2028. Article 50 transparency obligations still apply from 2 August 2026, and a new prohibition on AI-generated non-consensual intimate imagery and CSAM applies from 2 December 2026. Article 5 sits in Chapter II and, under Article 113, point (a), **applies from 2 February 2025**. That date is settled and is not affected by the Omnibus. See [CROSSWALK.md](CROSSWALK.md) for the mapping, the coverage boundary and the sources.
+
+**Scope, informed by the crosswalk.** The crosswalk maps this Assistant's workflow onto the EU AI Act, the NIST AI RMF, ISO/IEC 42001 and ISO/IEC 42005. What the mapping does not reach is as material as what it does: the Assistant supports an impact assessment, it does not perform a conformity assessment, issue a declaration of conformity or discharge any obligation owed to a regulator. Read the crosswalk for the boundary before relying on the output as evidence.
 
 ## Part of the ecosystem
 

@@ -25,18 +25,25 @@ This crosswalk maps the Assistant's elements to the EU AI Act, NIST AI RMF, ISO/
 
 Notes. ISO/IEC 42005:2025 is the standard purpose-built for AI system impact assessment and is the closest single reference for this Assistant's core workflow; ISO/IEC 42001 supplies the management system it plugs into. The NIST AI RMF GOVERN function is cross-cutting and touches nearly every row; the table lists the dominant function per element. Where privacy law applies, a data protection impact assessment (for example GDPR Art. 35) may be required alongside the AI impact assessment; the Assistant flags the trigger and refers to counsel.
 
-## Regulatory currency note (as of 13 July 2026)
+## Regulatory currency note (as at 13 August 2026, KST)
 
-The EU AI Act timeline was amended by the Digital Omnibus on AI. Status when this file was written:
+> **Amendment note, 13 August 2026 (KST).** This note previously recorded the Digital Omnibus on AI as adopted but awaiting publication. That status is superseded. The Digital Omnibus on AI amending Regulation (EU) 2024/1689 **entered into force on 27 July 2026**. The deferred dates below are therefore operative law, not pending changes.
 
-- Provisional political agreement reached 7 May 2026; European Parliament endorsement 16 June 2026; Council final approval 29 June 2026; publication in the Official Journal pending, with entry into force on the third day after publication.
+The EU AI Act timeline has been amended by the Digital Omnibus on AI. Current position:
+
+- Legislative sequence: provisional political agreement 7 May 2026; European Parliament endorsement 16 June 2026; Council final approval 29 June 2026; **entry into force 27 July 2026**.
+- **Article 5 applies from 2 February 2025**, per Article 113, point (a), Article 5 sitting in Chapter II. Settled and unaffected by the Omnibus.
 - Annex III stand-alone high-risk obligations: deferred from 2 August 2026 to 2 December 2027.
 - Annex I product-embedded high-risk obligations: deferred from 2 August 2027 to 2 August 2028.
 - Article 50 transparency obligations: still apply from 2 August 2026 (Article 50(2) watermarking for systems already on the market by that date: 2 December 2026).
 - New Article 5 prohibition on AI systems generating non-consensual intimate imagery or CSAM: applies from 2 December 2026.
 - GPAI obligations (Articles 51-55, applicable since August 2025): unchanged.
 
-Sources: Council of the EU and European Parliament press releases of 7 May 2026 on the Digital Omnibus on AI, and subsequent law firm analyses (Covington, Gibson Dunn, Sidley, White & Case, DLA Piper, May-June 2026). These dates bind only upon publication in the Official Journal. Verify current status before relying on any of them; this note will not be silently updated.
+**Coverage boundary.** This crosswalk maps the Assistant's workflow onto the instruments named above. It is a mapping of coverage, not a claim of conformity. The Assistant supports an impact assessment; it does not perform a conformity assessment, issue a declaration of conformity, or discharge any obligation owed to a regulator or notified body. Where a row is absent, treat the obligation as out of scope for this tool and in scope for the organisation.
+
+Sources: the consolidated text of Regulation (EU) 2024/1689 on EUR-Lex, as at 13 August 2026; the European Commission AI Act Service Desk reproduction of the Official Journal text of 13 June 2024; Council of the EU and European Parliament materials on the Digital Omnibus on AI; and law firm analyses (Covington, Gibson Dunn, Sidley, White & Case, DLA Piper, May to July 2026).
+
+⧉ The amending regulation's own Official Journal text has not been read. Its renumbering of Article 113 is unconfirmed, so no pinpoint to a numbered subsection of Article 113 is given here. Cite the consolidated text of Regulation (EU) 2024/1689 on EUR-Lex with an as-at date, and verify before relying on any date in a client-facing or regulatory submission. This note will not be silently updated.
 
 ---
 
