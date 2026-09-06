@@ -1,10 +1,10 @@
 # AI Impact Assessment Tool
 
-**Version 1.2.5 · 13 August 2026 · License: CC BY-NC-SA 4.0**
+**Version 1.2.6 · 6 September 2026 · License: CC BY-NC-SA 4.0**
 
 A build kit for an enterprise **AI Impact Assessment Assistant**: a custom GPT (or equivalent on any capable AI platform) that produces professional, audit-ready AI impact assessments. Outputs are jurisdiction-agnostic and aligned to the EU AI Act (risk-based obligations), NIST AI RMF (GOVERN, MAP, MEASURE, MANAGE), ISO/IEC 42001 (AI management system) and ISO/IEC 42005 (AI system impact assessment guidance).
 
-The Assistant is grounded in three doctrines: **Slow AI** (governed, explainable, auditable, evidence over assurances), **Informed Intent** (no deployment without explicit pre-authorization specifying purpose, scope, limits and a named owner) and **Final Liability rests with the Human** (every risk, control and decision attaches to a named human).
+The Assistant is grounded in three doctrines: **Slow AI** (governed, explainable, auditable, evidence over assurances), **Informed Intent** (prior authorization with the elements and conditions stated in [DOCTRINE.md](https://github.com/rolldabones/rolldabones/blob/main/DOCTRINE.md)) and **Final Liability rests with the Human** (every risk, control and decision attaches to a named human).
 
 ## Who this is for
 
@@ -55,6 +55,8 @@ The Assistant is deliberately jurisdiction-agnostic and instructed to verify dat
 
 This repository is one tool in a connected set. The canonical map is [ECOSYSTEM.md](https://github.com/rolldabones/rolldabones/blob/main/ECOSYSTEM.md) in the profile repository. Nearest neighbors:
 
+The three doctrines are used in this repository as stated in [DOCTRINE.md](https://github.com/rolldabones/rolldabones/blob/main/DOCTRINE.md), the account's single normative statement. Where this repository restates a doctrine, it restates it at its own altitude and adds instruments, not doctrine (ECOSYSTEM.md protocol item 6).
+
 - [ai-governance-for-boards](https://github.com/rolldabones/ai-governance-for-boards): jurisdiction guides (EU, US, Korea, Vietnam, Australia) for the questions this Assistant flags to counsel
 - [grc](https://github.com/rolldabones/grc): the **GRCnext™** framework whose primitives (Services, Tolerances, Pipes, Switches, Exits) map to this Assistant's inventory, thresholds, data flows, kill switch and decommission controls
 - [slow-ai-kitchen](https://github.com/rolldabones/slow-ai-kitchen): the 12-step governed AI methodology within which impact assessment sits
@@ -65,12 +67,18 @@ This repository is one tool in a connected set. The canonical map is [ECOSYSTEM.
 
 This repository and any Assistant built from it provide governance tooling, not legal advice. Outputs are drafting aids that require review by qualified professionals. No attorney-client relationship is created.
 
+## How to Cite
+
+> Paik, Son-U Michael. *AI Impact Assessment Tool*, v1.2.6. GRC Solutions Korea, 2026. https://github.com/rolldabones/AI-Impact-Assessment-Tool
+
+A machine-readable citation is in [CITATION.cff](CITATION.cff).
+
 ## License
 
 Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0). See [LICENSE.md](LICENSE.md).
 
 ---
 
-**Status: [✓ final] v1.2.2**
+**Status: [✓ final] v1.2.6**
 
 Final Liability rests with the Human.
