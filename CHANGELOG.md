@@ -4,6 +4,19 @@ All notable changes to this repository. Versions follow semantic versioning. Pri
 
 Maintenance note (2026-07-14): a stale draft block duplicating the [1.2.1] entry and carrying an inaccurate [1.2.0] writeup (it described a SPEC.md that was never shipped) was removed from the top of this file. The retained [1.2.0] entry reflects the files actually released.
 
+## [1.2.8] - 2026-09-08
+
+Three self-declared claims corrected, all found while remediating the v1.2.7 defect and all in files v1.2.7 did not touch. **One of them was false in a released repository and had been since v1.2.6.**
+
+- **STRUCK.** ~~`INSTRUCTIONS-EXTENDED.md`: "The uncompressed long form of the instruction block (7,735 characters)".~~ **STRUCK 8 September 2026.** The figure was exact at v1.2.0 and at v1.2.5, where the block measured 7,735 characters. The v1.2.6 correction that replaced the Informed Intent compression with a pointer to the canon added 38 characters to that block **and did not re-measure the count the file declares about itself**, so the claim has been false since 6 September 2026 and shipped through two releases. It now reads **7,773 characters**, measured on the file. ⧉ **This is the same defect the v1.2.7 entry records on the sibling file, made by the session that made the correction v1.2.7 was matching.** The two files each state their own size, and nothing reads either statement.
+- **`INSTRUCTIONS-EXTENDED.md` masthead date** moved from `13 July 2026` to `8 September 2026`. The file's substance changed at v1.2.6 and its date did not follow.
+- **`BUILD-GUIDE.md` to `v1.2.3 · 13 August 2026`** and **`CROSSWALK.md` to `v1.2.5 · 13 August 2026`**, mastheads and closing status lines. Both read `v1.2.1 · 13 July 2026` while their bytes changed after v1.2.1: `BUILD-GUIDE.md` last at v1.2.3, `CROSSWALK.md` last at v1.2.5. Read from the tags rather than from the files.
+- **The rule these two are corrected under, stated because it is not obvious and the alternative is circular.** A version line records the release in which the file's **substance** last changed. A commit that only corrects the version line is not a substantive change and does not reset it, or no version line could ever be corrected: the correcting commit would immediately become the last commit touching the file and make the corrected value wrong.
+- **`README.md` masthead, How to Cite and status line, and `CITATION.cff` `version`,** to 1.2.8. `date-released` stands at 2026-09-08, unchanged and correct.
+- **Not corrected, and it needs a decision rather than a measurement.** `INSTRUCTIONS-EXTENDED.md` closes with `**Status: [✓ final] reference companion to v1.2.0**`. That is a claim about what the file is a companion **to**, not a statement of its own version, and the v1.2.6 edit to its doctrine line means it no longer corresponds to the v1.2.0 instruction block. What it should name is a judgment about the file's role and is left open rather than guessed.
+- **The nine serial commas in `INSTRUCTIONS.md`'s fenced block are not corrected**, ruled 8 September 2026. The deployed reference implementation is frozen by decision, so that block is now a record of what is deployed rather than prose the author is maintaining, and editing it for style would make it a less accurate record. See the account's style rule on reproduction.
+- All other files in this repository are unchanged byte for byte.
+
 ## [1.2.7] - 2026-09-08
 
 The third Informed Intent compression corrected in `INSTRUCTIONS.md`. **A correction of substance, not a typo**, and itemised as one.

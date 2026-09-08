@@ -4,7 +4,7 @@ title: "AI Impact Assessment Tool"
 authors:
   - family-names: "Paik"
     given-names: "Son-U Michael"
-version: 1.2.7
+version: 1.2.8
 date-released: "2026-09-08"
 license: CC-BY-NC-SA-4.0
 repository-code: "https://github.com/rolldabones/AI-Impact-Assessment-Tool"

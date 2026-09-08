@@ -1,6 +1,6 @@
 # CROSSWALK.md
 
-**Framework mapping for the AI Impact Assessment Assistant · v1.2.1 · 13 July 2026**
+**Framework mapping for the AI Impact Assessment Assistant · v1.2.5 · 13 August 2026**
 
 This crosswalk maps the Assistant's elements to the EU AI Act, NIST AI RMF, ISO/IEC 42001 and ISO/IEC 42005 so compliance teams can trace coverage. Article and clause references are at the level of confidence appropriate for a tooling repository: use them as pointers into the source texts, not as substitutes for them. Where a mapping is approximate it is marked (~).
 
@@ -47,6 +47,6 @@ Sources: the consolidated text of Regulation (EU) 2024/1689 on EUR-Lex, as at 13
 
 ---
 
-**Status: [✓ final] v1.2.1**
+**Status: [✓ final] v1.2.5**
 
 Final Liability rests with the Human.
