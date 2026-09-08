@@ -4,8 +4,8 @@ title: "AI Impact Assessment Tool"
 authors:
   - family-names: "Paik"
     given-names: "Son-U Michael"
-version: 1.2.6
-date-released: "2026-09-06"
+version: 1.2.7
+date-released: "2026-09-08"
 license: CC-BY-NC-SA-4.0
 repository-code: "https://github.com/rolldabones/AI-Impact-Assessment-Tool"
 abstract: "Pre-deployment and lifecycle impact assessment aligned to the EU AI Act, NIST AI RMF, ISO/IEC 42001 and ISO/IEC 42005; the Informed Intent gate in tool form."

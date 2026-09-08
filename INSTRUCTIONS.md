@@ -1,8 +1,8 @@
 # INSTRUCTIONS.md
 
-**AI Impact Assessment Assistant · Deployed instruction block v1.2.1 · 13 July 2026**
+**AI Impact Assessment Assistant · Deployed instruction block v1.2.7 · 8 September 2026**
 
-This is the canonical instruction block, verbatim as deployed in the reference implementation: [AI Impact Assessment Assistant on ChatGPT](https://chatgpt.com/g/g-69882df5cb388191952447d6324de455-ai-impact-assessment-assistant). It is 7,599 characters, compressed to fit the GPT builder Instructions box. If your platform accepts longer system prompts, consider [INSTRUCTIONS-EXTENDED.md](INSTRUCTIONS-EXTENDED.md), the uncompressed long form. The two are functionally aligned; where they differ, the deployed block governs and adds the residual-risk evidence rule, the five-value decision taxonomy, mode declaration, a default strictness and a self-check.
+This is the canonical instruction block: [AI Impact Assessment Assistant on ChatGPT](https://chatgpt.com/g/g-69882df5cb388191952447d6324de455-ai-impact-assessment-assistant). ~~It is verbatim as deployed in the reference implementation.~~ **STRUCK 8 September 2026**, in this release: the Informed Intent line below was corrected to point at [DOCTRINE.md](https://github.com/rolldabones/rolldabones/blob/main/DOCTRINE.md), and the deployed implementation has not yet been updated to match. **This file governs; the deployment lags it until the live GPT is updated.** It is 7,666 characters, compressed to fit the GPT builder Instructions box. If your platform accepts longer system prompts, consider [INSTRUCTIONS-EXTENDED.md](INSTRUCTIONS-EXTENDED.md), the uncompressed long form. The two are functionally aligned; where they differ, this block governs and adds the residual-risk evidence rule, the five-value decision taxonomy, mode declaration, a default strictness and a self-check.
 
 ## The deployed instruction block
 
@@ -12,7 +12,7 @@ You are “AI Impact Assessment Assistant” for enterprise use. Produce audit-r
 CORE DOCTRINES
 
 * Slow AI: evidence over assurances; governed, explainable, auditable, reversible.
-* Informed Intent: no production deployment without pre-authorization covering purpose, scope, limits, owner, and approver.
+* Informed Intent: no deployment without prior authorization carrying the elements and conditions stated in DOCTRINE.md at github.com/rolldabones/rolldabones. The DECISION step is this gate.
 * Final Liability: every material risk, control, exception, escalation, decision, and kill-switch has a named human owner.
 
 MODE
@@ -123,6 +123,14 @@ Next step: one concrete action
 Final Liability rests with the Human.
 ```
 
+## What changed in v1.2.7
+
+Doctrinal correction, not editorial. The Informed Intent line stated the doctrine as a five-element list of its own. That list was the superseded four-element compression in different words, matched neither limb of DOCTRINE.md v1.1.0 and carried a serial comma against house style. It is replaced by the pointer form already carried by [INSTRUCTIONS-EXTENDED.md](INSTRUCTIONS-EXTENDED.md), matched word for word rather than re-worded, because re-wording is what produced the defect. The rule is now stated once, in DOCTRINE.md, and pointed at from here.
+
+The line also read "no production deployment" and now reads "no deployment". That is a widening: the gate no longer turns on whether a deployment is a production deployment. It is intended, it follows the canon and it is recorded here because a reader of the old block would not expect it.
+
+Two consequences a reader should not be surprised by. The block is 7,666 characters, re-measured rather than re-stated. And the reference implementation on ChatGPT still carries the old line until it is updated by hand; see the note above the block.
+
 ## What changed in v1.2.1
 
 Editorial only, mirroring edits made in the live GPT: the two closing lines now read "Final Liability rests with the Human." with a capital L, and the third doctrine label reverts from "Human accountability" to Final Liability. No behavioral change.
@@ -154,6 +162,6 @@ The Assistant's own ten-item checklist rates an assessed system. This checklist 
 
 ---
 
-**Status: [✓ final] v1.2.1**
+**Status: [✓ final] v1.2.7**
 
 Final Liability rests with the Human.
