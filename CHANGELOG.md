@@ -4,6 +4,15 @@ All notable changes to this repository. Versions follow semantic versioning. Pri
 
 Maintenance note (2026-07-14): a stale draft block duplicating the [1.2.1] entry and carrying an inaccurate [1.2.0] writeup (it described a SPEC.md that was never shipped) was removed from the top of this file. The retained [1.2.0] entry reflects the files actually released.
 
+## [1.2.9] - 2026-09-28
+
+Retirement notice for the deployed custom GPT. OpenAI's Custom GPT retirement and migration FAQ, read on 28 September 2026, states that custom GPTs and their GPT pages become inaccessible on 11 December 2026. On Michael's ruling of 28 September 2026 the GPT is retired on that date and not migrated to a plugin; the instructions stay published so readers can build their own.
+
+- **`README.md`**: retirement notice added below the reference implementation line; closing status line moved with it. The notice cites both OpenAI help articles with the date each was read. The version moved to this release at every occurrence.
+- **`CITATION.cff`**: `version` and `date-released` in lockstep.
+- **The link is kept.** It is live until 11 December 2026. Striking it and the same link in `BUILD-GUIDE.md` step 14 and the `INSTRUCTIONS.md` header, and recasting the present-tense deployment wording, is `account-maintenance` RUNBOOK §8 item 28, due on the first sweep after that date.
+- All other files in this repository are unchanged byte for byte.
+
 ## [1.2.8] - 2026-09-08
 
 Three self-declared claims corrected, all found while remediating the v1.2.7 defect and all in files v1.2.7 did not touch. **One of them was false in a released repository and had been since v1.2.6.**
