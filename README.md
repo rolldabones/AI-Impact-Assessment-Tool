@@ -1,6 +1,6 @@
 # AI Impact Assessment Tool
 
-**Version 1.2.10 · 5 October 2026 · License: CC BY-NC-SA 4.0**
+**Version 1.2.11 · 15 October 2026 · License: CC BY-NC-SA 4.0**
 
 A build kit for an enterprise **AI Impact Assessment Assistant**: a custom GPT (or equivalent on any capable AI platform) that produces professional, audit-ready AI impact assessments. Outputs are jurisdiction-agnostic and aligned to the EU AI Act (risk-based obligations), NIST AI RMF (GOVERN, MAP, MEASURE, MANAGE), ISO/IEC 42001 (AI management system) and ISO/IEC 42005 (AI system impact assessment guidance).
 
@@ -51,7 +51,7 @@ Reference implementation: [AI Impact Assessment Assistant on ChatGPT](https://ch
 
 The Assistant is deliberately jurisdiction-agnostic and instructed to verify dates rather than recite them.
 
-**Amendment note, 13 August 2026 (KST).** The Digital Omnibus on AI amending Regulation (EU) 2024/1689 **entered into force on 27 July 2026**. The deferred dates below are therefore operative law, not pending changes. This paragraph previously described publication as pending. Annex III stand-alone high-risk obligations are deferred to 2 December 2027 and Annex I product-embedded obligations to 2 August 2028. Article 50 transparency obligations still apply from 2 August 2026, and a new prohibition on AI-generated non-consensual intimate imagery and CSAM applies from 2 December 2026. Article 5 sits in Chapter II. Under **Article 113, third paragraph, point (a)**, as replaced by Regulation (EU) 2026/1744, Chapters I and II apply from **2 February 2025**, **with the exception of Article 5(1), first subparagraph, points (ba) and (bb), and Article 5(1a) and (1b), which apply from 2 December 2026**. So the general Article 5 date is 2 February 2025 and the prohibitions added by the Omnibus are deferred to 2 December 2026. Do not state the Article 5 date without that carve-out. See [CROSSWALK.md](CROSSWALK.md) for the mapping, the coverage boundary and the sources.
+**Amendment note, 13 August 2026 (KST).** The Digital Omnibus on AI amending Regulation (EU) 2024/1689 **entered into force on 27 July 2026**. The deferred dates below are therefore operative law, not pending changes. This paragraph previously described publication as pending. Annex III stand-alone high-risk obligations are deferred to 2 December 2027 and Annex I product-embedded obligations to 2 August 2028. Article 50 transparency obligations apply from 2 August 2026 for providers and deployers, with one carve-out: providers of generative systems placed on the market before 2 August 2026 have until 2 December 2026 to meet the Article 50(2) machine-readable marking duty (Recital 38). Two new prohibitions, Article 5(1), first subparagraph, points (ba) and (bb), on AI-generated non-consensual intimate imagery and child sexual abuse material, apply from 2 December 2026 (this note read "a new prohibition" until 15 October 2026 (KST)). The canonical account-wide statement of the post-Omnibus timeline is the [EU AI Act currency note](https://github.com/rolldabones/ai-governance-for-boards/blob/main/05-jurisdictions/eu.md#eu-ai-act-currency-note) in ai-governance-for-boards, dated 15 October 2026 (KST); where this paragraph and that note differ, the note governs. Article 5 sits in Chapter II. Under **Article 113, third paragraph, point (a)**, as replaced by Regulation (EU) 2026/1744, Chapters I and II apply from **2 February 2025**, **with the exception of Article 5(1), first subparagraph, points (ba) and (bb), and Article 5(1a) and (1b), which apply from 2 December 2026**. So the general Article 5 date is 2 February 2025 and the prohibitions added by the Omnibus are deferred to 2 December 2026. Do not state the Article 5 date without that carve-out. See [CROSSWALK.md](CROSSWALK.md) for the mapping, the coverage boundary and the sources.
 
 **Scope, informed by the crosswalk.** The crosswalk maps this Assistant's workflow onto the EU AI Act, the NIST AI RMF, ISO/IEC 42001 and ISO/IEC 42005. What the mapping does not reach is as material as what it does: the Assistant supports an impact assessment, it does not perform a conformity assessment, issue a declaration of conformity or discharge any obligation owed to a regulator. Read the crosswalk for the boundary before relying on the output as evidence.
 
@@ -73,7 +73,7 @@ This repository and any Assistant built from it provide governance tooling, not 
 
 ## How to Cite
 
-> Paik, Son-U Michael. *AI Impact Assessment Tool*, v1.2.10. GRC Solutions Korea, 2026. https://github.com/rolldabones/AI-Impact-Assessment-Tool
+> Paik, Son-U Michael. *AI Impact Assessment Tool*, v1.2.11. GRC Solutions Korea, 2026. https://github.com/rolldabones/AI-Impact-Assessment-Tool
 
 A machine-readable citation is in [CITATION.cff](CITATION.cff).
 
@@ -83,6 +83,6 @@ Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-N
 
 ---
 
-**Status: [✓ final] v1.2.10**
+**Status: [✓ final] v1.2.11**
 
 Final Liability rests with the Human.

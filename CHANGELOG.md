@@ -4,6 +4,14 @@ All notable changes to this repository. Versions follow semantic versioning. Pri
 
 Maintenance note (2026-07-14): a stale draft block duplicating the [1.2.1] entry and carrying an inaccurate [1.2.0] writeup (it described a SPEC.md that was never shipped) was removed from the top of this file. The retained [1.2.0] entry reflects the files actually released.
 
+## [1.2.11] - 2026-10-15
+
+Legal currency patch, session T1 of the whole-account review of 15 October 2026 (KST). No change to the instructions or the build guide.
+
+- **`README.md` amendment note and `CROSSWALK.md` timeline:** "a new prohibition on AI-generated non-consensual intimate imagery and CSAM" read as one prohibition; Regulation (EU) 2026/1744 ([OJ L, 2026/1744](http://data.europa.eu/eli/reg/2026/1744/oj)) inserts two, Article 5(1), first subparagraph, points (ba) and (bb), and both files now say so. The Article 50 line gains the provider carve-out as verified: providers of generative systems placed on the market before 2 August 2026 have until 2 December 2026 for the Article 50(2) marking duty (Recital 38); the earlier "already on the market by that date" wording is aligned. Both files link to the account's canonical [EU AI Act currency note](https://github.com/rolldabones/ai-governance-for-boards/blob/main/05-jurisdictions/eu.md#eu-ai-act-currency-note), published the same day, which governs on conflict. Reviewer report 12, items 13 and 14; review doc §2 and §3.
+- **`CROSSWALK.md` to v1.2.6:** ISO/IEC 42001:2023 cells cite controls by number (A.9.2 to A.9.4 and A.6.2.6 for oversight; A.8.2 and A.8.5 for transparency; A.6.2.8 and Clause 9.1 for logging; 8.4 and A.5.2 to A.5.5 for the full assessment); Art. 73 added to the incidents row, Art. 86 to the contestability row, Art. 14(4), point (e), to the oversight row. The ISO/IEC 42005:2025 column is unchanged, not having been opened. Item 15.
+- Masthead, How to Cite, status line and `CITATION.cff` to 1.2.11 in lockstep. All other files unchanged byte for byte.
+
 ## [1.2.10] - 2026-10-05
 
 Correction of substance to the retirement notice of the previous release. On 1 October 2026 the reference implementation, the AI Impact Assessment Assistant custom GPT, was converted to a private ChatGPT plugin, so the notice's statement that it would not be migrated was false.
