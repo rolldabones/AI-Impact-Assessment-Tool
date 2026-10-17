@@ -4,6 +4,15 @@ All notable changes to this repository. Versions follow semantic versioning. Pri
 
 Maintenance note (2026-07-14): a stale draft block duplicating the [1.2.1] entry and carrying an inaccurate [1.2.0] writeup (it described a SPEC.md that was never shipped) was removed from the top of this file. The retained [1.2.0] entry reflects the files actually released.
 
+## [1.2.12] - 2026-10-17
+
+Mechanical patch, session T3 of the whole-account review of 15 October 2026 (doc section 8). No change to the instruction block, the extended instructions or the operator checklist.
+
+- **`README.md` Quickstart step 1:** "7,985 characters" corrected to **7,666**, the length of the instruction block in `INSTRUCTIONS.md` measured on 17 October 2026 (UTF-16 code units, which here equal characters) and the figure `INSTRUCTIONS.md` itself states. 7,985 matched no block in this repository.
+- **Anchor:** `README.md` step 3 and `BUILD-GUIDE.md` step 13 linked `INSTRUCTIONS.md#builder-conformance-checklist`; the heading is "Operator verification checklist", so both links went to the top of the page. Both now name and link `#operator-verification-checklist`. `BUILD-GUIDE.md` to v1.2.4.
+- **`CROSSWALK.md` to v1.2.7:** "organisation" to "organization" and one serial comma removed in the Coverage boundary paragraph. No mapping cell changed.
+- Masthead, How to Cite, status line and `CITATION.cff` to 1.2.12 in lockstep. Retirement wording, the reference-implementation link and the deployed-block status are session T4's and are untouched. Shipped entries below are left as written (ruling 7 of 15 October 2026).
+
 ## [1.2.11] - 2026-10-15
 
 Legal currency patch, session T1 of the whole-account review of 15 October 2026 (KST). No change to the instructions or the build guide.

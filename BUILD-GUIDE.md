@@ -1,6 +1,6 @@
 # BUILD-GUIDE.md
 
-**How the AI Impact Assessment Assistant was built · v1.2.3 · 13 August 2026**
+**How the AI Impact Assessment Assistant was built · v1.2.4 · 17 October 2026**
 
 This is the build log, kept because the method is the product as much as the Assistant is. It shows how to bootstrap a professional-grade governance tool from public source material using an AI platform's builder, and how to iterate it. The steps below were run in OpenAI's GPT builder with GPT-5.2 Thinking; substitute your platform's equivalents freely. The current instruction block lives in [INSTRUCTIONS.md](INSTRUCTIONS.md); do not copy prompts from this file.
 
@@ -29,7 +29,7 @@ This is long, so I'll be curt.
 
 11. Periodically go back into the Builder and, using the Create chat interface rather than the Configure page, ask: "How could this GPT be improved?" Decide whether to adopt its recommendations. Mine proposed, and I adopted: an up-front prohibited-use screen; a deterministic scoring rubric for the Threshold Gate; an Assumptions and Confidence section; evidence quality tags with a minimum-evidence-for-Go checklist; a system boundary and data flow narrative; a mini threat model for security; a vendor contract-controls checklist; SLI/SLO-driven monitoring; a Decision Record with RACI and explicit kill-switch authority; and an optional crosswalk appendix. All of these are now baked into the v1.1.0 instruction block rather than left as chat-level behavior.
 12. I then instructed: "Ask the User for preferred strictness and be able to provide responses appropriate to both the risk-averse enterprise and the move-fast-with-guardrails enterprise." It thought for a long time, probably because extended thinking was enabled. Fun to watch. It even kept going after an interim "Thank you." It finally completed the build-out.
-13. Update the custom GPT and re-test: "Please run ten extended self-tests using mock data, to confirm you are operating properly." Then run the [Builder Conformance Checklist](INSTRUCTIONS.md#builder-conformance-checklist), which replaces ad hoc self-tests with pass/fail criteria.
+13. Update the custom GPT and re-test: "Please run ten extended self-tests using mock data, to confirm you are operating properly." Then run the [Operator verification checklist](INSTRUCTIONS.md#operator-verification-checklist), which replaces ad hoc self-tests with pass/fail criteria.
 14. Here is my custom GPT: [AI Impact Assessment Assistant](https://chatgpt.com/g/g-69882df5cb388191952447d6324de455-ai-impact-assessment-assistant).
 
 ## Phase 5: When the tool improves itself

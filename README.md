@@ -1,6 +1,6 @@
 # AI Impact Assessment Tool
 
-**Version 1.2.11 · 15 October 2026 · License: CC BY-NC-SA 4.0**
+**Version 1.2.12 · 17 October 2026 · License: CC BY-NC-SA 4.0**
 
 A build kit for an enterprise **AI Impact Assessment Assistant**: a custom GPT (or equivalent on any capable AI platform) that produces professional, audit-ready AI impact assessments. Outputs are jurisdiction-agnostic and aligned to the EU AI Act (risk-based obligations), NIST AI RMF (GOVERN, MAP, MEASURE, MANAGE), ISO/IEC 42001 (AI management system) and ISO/IEC 42005 (AI system impact assessment guidance).
 
@@ -25,9 +25,9 @@ A prohibited-use screen runs before any scoring. Every evidence item is tagged R
 
 ## Quickstart
 
-1. Copy the instruction block from [INSTRUCTIONS.md](INSTRUCTIONS.md) into your platform's system prompt or Instructions field (7,985 characters; fits the 8,000-character limit in OpenAI's GPT builder).
+1. Copy the instruction block from [INSTRUCTIONS.md](INSTRUCTIONS.md) into your platform's system prompt or Instructions field (7,666 characters; fits the 8,000-character limit in OpenAI's GPT builder).
 2. Name it, describe it, enable your platform's code execution feature and select a reasoning-capable model.
-3. Run the Builder Conformance Checklist in [INSTRUCTIONS.md](INSTRUCTIONS.md#builder-conformance-checklist) before first use.
+3. Run the Operator verification checklist in [INSTRUCTIONS.md](INSTRUCTIONS.md#operator-verification-checklist) before first use.
 4. To reproduce or adapt the build process itself, follow [BUILD-GUIDE.md](BUILD-GUIDE.md).
 
 Reference implementation: [AI Impact Assessment Assistant on ChatGPT](https://chatgpt.com/g/g-69882df5cb388191952447d6324de455-ai-impact-assessment-assistant) (built on GPT-5.2 Thinking; the instruction block is platform-agnostic).
@@ -73,7 +73,7 @@ This repository and any Assistant built from it provide governance tooling, not 
 
 ## How to Cite
 
-> Paik, Son-U Michael. *AI Impact Assessment Tool*, v1.2.11. GRC Solutions Korea, 2026. https://github.com/rolldabones/AI-Impact-Assessment-Tool
+> Paik, Son-U Michael. *AI Impact Assessment Tool*, v1.2.12. GRC Solutions Korea, 2026. https://github.com/rolldabones/AI-Impact-Assessment-Tool
 
 A machine-readable citation is in [CITATION.cff](CITATION.cff).
 
@@ -83,6 +83,6 @@ Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-N
 
 ---
 
-**Status: [✓ final] v1.2.11**
+**Status: [✓ final] v1.2.12**
 
 Final Liability rests with the Human.

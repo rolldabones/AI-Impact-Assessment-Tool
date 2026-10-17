@@ -1,6 +1,6 @@
 # CROSSWALK.md
 
-**Framework mapping for the AI Impact Assessment Assistant · v1.2.6 · 15 October 2026 (KST)**
+**Framework mapping for the AI Impact Assessment Assistant · v1.2.7 · 17 October 2026 (KST)**
 
 > **Amendment note, 15 October 2026 (KST).** ISO/IEC 42001:2023 cells that read "Annex A oversight controls (~)", "Annex A transparency controls (~)" and "Clause 9 (~)" now cite the controls by number; the incidents row adds Art. 73 (serious incident reporting) beside Art. 72; the contestability row adds Art. 86 (right to explanation of individual decision-making); the human oversight row pinpoints Art. 14(4), point (e); the full-assessment row adds Clause 8.4 and controls A.5.2 to A.5.5. The ISO/IEC 42005:2025 column is unchanged and still carries no clause numbers: the standard was not opened in this pass and the column stays at the (~) level of confidence. The EU AI Act timeline below now links to the account's canonical note.
 
@@ -42,7 +42,7 @@ The EU AI Act timeline has been amended by the Digital Omnibus on AI. Current po
 - The canonical account-wide statement of this timeline is the [EU AI Act currency note](https://github.com/rolldabones/ai-governance-for-boards/blob/main/05-jurisdictions/eu.md#eu-ai-act-currency-note) in ai-governance-for-boards, dated 15 October 2026 (KST); it governs where this list and it differ.
 - GPAI obligations (Articles 51-55, applicable since August 2025): unchanged.
 
-**Coverage boundary.** This crosswalk maps the Assistant's workflow onto the instruments named above. It is a mapping of coverage, not a claim of conformity. The Assistant supports an impact assessment; it does not perform a conformity assessment, issue a declaration of conformity, or discharge any obligation owed to a regulator or notified body. Where a row is absent, treat the obligation as out of scope for this tool and in scope for the organisation.
+**Coverage boundary.** This crosswalk maps the Assistant's workflow onto the instruments named above. It is a mapping of coverage, not a claim of conformity. The Assistant supports an impact assessment; it does not perform a conformity assessment, issue a declaration of conformity or discharge any obligation owed to a regulator or notified body. Where a row is absent, treat the obligation as out of scope for this tool and in scope for the organization.
 
 Sources: the consolidated text of Regulation (EU) 2024/1689 on EUR-Lex, as at 13 August 2026; the European Commission AI Act Service Desk reproduction of the Official Journal text of 13 June 2024; Council of the EU and European Parliament materials on the Digital Omnibus on AI; and law firm analyses (Covington, Gibson Dunn, Sidley, White & Case, DLA Piper, May to July 2026).
 
