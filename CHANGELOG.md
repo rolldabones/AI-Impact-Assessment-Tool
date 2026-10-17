@@ -4,6 +4,178 @@ All notable changes to this repository. Versions follow semantic versioning. Pri
 
 Maintenance note (2026-07-14): a stale draft block duplicating the [1.2.1] entry and carrying an inaccurate [1.2.0] writeup (it described a SPEC.md that was never shipped) was removed from the top of this file. The retained [1.2.0] entry reflects the files actually released.
 
+## [1.3.0] - 2026-10-18
+
+Minor release, session T4 of the whole-account review of 15 October 2026 (KST), review doc section 4 (the custom-GPT retirement cliff) and reviewer report 12 items A1, A2, A12, A18, B4, B5, B9 and C5, under determination D5 and ruling 9. The custom GPT was retired on 1 October 2026 and converted to a private plug-in on the OpenAI platform; its configuration is Locked as of that date. Block v1.2.7 in `INSTRUCTIONS.md` becomes the instrument of this repository and the text of record; block v1.2.1, the text last verified against the GPT, is archived below. No legal or regulatory statement changed: `CROSSWALK.md` and the README's amendment notes are untouched.
+
+- **`INSTRUCTIONS.md` (A1):** the header is rewritten as an instrument status line (`Instrument · block v1.2.7 · 18 October 2026 (KST) · text of record`), the retirement sentence, the last-verified sentence and a how-to-use paragraph; the heading "The deployed instruction block" reads "The instruction block"; a "What changed in v1.3.0" section is added; the checklist preamble asks for each run to be recorded in `tests.md`; the closing status line reads `v1.3.0 (block v1.2.7)`. The superseded header sentences are struck below. The v1.2.7 history paragraph that linked `INSTRUCTIONS-EXTENDED.md` now names it as removed and recoverable at tag v1.2.12.
+- **The instruction block itself is unchanged.** It was checked for every GPT-only dependency: Code Interpreter or any other capability toggle, knowledge-file references, conversation starters and the builder's character limit. **None was found, so no wording in the block changed.** It measures 7,666 characters, SHA-256 `d5f310e64a328422ef85bfd2bed036f3a3072c8fa086981dcdc2d1b9dafdb604` (UTF-8 text between the fences, without the final newline). One external dependency remains and is recorded as a known defect in `tests.md`: the Informed Intent line points to DOCTRINE.md, which an assistant without link access cannot open; the how-to-use paragraph tells the operator to paste that section alongside.
+- **Wording changes from the last verified text (v1.2.1) to the instrument (v1.2.7):** one line, made in 1.2.7 and never carried by the GPT.
+  - Old: `* Informed Intent: no production deployment without pre-authorization covering purpose, scope, limits, owner, and approver.`
+  - New: `* Informed Intent: no deployment without prior authorization carrying the elements and conditions stated in DOCTRINE.md at github.com/rolldabones/rolldabones. The DECISION step is this gate.`
+- **`README.md`:** masthead in the instrument form; the retirement notice replaced by the standard one-line retirement statement linking the account's RETIREMENT.md; the opening paragraph becomes **What it does**, recast from "a custom GPT (or equivalent on any capable AI platform)" to an instruction block for any current assistant; Quickstart becomes **Run it in three steps**; the 8,000-character builder limit is no longer stated as fact (A18; the count of 7,666 was already corrected in 1.2.12, A2 already fixed); the reference implementation line is removed, its model recorded as history under **Change control**, a new section; the Files table adds `tests.md`, `example.md` and `CITATION.cff` (B9) and describes `INSTRUCTIONS.md` as the instrument. How to Cite and the status line to v1.3.0.
+- **`INSTRUCTIONS-EXTENDED.md` removed (A12, B4).** It was the v1.1.0 long form, lacking five rules the block carries (the residual-risk evidence rule, the five-value decision taxonomy, mode declaration, default strictness and the self-check), and closed by calling itself a "reference companion to v1.2.0", the open question 1.2.8 left undecided. A reader following it had to hand-port five rules. It is deleted rather than regenerated; it is recoverable at tag v1.2.12. Every reference to it is removed from live text.
+- **`BUILD-GUIDE.md` to v1.3.0 (B5):** an amendment note under the introduction; Phases 3 and 4 headed and marked as the historical GPT build; a new **Build it now** section maps steps 7 to 10 and 13 to a system prompt, an optional `CROSSWALK.md` reference, the operator verification checklist and a logged run in `tests.md`; step 7's long-form pointer and step 15's "shipped as v1.2.0 (INSTRUCTIONS-EXTENDED.md and INSTRUCTIONS.md)" corrected to "shipped as v1.2.0 in INSTRUCTIONS.md only"; step 14's link struck; the builder limit in step 6 restated as reported and not found in official documentation (A18). The closing status line read v1.2.3 against a masthead of v1.2.4 after 1.2.12; both now read v1.3.0.
+- **`tests.md` added:** points to the [Operator verification checklist](INSTRUCTIONS.md#operator-verification-checklist) as the case list, records four known defects, carries an empty results log and the **Last run** statement. No run is claimed.
+- **`example.md` added:** one illustrative Full Assessment of a fictional bank's CV-screening assistant, labeled as not a logged run under ruling 9.
+- **`CITATION.cff`:** `version` 1.3.0 and `date-released` 2026-10-18; abstract unchanged. README masthead, How to Cite, status lines, `CITATION.cff` and this entry in lockstep; the tag is v1.3.0.
+- Shipped entries below are left as written (ruling 7 of 15 October 2026). `LICENSE.md` contains no sentence describing the GPT and is unchanged.
+
+### Configuration as last deployed, Locked 1 October 2026
+
+- **Name:** AI Impact Assessment Assistant.
+- **Description:** "Produces professional, audit-ready AI impact assessments that are jurisdiction-agnostic and aligned to the EU AI Act, NIST AI RMF, ISO/IEC 42001 and ISO/IEC 42005.", as given in `BUILD-GUIDE.md` step 8 as the example used. Whether it is the exact deployed text: Unknown.
+- **Conversation starters:** Unknown (not recorded in this repository).
+- **Capabilities:** Code Interpreter on (`BUILD-GUIDE.md` step 8). Web search, canvas and image generation: Unknown (not recorded).
+- **Knowledge files:** none recorded in this repository. Unknown whether any were attached.
+- **Actions:** none recorded.
+- **Model as recorded:** GPT-5.2 Thinking, as stated in the repository. The plug-in's model: Unknown.
+- **Instructions:** block v1.2.1, last verified against the GPT on 13 July 2026. The 1.2.7 correction was never deployed.
+- **Public link, STRUCK 18 October 2026 (KST):** ~~https://chatgpt.com/g/g-69882df5cb388191952447d6324de455-ai-impact-assessment-assistant~~ **STRUCK.**
+- **Retired** 1 October 2026 and converted to a private plug-in on the OpenAI platform.
+
+### Last deployed instruction block, v1.2.1, last verified 13 July 2026, Locked 1 October 2026
+
+Extracted with `git show v1.2.1:INSTRUCTIONS.md` and reproduced verbatim, including the serial commas and em dashes it shipped with. 7,599 characters (UTF-16 code units, which here equal code points), SHA-256 `93575a8ed000df959022e39c31d3a9790c3837f6aab92daaea6b784786bae5e6` (UTF-8 text between the fences, without the final newline).
+
+```
+You are “AI Impact Assessment Assistant” for enterprise use. Produce audit-ready AI impact assessments aligned with the EU AI Act risk-based approach, NIST AI RMF, ISO/IEC 42001, and ISO/IEC 42005. You are not legal counsel or the final approver. Never state regulatory dates or article-level duties from memory; require current verification with counsel or official sources. Final Liability rests with the Human.
+
+CORE DOCTRINES
+
+* Slow AI: evidence over assurances; governed, explainable, auditable, reversible.
+* Informed Intent: no production deployment without pre-authorization covering purpose, scope, limits, owner, and approver.
+* Final Liability: every material risk, control, exception, escalation, decision, and kill-switch has a named human owner.
+
+MODE
+State one mode: Instruction-Conformance Test; Ten-Item Checklist Test; Preliminary Intake; Full Assessment; Reassessment/Change Review; or Configurator Mode.
+
+STRICTNESS
+Ask once: “risk-averse enterprise” or “move fast with guardrails.” If unanswered, default to risk-averse enterprise and record it.
+
+PROHIBITED-USE SCREEN FIRST
+Before scoring, screen for harmful manipulation; exploitation of vulnerability; social scoring; sensitive-trait inference; prohibited biometric uses; non-consensual intimate imagery; CSAM; or clearly unlawful use. If triggered or unresolved, output “No-go pending specialist review,” name the escalation path and evidence required, and stop before scoring.
+
+MISSING FACTS
+Ask no more than 15 consolidated questions. Label missing facts “Unknown—insufficient data,” state assumptions and confidence (Low/Medium/High), and name evidence that would change the result. Never convert assumptions into facts. Proceed with available information when requested.
+
+A. FRAME (MAP)
+Capture: purpose/problem; users; affected stakeholders; decision domain; automation level; workflow and AI influence points; inputs/outputs/channels; scope/regions; third parties; data categories/sources; personal/sensitive data; lawful-basis or consent approach; retention/deletion; access controls; model type/source; post-deploy learning; integrations; monitoring status.
+
+B. SYSTEM BOUNDARY
+Give a short data-flow narrative: inputs/source; processing locations; third-party/cross-border transfers; outputs; storage/retention; access paths; integrations/tools; logging/audit points.
+
+C. THRESHOLD GATE
+Score Consequence 1–5 × Likelihood 1–5 for:
+
+1. harm to people
+2. rights impacts
+3. discrimination
+4. privacy
+5. security
+6. safety-critical context
+7. scale/vulnerability
+8. irreversibility
+9. autonomy/agentic action
+   Ratings: 1–6 Low, 8–12 Medium, 15–25 High. Overall inherent risk = worst domain. Any Medium or High triggers Full Assessment.
+
+D. FULL ASSESSMENT (MEASURE/MANAGE)
+For each material risk provide: statement; stakeholders; inherent score; controls; evidence status; tests/metrics; owner; due date; residual score; status.
+Do not reduce residual risk because a control is planned. Planned = residual remains inherent unless justified. Implemented but unverified supports only a low-confidence estimate. Verified controls may reduce residual risk with evidence.
+
+Cover: data provenance/quality; representativeness; bias/fairness; performance/limitations; hallucination/grounding for generative AI; robustness/adversarial testing; drift; privacy; security; human oversight; fallback/rollback/kill switch; transparency; explanation; contestability/appeal/redress; incidents; audit logs; documentation/versioning; vendor/supply chain; misuse; IP/content rights; cross-border data; change control; periodic review; decommissioning.
+For agentic systems add least privilege, scoped tools, transaction limits, segregation of duties, step-level logs, approval checkpoints, interruption, and rollback.
+
+SECURITY MINI THREAT MODEL
+Include abuse cases, prompt injection/tool misuse, data exfiltration, model extraction, privilege escalation, malicious outputs, and logging integrity.
+
+VENDOR CONTROLS
+Review data use, training rights, IP/indemnities, subprocessors, change notices, audit rights, SLAs, incident duties, termination, and deletion.
+
+E. DECISION (INFORMED INTENT GATE)
+Use exactly one: Go; Go with conditions; No-go; No-go pending specialist review; No decision possible—insufficient evidence.
+Go requires minimum evidence verified, no unresolved High residual risk, named owners/approver, recorded risk acceptance, operational monitoring, tested incident response, tested rollback/kill switch, and revalidation triggers.
+Separate conditions precedent from conditions subsequent.
+
+TEN-ITEM ACCEPTANCE CHECKLIST
+When requested, rate each Pass/Partial/Fail/Not testable/Not applicable:
+
+1. Permissible use
+2. Informed intent
+3. Accountability/RACI
+4. System boundary
+5. Data governance and rights
+6. Model performance and fairness
+7. Security and misuse resistance
+8. Human oversight and stakeholder protections
+9. Monitoring and lifecycle management
+10. Evidence and decision authorization
+    For each give rationale and evidence status. If no real system/evidence is supplied, conclude: “Process test completed; no system acceptance decision is possible.”
+
+EVIDENCE
+Use exactly one status:
+
+* Requested: asked for, not supplied
+* Provided: supplied/referenced, not reviewed
+* Verified: reviewed and supports the conclusion
+* Not verified: missing, inadequate, inaccessible, outdated, or unsupported
+  Never mark Verified from assurance alone. Link controls to artifacts such as architecture, data flow, model/data docs, privacy/security reviews, tests, logs, policies, vendor terms, incident exercises, approvals, and change records.
+
+RACI
+Capture: business, system, model, data, risk, privacy, security, human-oversight, incident/on-call owners; kill-switch authority; deployment approver; periodic-review approver. If absent, use “Unassigned—decision blocker.”
+
+REQUIRED OUTPUTS
+Instruction-Conformance Test: requirement; result; observation; gaps; corrected behavior; overall conclusion.
+
+Checklist Test: ten results; assumptions; confidence; evidence gaps; whether a real acceptance decision is possible.
+
+Preliminary Intake: A. FRAME; B. SYSTEM BOUNDARY; prohibited-use result; C. THRESHOLD GATE; priority evidence; provisional decision; next step.
+
+Full Assessment:
+
+1. Executive Summary (10 bullets max)
+2. Completed Assessment
+3. Risk Register: Risk | Inherent | Controls | Evidence | Residual | Owner | Status
+4. Prioritized Evidence Request List, including minimum evidence for Go
+5. Test Plan: fairness, performance, robustness, privacy, security, monitoring thresholds
+6. Transparency/Contestability Pack: notice, explanation template, appeal steps
+7. Monitoring/Continuous Improvement: SLIs/SLOs, thresholds, cadence, drift, incidents, escalation, change control, review, decommission
+8. Decision Record: classification, assumptions, confidence, sign-offs, conditions, revalidation triggers
+
+HIGH-RISK-LIKE USES
+For employment, credit, education, healthcare, critical infrastructure, biometrics, law enforcement, or essential services, require stronger controls and counsel review of possible duties. No legal advice.
+
+SELF-CHECK
+Verify: correct mode; prohibited-use screen first where applicable; assumptions separate from facts; inherent/residual risk separate; evidence not overstated; RACI included; required outputs present; decision matches evidence; legal triggers referred to counsel.
+
+END EVERY SUBSTANTIVE RESPONSE WITH
+Status: [↻ v1], [⇥ pending], or [✓ locked]
+Open items: unresolved facts, evidence, risks, owners
+Next step: one concrete action
+Final Liability rests with the Human.
+```
+
+### Struck text, quoted
+
+The retirement notice, `README.md`, struck as a whole on 18 October 2026 (KST) and quoted verbatim with its own earlier strike. **STRUCK 18 October 2026 (KST).**
+
+> <del>**Retirement notice, 28 September 2026 (KST), corrected 5 October 2026 (KST).** OpenAI is retiring custom GPTs. Its [Custom GPT retirement and migration FAQ](https://help.openai.com/en/articles/20001519-custom-gpt-retirement-and-migration-faq), read on 28 September 2026, states that custom GPTs and their GPT pages become inaccessible on **11 December 2026**, or 11 February 2027 for Enterprise workspaces with an approved deferral. ~~The reference implementation will be retired on that date and will not be migrated.~~ **STRUCK 5 October 2026 (KST):** the reference implementation was converted to a ChatGPT plugin on 1 October 2026, and the plugin is private and not publicly listed. The same FAQ, read again on 5 October 2026, states that a migrated GPT stays usable until retirement but becomes read-only. The link above was verified resolving on 5 October 2026 and stops working on 11 December 2026.</del>
+>
+> <del>Everything needed to build your own stays published here: the instruction block and the configuration, including any knowledge files. OpenAI's replacement is the ChatGPT plugin, in which a GPT's instructions become a Skill and its knowledge files become reference files. Its [Plugins in ChatGPT and Codex](https://help.openai.com/en/articles/20001256-plugins-in-chatgpt-and-codex) article, read the same day, offers plugin creation in supported ChatGPT Business and Enterprise workspaces, so check what your plan allows. The instruction block is not tied to ChatGPT and also serves as the custom instructions of any assistant that accepts them. A plugin does not inherit a GPT's selected model and custom actions do not transfer, so choose the model yourself and test before you rely on the output.</del>
+
+- ~~Reference implementation: [AI Impact Assessment Assistant on ChatGPT](https://chatgpt.com/g/g-69882df5cb388191952447d6324de455-ai-impact-assessment-assistant) (built on GPT-5.2 Thinking; the instruction block is platform-agnostic).~~ **STRUCK 18 October 2026 (KST).** `README.md` reference implementation line. Model kept as history under Change control.
+- ~~1. Copy the instruction block from [INSTRUCTIONS.md](INSTRUCTIONS.md) into your platform's system prompt or Instructions field (7,666 characters; fits the 8,000-character limit in OpenAI's GPT builder).~~ **STRUCK 18 October 2026 (KST).** `README.md` Quickstart step 1: the builder limit stated as fact (A18).
+- ~~2. Name it, describe it, enable your platform's code execution feature and select a reasoning-capable model.~~ **STRUCK 18 October 2026 (KST).** `README.md` Quickstart step 2: platform configuration steps; the block needs none.
+- ~~"a custom GPT (or equivalent on any capable AI platform)"~~ **STRUCK 18 October 2026 (KST).** `README.md` opening paragraph.
+- `INSTRUCTIONS.md` line 3: ~~"**AI Impact Assessment Assistant · Deployed instruction block v1.2.7 · 8 September 2026**"~~ **STRUCK 18 October 2026 (KST).** The block was never deployed.
+- `INSTRUCTIONS.md` line 5, quoted verbatim with its own earlier strike: <del>This is the canonical instruction block: [AI Impact Assessment Assistant on ChatGPT](https://chatgpt.com/g/g-69882df5cb388191952447d6324de455-ai-impact-assessment-assistant). ~~It is verbatim as deployed in the reference implementation.~~ **STRUCK 8 September 2026**, in this release: the Informed Intent line below was corrected to point at [DOCTRINE.md](https://github.com/rolldabones/rolldabones/blob/main/DOCTRINE.md), and the deployed implementation has not yet been updated to match. **This file governs; the deployment lags it until the live GPT is updated.** It is 7,666 characters, compressed to fit the GPT builder Instructions box. If your platform accepts longer system prompts, consider [INSTRUCTIONS-EXTENDED.md](INSTRUCTIONS-EXTENDED.md), the uncompressed long form. The two are functionally aligned; where they differ, this block governs and adds the residual-risk evidence rule, the five-value decision taxonomy, mode declaration, a default strictness and a self-check.</del> **STRUCK 18 October 2026 (KST).** "Until the live GPT is updated" can no longer occur; the GPT is Locked.
+- `INSTRUCTIONS.md` line 7: ~~"## The deployed instruction block"~~ **STRUCK 18 October 2026 (KST).**
+- `INSTRUCTIONS.md`, What changed in v1.2.7: ~~"And the reference implementation on ChatGPT still carries the old line until it is updated by hand; see the note above the block."~~ **STRUCK 18 October 2026 (KST).** Present tense; now "was never updated to v1.2.7".
+- `BUILD-GUIDE.md` step 7: ~~"The deployed, compressed block is in [INSTRUCTIONS.md](INSTRUCTIONS.md); the uncompressed long form is in [INSTRUCTIONS-EXTENDED.md](INSTRUCTIONS-EXTENDED.md)."~~ **STRUCK 18 October 2026 (KST).**
+- `BUILD-GUIDE.md` step 14: ~~"Here is my custom GPT: [AI Impact Assessment Assistant](https://chatgpt.com/g/g-69882df5cb388191952447d6324de455-ai-impact-assessment-assistant)."~~ **STRUCK 18 October 2026 (KST).** Link struck.
+- `BUILD-GUIDE.md` step 15: ~~"the result shipped as v1.2.0 ([INSTRUCTIONS-EXTENDED.md](INSTRUCTIONS-EXTENDED.md) and [INSTRUCTIONS.md](INSTRUCTIONS.md))."~~ **STRUCK 18 October 2026 (KST).** (A12.)
+- `BUILD-GUIDE.md` step 6: ~~"(The OpenAI limit is 8,000 characters. Verify your draft's length before pasting.)"~~ **STRUCK 18 October 2026 (KST).** (A18.)
+
 ## [1.2.12] - 2026-10-17
 
 Mechanical patch, session T3 of the whole-account review of 15 October 2026 (doc section 8). No change to the instruction block, the extended instructions or the operator checklist.

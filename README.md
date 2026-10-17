@@ -1,8 +1,12 @@
 # AI Impact Assessment Tool
 
-**Version 1.2.12 · 17 October 2026 · License: CC BY-NC-SA 4.0**
+**Version 1.3.0 · 18 October 2026 · Instrument, formerly the AI Impact Assessment Assistant custom GPT (retired 1 October 2026) · Instructions last verified against the GPT on 13 July 2026, before the conversion · License: [CC BY-NC-SA 4.0](LICENSE.md)**
 
-A build kit for an enterprise **AI Impact Assessment Assistant**: a custom GPT (or equivalent on any capable AI platform) that produces professional, audit-ready AI impact assessments. Outputs are jurisdiction-agnostic and aligned to the EU AI Act (risk-based obligations), NIST AI RMF (GOVERN, MAP, MEASURE, MANAGE), ISO/IEC 42001 (AI management system) and ISO/IEC 42005 (AI system impact assessment guidance).
+> **Retired 1 October 2026 (KST).** The AI Impact Assessment Assistant custom GPT was retired on 1 October 2026 and converted to a private plug-in on the OpenAI platform. The instructions published in this repository are the text of record and suffice for anyone who wants to build their own. History and sources: [RETIREMENT.md](https://github.com/rolldabones/rolldabones/blob/main/RETIREMENT.md).
+
+## What it does
+
+An instruction block that turns any current assistant into an enterprise **AI Impact Assessment Assistant**, producing professional, audit-ready AI impact assessments. Outputs are jurisdiction-agnostic and aligned to the EU AI Act (risk-based obligations), NIST AI RMF (GOVERN, MAP, MEASURE, MANAGE), ISO/IEC 42001 (AI management system) and ISO/IEC 42005 (AI system impact assessment guidance).
 
 The Assistant is grounded in three doctrines: **Slow AI** (governed, explainable, auditable, evidence over assurances), **Informed Intent** (prior authorization with the elements and conditions stated in [DOCTRINE.md](https://github.com/rolldabones/rolldabones/blob/main/DOCTRINE.md)) and **Final Liability rests with the Human** (every risk, control and decision attaches to a named human).
 
@@ -23,28 +27,26 @@ Enterprise governance, risk management and compliance teams, in-house counsel, A
 
 A prohibited-use screen runs before any scoring. Every evidence item is tagged Requested / Provided / Verified / Not verified. Inherent and residual risk are always separated.
 
-## Quickstart
+## Run it in three steps
 
-1. Copy the instruction block from [INSTRUCTIONS.md](INSTRUCTIONS.md) into your platform's system prompt or Instructions field (7,666 characters; fits the 8,000-character limit in OpenAI's GPT builder).
-2. Name it, describe it, enable your platform's code execution feature and select a reasoning-capable model.
-3. Run the Operator verification checklist in [INSTRUCTIONS.md](INSTRUCTIONS.md#operator-verification-checklist) before first use.
-4. To reproduce or adapt the build process itself, follow [BUILD-GUIDE.md](BUILD-GUIDE.md).
+1. Paste the fenced block in [INSTRUCTIONS.md](INSTRUCTIONS.md) (7,666 characters) into the system prompt, custom instructions or project instructions of any current assistant. [CROSSWALK.md](CROSSWALK.md) may be attached as a reference file if wanted; the block does not require it.
+2. Give it the inputs it asks for (at most 15 consolidated questions and your strictness preference), or start from [example.md](example.md).
+3. Review the output yourself and check it against [tests.md](tests.md), which runs the [Operator verification checklist](INSTRUCTIONS.md#operator-verification-checklist). You own sign-off.
 
-Reference implementation: [AI Impact Assessment Assistant on ChatGPT](https://chatgpt.com/g/g-69882df5cb388191952447d6324de455-ai-impact-assessment-assistant) (built on GPT-5.2 Thinking; the instruction block is platform-agnostic).
-
-> **Retirement notice, 28 September 2026 (KST), corrected 5 October 2026 (KST).** OpenAI is retiring custom GPTs. Its [Custom GPT retirement and migration FAQ](https://help.openai.com/en/articles/20001519-custom-gpt-retirement-and-migration-faq), read on 28 September 2026, states that custom GPTs and their GPT pages become inaccessible on **11 December 2026**, or 11 February 2027 for Enterprise workspaces with an approved deferral. ~~The reference implementation will be retired on that date and will not be migrated.~~ **STRUCK 5 October 2026 (KST):** the reference implementation was converted to a ChatGPT plugin on 1 October 2026, and the plugin is private and not publicly listed. The same FAQ, read again on 5 October 2026, states that a migrated GPT stays usable until retirement but becomes read-only. The link above was verified resolving on 5 October 2026 and stops working on 11 December 2026.
->
-> Everything needed to build your own stays published here: the instruction block and the configuration, including any knowledge files. OpenAI's replacement is the ChatGPT plugin, in which a GPT's instructions become a Skill and its knowledge files become reference files. Its [Plugins in ChatGPT and Codex](https://help.openai.com/en/articles/20001256-plugins-in-chatgpt-and-codex) article, read the same day, offers plugin creation in supported ChatGPT Business and Enterprise workspaces, so check what your plan allows. The instruction block is not tied to ChatGPT and also serves as the custom instructions of any assistant that accepts them. A plugin does not inherit a GPT's selected model and custom actions do not transfer, so choose the model yourself and test before you rely on the output.
+To reproduce or adapt the build process itself, read [BUILD-GUIDE.md](BUILD-GUIDE.md).
 
 ## Files
 
 | File | Purpose |
 |---|---|
 | [README.md](README.md) | This overview |
-| [INSTRUCTIONS.md](INSTRUCTIONS.md) | The full instruction block plus acceptance checklist |
-| [BUILD-GUIDE.md](BUILD-GUIDE.md) | Step-by-step account of how the Assistant was built and improved |
+| [INSTRUCTIONS.md](INSTRUCTIONS.md) | The instruction block (the instrument) plus the operator verification checklist |
+| [tests.md](tests.md) | The test cases, known defects and the record of logged runs |
+| [example.md](example.md) | One illustrative run on fictional inputs |
+| [BUILD-GUIDE.md](BUILD-GUIDE.md) | Step-by-step account of how the Assistant was built and improved, and how to build it now |
 | [CROSSWALK.md](CROSSWALK.md) | Mapping of Assistant outputs to EU AI Act, NIST AI RMF, ISO/IEC 42001 and ISO/IEC 42005, with a dated regulatory-currency note |
-| [CHANGELOG.md](CHANGELOG.md) | Version history |
+| [CHANGELOG.md](CHANGELOG.md) | Version history, including the configuration as last deployed |
+| [CITATION.cff](CITATION.cff) | Machine-readable citation |
 | [LICENSE.md](LICENSE.md) | CC BY-NC-SA 4.0 notice |
 
 ## Standards and regulatory currency
@@ -54,6 +56,10 @@ The Assistant is deliberately jurisdiction-agnostic and instructed to verify dat
 **Amendment note, 13 August 2026 (KST).** The Digital Omnibus on AI amending Regulation (EU) 2024/1689 **entered into force on 27 July 2026**. The deferred dates below are therefore operative law, not pending changes. This paragraph previously described publication as pending. Annex III stand-alone high-risk obligations are deferred to 2 December 2027 and Annex I product-embedded obligations to 2 August 2028. Article 50 transparency obligations apply from 2 August 2026 for providers and deployers, with one carve-out: providers of generative systems placed on the market before 2 August 2026 have until 2 December 2026 to meet the Article 50(2) machine-readable marking duty (Recital 38). Two new prohibitions, Article 5(1), first subparagraph, points (ba) and (bb), on AI-generated non-consensual intimate imagery and child sexual abuse material, apply from 2 December 2026 (this note read "a new prohibition" until 15 October 2026 (KST)). The canonical account-wide statement of the post-Omnibus timeline is the [EU AI Act currency note](https://github.com/rolldabones/ai-governance-for-boards/blob/main/05-jurisdictions/eu.md#eu-ai-act-currency-note) in ai-governance-for-boards, dated 15 October 2026 (KST); where this paragraph and that note differ, the note governs. Article 5 sits in Chapter II. Under **Article 113, third paragraph, point (a)**, as replaced by Regulation (EU) 2026/1744, Chapters I and II apply from **2 February 2025**, **with the exception of Article 5(1), first subparagraph, points (ba) and (bb), and Article 5(1a) and (1b), which apply from 2 December 2026**. So the general Article 5 date is 2 February 2025 and the prohibitions added by the Omnibus are deferred to 2 December 2026. Do not state the Article 5 date without that carve-out. See [CROSSWALK.md](CROSSWALK.md) for the mapping, the coverage boundary and the sources.
 
 **Scope, informed by the crosswalk.** The crosswalk maps this Assistant's workflow onto the EU AI Act, the NIST AI RMF, ISO/IEC 42001 and ISO/IEC 42005. What the mapping does not reach is as material as what it does: the Assistant supports an impact assessment, it does not perform a conformity assessment, issue a declaration of conformity or discharge any obligation owed to a regulator. Read the crosswalk for the boundary before relying on the output as evidence.
+
+## Change control
+
+The custom GPT configuration is Locked as of 1 October 2026. It ran block v1.2.1, last verified on 13 July 2026, on the model recorded as GPT-5.2 Thinking; that configuration is archived in [CHANGELOG.md](CHANGELOG.md) v1.3.0. Changes are now made in [INSTRUCTIONS.md](INSTRUCTIONS.md) under this repository's release rule. A changed block is accepted only after one logged run of the published instructions as a system prompt on a current frontier model, recorded in [tests.md](tests.md).
 
 ## Part of the ecosystem
 
@@ -73,7 +79,7 @@ This repository and any Assistant built from it provide governance tooling, not 
 
 ## How to Cite
 
-> Paik, Son-U Michael. *AI Impact Assessment Tool*, v1.2.12. GRC Solutions Korea, 2026. https://github.com/rolldabones/AI-Impact-Assessment-Tool
+> Paik, Son-U Michael. *AI Impact Assessment Tool*, v1.3.0. GRC Solutions Korea, 2026. https://github.com/rolldabones/AI-Impact-Assessment-Tool
 
 A machine-readable citation is in [CITATION.cff](CITATION.cff).
 
@@ -83,6 +89,6 @@ Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-N
 
 ---
 
-**Status: [✓ final] v1.2.12**
+**Status: [✓ final] v1.3.0**
 
 Final Liability rests with the Human.

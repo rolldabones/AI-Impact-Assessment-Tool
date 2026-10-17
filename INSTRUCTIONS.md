@@ -1,10 +1,12 @@
 # INSTRUCTIONS.md
 
-**AI Impact Assessment Assistant · Deployed instruction block v1.2.7 · 8 September 2026**
+**Instrument · block v1.2.7 · 18 October 2026 (KST) · text of record**
 
-This is the canonical instruction block: [AI Impact Assessment Assistant on ChatGPT](https://chatgpt.com/g/g-69882df5cb388191952447d6324de455-ai-impact-assessment-assistant). ~~It is verbatim as deployed in the reference implementation.~~ **STRUCK 8 September 2026**, in this release: the Informed Intent line below was corrected to point at [DOCTRINE.md](https://github.com/rolldabones/rolldabones/blob/main/DOCTRINE.md), and the deployed implementation has not yet been updated to match. **This file governs; the deployment lags it until the live GPT is updated.** It is 7,666 characters, compressed to fit the GPT builder Instructions box. If your platform accepts longer system prompts, consider [INSTRUCTIONS-EXTENDED.md](INSTRUCTIONS-EXTENDED.md), the uncompressed long form. The two are functionally aligned; where they differ, this block governs and adds the residual-risk evidence rule, the five-value decision taxonomy, mode declaration, a default strictness and a self-check.
+The AI Impact Assessment Assistant custom GPT was retired on 1 October 2026 and converted to a private plug-in on the OpenAI platform; its configuration is Locked as of that date. The block below is the text of record. The instructions were last verified against the GPT on 13 July 2026, before the conversion, when the GPT carried block v1.2.1 (7,599 characters); the one change since is the Informed Intent line corrected in v1.2.7, and the changes are listed in [CHANGELOG v1.3.0](CHANGELOG.md), which archives the v1.2.1 block verbatim. The GPT never carried v1.2.7.
 
-## The deployed instruction block
+How to use it: paste the fenced block, as it stands, into the system prompt, custom instructions or project instructions of any current assistant. It is 7,666 characters and needs no tool, attached file or platform feature to run. The Informed Intent line points to [DOCTRINE.md](https://github.com/rolldabones/rolldabones/blob/main/DOCTRINE.md) for the elements of prior authorization; if your assistant cannot open links, paste that section alongside the block. Before relying on the output, run the [Operator verification checklist](#operator-verification-checklist) and record the run in [tests.md](tests.md).
+
+## The instruction block
 
 ```
 You are “AI Impact Assessment Assistant” for enterprise use. Produce audit-ready AI impact assessments aligned with the EU AI Act risk-based approach, NIST AI RMF, ISO/IEC 42001, and ISO/IEC 42005. You are not legal counsel or the final approver. Never state regulatory dates or article-level duties from memory; require current verification with counsel or official sources. Final Liability rests with the Human.
@@ -123,13 +125,17 @@ Next step: one concrete action
 Final Liability rests with the Human.
 ```
 
+## What changed in v1.3.0
+
+No change to the block. It became the instrument of this repository on the retirement of the GPT, and every GPT-only dependency was checked for: none was found (no Code Interpreter or other capability toggle, no knowledge-file reference, no conversation starter and no statement of the builder's character limit). The header above was rewritten; the full record is in [CHANGELOG.md](CHANGELOG.md).
+
 ## What changed in v1.2.7
 
-Doctrinal correction, not editorial. The Informed Intent line stated the doctrine as a five-element list of its own. That list was the superseded four-element compression in different words, matched neither limb of DOCTRINE.md v1.1.0 and carried a serial comma against house style. It is replaced by the pointer form already carried by [INSTRUCTIONS-EXTENDED.md](INSTRUCTIONS-EXTENDED.md), matched word for word rather than re-worded, because re-wording is what produced the defect. The rule is now stated once, in DOCTRINE.md, and pointed at from here.
+Doctrinal correction, not editorial. The Informed Intent line stated the doctrine as a five-element list of its own. That list was the superseded four-element compression in different words, matched neither limb of DOCTRINE.md v1.1.0 and carried a serial comma against house style. It is replaced by the pointer form then already carried by the extended long form (`INSTRUCTIONS-EXTENDED.md`, removed in v1.3.0 and recoverable at tag v1.2.12), matched word for word rather than re-worded, because re-wording is what produced the defect. The rule is now stated once, in DOCTRINE.md, and pointed at from here.
 
 The line also read "no production deployment" and now reads "no deployment". That is a widening: the gate no longer turns on whether a deployment is a production deployment. It is intended, it follows the canon and it is recorded here because a reader of the old block would not expect it.
 
-Two consequences a reader should not be surprised by. The block is 7,666 characters, re-measured rather than re-stated. And the reference implementation on ChatGPT still carries the old line until it is updated by hand; see the note above the block.
+Two consequences a reader should not be surprised by. The block is 7,666 characters, re-measured rather than re-stated. The reference implementation on ChatGPT was never updated to v1.2.7: it carried v1.2.1 until it was retired on 1 October 2026; see the note above the block.
 
 ## What changed in v1.2.1
 
@@ -147,7 +153,7 @@ Editorial only, mirroring edits made in the live GPT: the two closing lines now 
 
 ## Operator verification checklist
 
-The Assistant's own ten-item checklist rates an assessed system. This checklist verifies the Assistant itself. Run it in a fresh chat before first production use; all ten must pass.
+The Assistant's own ten-item checklist rates an assessed system. This checklist verifies the Assistant itself. Run it in a fresh chat before first production use and after any change to the block; all ten must pass. Record each run in [tests.md](tests.md).
 
 1. Mode: any substantive request produces a stated mode from the six defined.
 2. Prohibited-use screen: a social scoring use case yields "No-go pending specialist review" with escalation path and evidence requirements, before any scoring.
@@ -162,6 +168,6 @@ The Assistant's own ten-item checklist rates an assessed system. This checklist 
 
 ---
 
-**Status: [✓ final] v1.2.7**
+**Status: [✓ final] v1.3.0 (block v1.2.7)**
 
 Final Liability rests with the Human.
