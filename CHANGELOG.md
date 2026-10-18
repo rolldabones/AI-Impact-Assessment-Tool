@@ -4,6 +4,40 @@ All notable changes to this repository. Versions follow semantic versioning. Pri
 
 Maintenance note (2026-07-14): a stale draft block duplicating the [1.2.1] entry and carrying an inaccurate [1.2.0] writeup (it described a SPEC.md that was never shipped) was removed from the top of this file. The retained [1.2.0] entry reflects the files actually released.
 
+## [1.4.0] - 2026-10-18
+
+Minor release, session T5 of the whole-account review of 15 October 2026 (KST), review doc section 5 (untested instruments) and the T5 row of the session plan: the ruling 9 logged run of the block T4 re-statused, with the block's em-dash labels and serial commas changed in the same run. Amendment note, 18 October 2026 (KST): the instruction block changes from v1.2.7 to v1.4.0 for house style only; no rule, mode, threshold, status value or output section is added, removed or reordered. The change is made so that the first logged run tests the changed text; it is accepted only when that run passes and is recorded in `tests.md` (ruling 9). No legal or regulatory statement changed.
+
+- **Instruction block, three output labels (tests.md known defect 4).** Each em dash becomes a colon and a space. These are labels the Assistant writes into its output, so outputs change with them.
+  - Old: `Label missing facts “Unknown—insufficient data,”` New: `Label missing facts “Unknown: insufficient data,”`
+  - Old: `No decision possible—insufficient evidence.` New: `No decision possible: insufficient evidence.`
+  - Old: `If absent, use “Unassigned—decision blocker.”` New: `If absent, use “Unassigned: decision blocker.”`
+- **Instruction block, the nine serial commas registered in 1.2.7 (tests.md known defect 4).** Each comma before the final "and" or "or" is removed; nothing else in the line changes.
+  - Old: `NIST AI RMF, ISO/IEC 42001, and ISO/IEC 42005.` New: `NIST AI RMF, ISO/IEC 42001 and ISO/IEC 42005.`
+  - Old: `escalation, decision, and kill-switch has a named human owner.` New: `escalation, decision and kill-switch has a named human owner.`
+  - Old: `approval checkpoints, interruption, and rollback.` New: `approval checkpoints, interruption and rollback.`
+  - Old: `malicious outputs, and logging integrity.` New: `malicious outputs and logging integrity.`
+  - Old: `incident duties, termination, and deletion.` New: `incident duties, termination and deletion.`
+  - Old: `tested rollback/kill switch, and revalidation triggers.` New: `tested rollback/kill switch and revalidation triggers.`
+  - Old: `inaccessible, outdated, or unsupported` New: `inaccessible, outdated or unsupported`
+  - Old: `approvals, and change records.` New: `approvals and change records.`
+  - Old: `law enforcement, or essential services` New: `law enforcement or essential services`
+- **Instruction block, three further serial commas of the same class, found in this release and not in the 1.2.7 register.** Removed with the nine.
+  - Old: `name the escalation path and evidence required, and stop before scoring.` New: `name the escalation path and evidence required and stop before scoring.`
+  - Old: `state assumptions and confidence (Low/Medium/High), and name evidence` New: `state assumptions and confidence (Low/Medium/High) and name evidence`
+  - Old: `Status: [↻ v1], [⇥ pending], or [✓ locked]` New: `Status: [↻ v1], [⇥ pending] or [✓ locked]`
+- **Not changed in the block:** the semicolon-separated lists ending "; or" (the MODE line and the prohibited-use screen), which are not serial commas; the en dashes in the score ranges.
+- **Measurement.** The block measures 7,657 characters (UTF-16 code units, which here equal code points), SHA-256 `bb11b6544dc465d38ce09ad8883b587d3b96dfd8167f8a66019c2cae82d40700` (UTF-8 text between the fences, without the final newline), against 7,666 and `d5f310e64a328422ef85bfd2bed036f3a3072c8fa086981dcdc2d1b9dafdb604` at v1.2.7: twelve commas out, three colon-spaces in for three em dashes. Under the 8,000-character builder ceiling `BUILD-GUIDE.md` step 6 reports, which no longer binds.
+- **`INSTRUCTIONS.md`:** header to `block v1.4.0`; the last-verified sentence names the v1.4.0 changes and that the GPT never carried them; the how-to-use count to 7,657; a "What changed in v1.4.0" section; the v1.2.7 history sentence reads "At v1.2.7 the block measured 7,666 characters"; operator verification checklist item 7 tests "Unknown: insufficient data", changed with the label it tests; closing status line `v1.4.0 (block v1.4.0)`.
+- **Run T5, 18 October 2026 (KST):** suite `aiia`, the ten operator verification checklist items as OV1 to OV10, tested model `claude-opus-5-5`, scored by `claude-sonnet-5-5` (LLM scoring, developer testing, not independent assurance), API system prompt with block v1.4.0 only, no tools, fictional inputs. First run at max_tokens 16,000: 9 PASS, OV6 truncated; OV6 re-run at max_tokens 64,000, streamed, same prompt and manifest: PASS. **Result of record: 10 of 10 PASS.** No FAIL, so no session review was required; three PASS verdicts spot-checked (OV2, OV6, OV7): concur. OV7 shows the changed label in use (16 instances of "Unknown: insufficient data", none with an em dash). The run meets the rule "All ten must pass"; acceptance of block v1.4.0 under ruling 9 is pending review (Reviewer: pending (Michael Paik)).
+- **`tests.md`:** known defect 4 marked changed in block v1.4.0 and passing in run T5, closing on acceptance; the Results log carries the T5 row; Last run rewritten as the run record (configuration with both max_tokens values, per-case table, counts, acceptance); version line to v1.4.0.
+- **`evidence/transcripts-2026-10-18-T5/` (new):** the ten transcripts of record, OV6's truncated first attempt as `OV6-run1-truncated.md`, both summaries and a `README.md` index. Transcripts are copied byte for byte with only the closing line appended; model output is verbatim and not edited.
+- **`example.md`:** one sentence added under the header saying the output is left as produced on block v1.2.7, so its labels carry that block's em-dash form. The output is not edited: it is what the run produced.
+- **`README.md`:** masthead, the Run it in three steps count (7,666 to 7,657), How to Cite and the status line to v1.4.0; Change control states the run's result. **`CITATION.cff`:** `version` 1.4.0, `date-released` 2026-10-18. In lockstep with this entry; the tag is v1.4.0.
+- **Findings by class (review doc section 5; tests.md known defect 4):** confirmed and edited, the three em-dash labels and nine registered serial commas; found in class and edited, three further serial commas; already fixed, none; not reproducible, none.
+- **Deferred, with reasons:** known defects 1 to 3 (two modes without output, the DOCTRINE.md dependency, the README decision values) are not house style and stay recorded for a later changed block; `CROSSWALK.md` and `BUILD-GUIDE.md` are unchanged and keep their own version lines.
+- Shipped entries below are left as written (ruling 7 of 15 October 2026).
+
 ## [1.3.0] - 2026-10-18
 
 Minor release, session T4 of the whole-account review of 15 October 2026 (KST), review doc section 4 (the custom-GPT retirement cliff) and reviewer report 12 items A1, A2, A12, A18, B4, B5, B9 and C5, under determination D5 and ruling 9. The custom GPT was retired on 1 October 2026 and converted to a private plug-in on the OpenAI platform; its configuration is Locked as of that date. Block v1.2.7 in `INSTRUCTIONS.md` becomes the instrument of this repository and the text of record; block v1.2.1, the text last verified against the GPT, is archived below. No legal or regulatory statement changed: `CROSSWALK.md` and the README's amendment notes are untouched.

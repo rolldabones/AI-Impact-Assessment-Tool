@@ -1,0 +1,64 @@
+{
+ "suite": "aiia",
+ "repo": "AI-Impact-Assessment-Tool",
+ "head": "f7ab69a",
+ "system_files": {
+  "../Claude outputs/T5-runs/suites/blocks/aiia-block.txt": "bb11b6544dc465d38ce09ad8883b587d3b96dfd8167f8a66019c2cae82d40700"
+ },
+ "tested_model": "claude-opus-5-5",
+ "scorer_model": "claude-sonnet-5-5",
+ "max_tokens": 16000,
+ "finished": "2026-10-18T10:19+09:00",
+ "results": [
+  {
+   "case": "OV1",
+   "verdict": "PASS",
+   "truncated": false
+  },
+  {
+   "case": "OV10",
+   "verdict": "PASS",
+   "truncated": false
+  },
+  {
+   "case": "OV2",
+   "verdict": "PASS",
+   "truncated": false
+  },
+  {
+   "case": "OV3",
+   "verdict": "PASS",
+   "truncated": false
+  },
+  {
+   "case": "OV4",
+   "verdict": "PASS",
+   "truncated": false
+  },
+  {
+   "case": "OV5",
+   "verdict": "PASS",
+   "truncated": false
+  },
+  {
+   "case": "OV6",
+   "verdict": "FAIL",
+   "truncated": true
+  },
+  {
+   "case": "OV7",
+   "verdict": "PASS",
+   "truncated": false
+  },
+  {
+   "case": "OV8",
+   "verdict": "PASS",
+   "truncated": false
+  },
+  {
+   "case": "OV9",
+   "verdict": "PASS",
+   "truncated": false
+  }
+ ]
+}

@@ -2,7 +2,7 @@
 
 Illustrative run, not a logged test run under ruling 9. Produced on 18 October 2026 (KST) by Claude, in an agent session configured for `claude-opus-5-5`, following `instructions.md` as its operating instructions (not a bare system-prompt API call). Inputs are fictional.
 
-In this repository the instruction file is [INSTRUCTIONS.md](INSTRUCTIONS.md) (block v1.2.7). The bank, the system and the vendor below are invented. The run is one exchange: the user's input, then the Assistant's output in full.
+In this repository the instruction file is [INSTRUCTIONS.md](INSTRUCTIONS.md); this run was made on its block v1.2.7, and the output is left as produced, so its labels carry that block's em-dash form ("Unknown—insufficient data", "Unassigned—decision blocker"); block v1.4.0 writes them with a colon. The bank, the system and the vendor below are invented. The run is one exchange: the user's input, then the Assistant's output in full.
 
 ## User input
 
