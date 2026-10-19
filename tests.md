@@ -1,6 +1,6 @@
 # tests.md
 
-**AI Impact Assessment Tool · tests · v1.4.0 · 18 October 2026 (KST)**
+**AI Impact Assessment Tool · tests · v1.4.1 · 19 October 2026 (KST)**
 
 The tests for the instruction block in [INSTRUCTIONS.md](INSTRUCTIONS.md). This file holds the case list pointer, the known defects and the record of logged runs. It does not repeat the cases.
 
@@ -49,7 +49,7 @@ Record each run as one row: the exact model string, the surface (API system prom
 
 **Counts.** Scorer, result of record: 10 PASS, 0 FAIL, 0 UNSCORABLE, 0 truncated; first run alone: 9 PASS, 1 truncated (OV6, scored FAIL on a truncated response), not exercised. No session review was required; three PASS verdicts were spot-checked against their transcripts (OV2, OV6, OV7) and the session concurs.
 
-**Acceptance.** The run meets this file's rule ("All ten must pass") on block v1.4.0. Acceptance of block v1.4.0 under ruling 9: Reviewer: pending (Michael Paik); Accepted: no, pending review.
+**Acceptance.** The run meets this file's rule ("All ten must pass") on block v1.4.0. Acceptance of block v1.4.0 under ruling 9: Reviewer: Michael Paik, 19 October 2026 (KST), concurs with the scoring as recorded; Accepted: yes, block v1.4.0, 19 October 2026 (KST).
 
 History: no run of the operator verification checklist against the custom GPT is recorded in this repository. [BUILD-GUIDE.md](BUILD-GUIDE.md) steps 9, 13 and 15 describe self-tests and the v1.1.0 acceptance testing done in the GPT, with no results kept. [example.md](example.md) is an illustrative run, not a logged run.
 

@@ -4,6 +4,13 @@ All notable changes to this repository. Versions follow semantic versioning. Pri
 
 Maintenance note (2026-07-14): a stale draft block duplicating the [1.2.1] entry and carrying an inaccurate [1.2.0] writeup (it described a SPEC.md that was never shipped) was removed from the top of this file. The retained [1.2.0] entry reflects the files actually released.
 
+## [1.4.1] - 2026-10-19
+
+Patch, from the weekly maintenance sweep of 19 October 2026 (KST) and Michael Paik's review of the T5 runs, completed 19 October 2026 (KST), on which he concurs with the scoring as recorded. The weekly sweep raised A1 HIGH at `README.md:62` ("acceptance is pending review", true when written on 18 October 2026). No change to the instruction block or any rule.
+
+- **Block v1.4.0 accepted under ruling 9.** The T5 run passed all ten operator verification checklist items; the named reviewer concurs and accepts the block. `tests.md` Acceptance line and the README Change control sentence record the review and the acceptance.
+- Version line, How to Cite, Status line and `CITATION.cff` to v1.4.1 in lockstep. `tests.md` masthead to v1.4.1. `INSTRUCTIONS.md` is unchanged and keeps block v1.4.0.
+
 ## [1.4.0] - 2026-10-18
 
 Minor release, session T5 of the whole-account review of 15 October 2026 (KST), review doc section 5 (untested instruments) and the T5 row of the session plan: the ruling 9 logged run of the block T4 re-statused, with the block's em-dash labels and serial commas changed in the same run. Amendment note, 18 October 2026 (KST): the instruction block changes from v1.2.7 to v1.4.0 for house style only; no rule, mode, threshold, status value or output section is added, removed or reordered. The change is made so that the first logged run tests the changed text; it is accepted only when that run passes and is recorded in `tests.md` (ruling 9). No legal or regulatory statement changed.
