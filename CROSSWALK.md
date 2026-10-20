@@ -23,11 +23,11 @@ This crosswalk maps the Assistant's elements to the EU AI Act, NIST AI RMF, ISO/
 | Logging and auditability | Art. 12 record-keeping | MEASURE | A.6.2.8 AI system recording of event logs; Clause 9.1 monitoring, measurement, analysis and evaluation | Evidence and traceability |
 | Monitoring, SLIs/SLOs, incidents, revalidation | Art. 72 post-market monitoring; Art. 73 reporting of serious incidents | MANAGE | Clause 9; Clause 10 improvement | Monitoring and review |
 | Decommission plan | (no direct article; lifecycle good practice) | MANAGE | Clause 8 (~) | End-of-life considerations |
-| Decision Record, RACI, sign-offs | Accountability principle across Chapters II-III (~) | GOVERN | Clause 5 leadership | Roles and responsibilities |
+| Decision Record, RACI (responsible, accountable, consulted and informed) chart, sign-offs | Accountability principle across Chapters II-III (~) | GOVERN | Clause 5 leadership | Roles and responsibilities |
 
 Notes. ISO/IEC 42005:2025 is the standard purpose-built for AI system impact assessment and is the closest single reference for this Assistant's core workflow; ISO/IEC 42001 supplies the management system it plugs into. The NIST AI RMF GOVERN function is cross-cutting and touches nearly every row; the table lists the dominant function per element. Where privacy law applies, a data protection impact assessment (for example GDPR Art. 35) may be required alongside the AI impact assessment; the Assistant flags the trigger and refers to counsel.
 
-## Regulatory currency note (as at 13 August 2026, KST)
+## Regulatory currency note (as at 13 August 2026, KST; amended 15 and 20 October 2026)
 
 > **Amendment note, 13 August 2026 (KST).** This note previously recorded the Digital Omnibus on AI as adopted but awaiting publication. That status is superseded. The Digital Omnibus on AI amending Regulation (EU) 2024/1689 **entered into force on 27 July 2026**. The deferred dates below are therefore operative law, not pending changes.
 
@@ -37,19 +37,19 @@ The EU AI Act timeline has been amended by the Digital Omnibus on AI. Current po
 - **Article 5 applies from 2 February 2025**, per **Article 113, third paragraph, point (a)** as replaced by Regulation (EU) 2026/1744, Article 5 sitting in Chapter II. **Except** Article 5(1), first subparagraph, points (ba) and (bb), and Article 5(1a) and (1b), which apply from **2 December 2026**. The general date is settled; the Omnibus-added prohibitions are deferred.
 - Annex III stand-alone high-risk obligations: deferred from 2 August 2026 to 2 December 2027.
 - Annex I product-embedded high-risk obligations: deferred from 2 August 2027 to 2 August 2028.
-- Article 50 transparency obligations: apply from 2 August 2026 for providers and deployers. One carve-out: providers of generative systems placed on the market before 2 August 2026 have until 2 December 2026 to meet the Article 50(2) machine-readable marking duty (Recital 38, a four-month transitional period). Until 15 October 2026 (KST) this line read "watermarking for systems already on the market by that date", which is the same population stated less precisely; aligned to the verified wording.
+- Article 50 transparency obligations: apply from 2 August 2026 for providers and deployers. One carve-out: providers of generative systems placed on the market before 2 August 2026 have until 2 December 2026 to meet the Article 50(2) machine-readable marking duty (Article 111(4) of Regulation (EU) 2024/1689, inserted by Regulation (EU) 2026/1744, Article 1, point (39)(b); Recital 38 explains the four-month transitional period; until 20 October 2026 (KST) this line cited Recital 38 alone). Until 15 October 2026 (KST) this line read "watermarking for systems already on the market by that date", which is the same population stated less precisely; aligned to the verified wording.
 - Two new Article 5 prohibitions, Article 5(1), first subparagraph, points (ba) and (bb), on AI systems generating non-consensual intimate imagery or child sexual abuse material: apply from 2 December 2026 (this line read "New Article 5 prohibition" until 15 October 2026).
 - The canonical account-wide statement of this timeline is the [EU AI Act currency note](https://github.com/rolldabones/ai-governance-for-boards/blob/main/05-jurisdictions/eu.md#eu-ai-act-currency-note) in ai-governance-for-boards, dated 15 October 2026 (KST); it governs where this list and it differ.
-- GPAI obligations (Articles 51-55, applicable since August 2025): unchanged.
+- General-purpose AI (GPAI) obligations (Articles 51-55, applicable since August 2025): unchanged.
 
 **Coverage boundary.** This crosswalk maps the Assistant's workflow onto the instruments named above. It is a mapping of coverage, not a claim of conformity. The Assistant supports an impact assessment; it does not perform a conformity assessment, issue a declaration of conformity or discharge any obligation owed to a regulator or notified body. Where a row is absent, treat the obligation as out of scope for this tool and in scope for the organization.
 
-Sources: the consolidated text of Regulation (EU) 2024/1689 on EUR-Lex, as at 13 August 2026; the European Commission AI Act Service Desk reproduction of the Official Journal text of 13 June 2024; Council of the EU and European Parliament materials on the Digital Omnibus on AI; and law firm analyses (Covington, Gibson Dunn, Sidley, White & Case, DLA Piper, May to July 2026).
+Sources: the consolidated text of Regulation (EU) 2024/1689 on EUR-Lex, as at 13 August 2026; the European Commission AI Act Service Desk reproduction of the Official Journal text of 12 July 2024 (Regulation of 13 June 2024; this source read "Official Journal text of 13 June 2024" until 20 October 2026); Council of the EU and European Parliament materials on the Digital Omnibus on AI; and law firm analyses (Covington, Gibson Dunn, Sidley, White & Case, DLA Piper, May to July 2026).
 
 **Citation.** The amending act is **Regulation (EU) 2026/1744** of the European Parliament and of the Council of 8 July 2026, OJ L, 2026/1744, 24.7.2026, ELI http://data.europa.eu/eli/reg/2026/1744/oj, in force 27 July 2026. Its Article 1, point (40) amends the **third paragraph of Article 113** of Regulation (EU) 2024/1689. **Article 113 has unnumbered paragraphs with lettered points, so the correct pinpoint form is "Article 113, third paragraph, point (c)", not "Article 113(3)".** Amended point (c) provides that Chapter III, Sections 1, 2 and 3, with the exception of Article 6(5), apply from (i) 2 December 2027 for AI systems classified as high-risk pursuant to Article 6(2) and Annex III, and (ii) 2 August 2028 for those classified pursuant to Article 6(1) and Annex I. A new point (d) provides that Articles 102 to 110 apply from 27 July 2026. Read against the consolidated text of Regulation (EU) 2024/1689 on EUR-Lex, as at 13 August 2026 (KST). This note will not be silently updated.
 
 ---
 
-**Status: [✓ final] v1.2.5**
+**Status: [✓ final] v1.2.7**
 
 Final Liability rests with the Human.

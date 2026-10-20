@@ -49,7 +49,7 @@ The successor to the GPT build, for any current frontier model. It replaces Phas
 1. Paste the fenced block in [INSTRUCTIONS.md](INSTRUCTIONS.md) as the system prompt, custom instructions or project instructions of your assistant (replaces steps 7 and 8). Name and model are your choice; no capability toggle is needed.
 2. Attach [CROSSWALK.md](CROSSWALK.md) as a reference file if wanted. The block does not depend on it.
 3. Run the [Operator verification checklist](INSTRUCTIONS.md#operator-verification-checklist) in a fresh conversation (replaces the self-tests of steps 9, 10 and 13).
-4. Log the run in [tests.md](tests.md), naming the model string and the date (replaces "Update the custom GPT"). A changed block is accepted only after one such run.
+4. Log the run in your own run log, naming the model string and the date (replaces "Update the custom GPT"). A changed block is accepted only after one such run. [tests.md](tests.md) is this repository's own record of its runs; use its results-log row as the format.
 
 ## The lesson
 

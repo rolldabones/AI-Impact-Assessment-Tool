@@ -10,12 +10,12 @@ The cases are the ten items of the [Operator verification checklist](INSTRUCTION
 
 ## Known defects
 
-Recorded, not fixed. Each is a change to the block and needs a logged run before it is accepted.
+Recorded, not fixed, unless marked closed. Each open defect is a change to the block and needs a logged run before it is accepted.
 
 1. **Two modes have no specified output.** MODE lists six modes; REQUIRED OUTPUTS specifies four. Reassessment/Change Review and Configurator Mode have no output structure, so their behavior is whatever the model supplies.
 2. **One rule depends on an external file.** The Informed Intent line points to DOCTRINE.md for the elements and conditions of prior authorization. An assistant that cannot open the link applies the gate without them unless the operator supplies that section.
-3. **README summary narrower than the block.** README's "What the Assistant produces", item 8, names three decision values; the block uses five.
-4. **House style inside the block. Changed in block v1.4.0, 18 October 2026 (KST), awaiting the logged run.** The three output labels that carried em dashes now read "Unknown: insufficient data", "Unassigned: decision blocker" and "No decision possible: insufficient evidence", and checklist item 7 changes with the first. The nine serial commas registered in CHANGELOG 1.2.7 and three more found in the same class are removed (CHANGELOG 1.4.0). Run T5 (18 October 2026) passed all ten cases on block v1.4.0, OV7 with the new label (16 instances of "Unknown: insufficient data", none with an em dash); the defect closes when that run is accepted on review.
+3. **README summary narrower than the block. Closed 20 October 2026 (KST).** README's "What the Assistant produces", item 8, named three decision values; the block uses five. Item 8 now lists all five as the block spells them. The block is unchanged, so no logged run is needed.
+4. **House style inside the block. Changed in block v1.4.0, 18 October 2026 (KST); closed 19 October 2026 (KST) on acceptance of the logged run.** The three output labels that carried em dashes now read "Unknown: insufficient data", "Unassigned: decision blocker" and "No decision possible: insufficient evidence", and checklist item 7 changes with the first. The nine serial commas registered in CHANGELOG 1.2.7 and three more found in the same class are removed (CHANGELOG 1.4.0). Run T5 (18 October 2026) passed all ten cases on block v1.4.0, OV7 with the new label (16 instances of "Unknown: insufficient data", none with an em dash). Michael Paik accepted block v1.4.0 on that run on 19 October 2026 (KST) (see Acceptance below), which closes the defect.
 
 ## Results log
 
