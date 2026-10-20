@@ -1,6 +1,6 @@
 # AI Impact Assessment Tool
 
-**Version 1.4.1 · 19 October 2026 · Instrument, formerly the AI Impact Assessment Assistant custom GPT (retired 1 October 2026) · Instructions last verified against the GPT on 13 July 2026, before the conversion · License: [CC BY-NC-SA 4.0](LICENSE.md)**
+**Version 1.4.2 · 20 October 2026 · Instrument, formerly the AI Impact Assessment Assistant custom GPT (retired 1 October 2026) · Instructions last verified against the GPT on 13 July 2026, before the conversion · License: [CC BY-NC-SA 4.0](LICENSE.md)**
 
 > **Retired 1 October 2026 (KST).** The AI Impact Assessment Assistant custom GPT was retired on 1 October 2026 and converted to a private plug-in on the OpenAI platform. The instructions published in this repository are the text of record and suffice for anyone who wants to build their own. History and sources: [RETIREMENT.md](https://github.com/rolldabones/rolldabones/blob/main/RETIREMENT.md).
 
@@ -79,7 +79,7 @@ This repository and any Assistant built from it provide governance tooling, not 
 
 ## How to Cite
 
-> Paik, Son-U Michael. *AI Impact Assessment Tool*, v1.4.1. GRC Solutions Korea, 2026. https://github.com/rolldabones/AI-Impact-Assessment-Tool
+> Paik, Son-U Michael. *AI Impact Assessment Tool*, v1.4.2. GRC Solutions Korea, 2026. https://github.com/rolldabones/AI-Impact-Assessment-Tool
 
 A machine-readable citation is in [CITATION.cff](CITATION.cff).
 
@@ -89,6 +89,6 @@ Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-N
 
 ---
 
-**Status: [✓ final] v1.4.1**
+**Status: [✓ final] v1.4.2**
 
 Final Liability rests with the Human.

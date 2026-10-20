@@ -4,6 +4,11 @@ All notable changes to this repository. Versions follow semantic versioning. Pri
 
 Maintenance note (2026-07-14): a stale draft block duplicating the [1.2.1] entry and carrying an inaccurate [1.2.0] writeup (it described a SPEC.md that was never shipped) was removed from the top of this file. The retained [1.2.0] entry reflects the files actually released.
 
+## [1.4.2] - 2026-10-20
+
+- LICENSE: two defects against the Creative Commons legal code corrected (the space in 'ShareAlike. In'; the CC0 sentence of the closing notice). Operative terms unchanged.
+- Version line, How to Cite, Status line and `CITATION.cff` to v1.4.2 in lockstep. `INSTRUCTIONS.md` is unchanged and keeps block v1.4.0.
+
 ## [1.4.1] - 2026-10-19
 
 Patch, from the weekly maintenance sweep of 19 October 2026 (KST) and Michael Paik's review of the T5 runs, completed 19 October 2026 (KST), on which he concurs with the scoring as recorded. The weekly sweep raised A1 HIGH at `README.md:62` ("acceptance is pending review", true when written on 18 October 2026). No change to the instruction block or any rule.
