@@ -1,6 +1,6 @@
 # CROSSWALK.md
 
-**Framework mapping for the AI Impact Assessment Assistant · v1.2.7 · 17 October 2026 (KST)**
+**Framework mapping for the AI Impact Assessment Assistant · v1.2.8 · 20 October 2026 (KST)**
 
 > **Amendment note, 15 October 2026 (KST).** ISO/IEC 42001:2023 cells that read "Annex A oversight controls (~)", "Annex A transparency controls (~)" and "Clause 9 (~)" now cite the controls by number; the incidents row adds Art. 73 (serious incident reporting) beside Art. 72; the contestability row adds Art. 86 (right to explanation of individual decision-making); the human oversight row pinpoints Art. 14(4), point (e); the full-assessment row adds Clause 8.4 and controls A.5.2 to A.5.5. The ISO/IEC 42005:2025 column is unchanged and still carries no clause numbers: the standard was not opened in this pass and the column stays at the (~) level of confidence. The EU AI Act timeline below now links to the account's canonical note.
 
@@ -46,10 +46,10 @@ The EU AI Act timeline has been amended by the Digital Omnibus on AI. Current po
 
 Sources: the consolidated text of Regulation (EU) 2024/1689 on EUR-Lex, as at 13 August 2026; the European Commission AI Act Service Desk reproduction of the Official Journal text of 12 July 2024 (Regulation of 13 June 2024; this source read "Official Journal text of 13 June 2024" until 20 October 2026); Council of the EU and European Parliament materials on the Digital Omnibus on AI; and law firm analyses (Covington, Gibson Dunn, Sidley, White & Case, DLA Piper, May to July 2026).
 
-**Citation.** The amending act is **Regulation (EU) 2026/1744** of the European Parliament and of the Council of 8 July 2026, OJ L, 2026/1744, 24.7.2026, ELI http://data.europa.eu/eli/reg/2026/1744/oj, in force 27 July 2026. Its Article 1, point (40) amends the **third paragraph of Article 113** of Regulation (EU) 2024/1689. **Article 113 has unnumbered paragraphs with lettered points, so the correct pinpoint form is "Article 113, third paragraph, point (c)", not "Article 113(3)".** Amended point (c) provides that Chapter III, Sections 1, 2 and 3, with the exception of Article 6(5), apply from (i) 2 December 2027 for AI systems classified as high-risk pursuant to Article 6(2) and Annex III, and (ii) 2 August 2028 for those classified pursuant to Article 6(1) and Annex I. A new point (d) provides that Articles 102 to 110 apply from 27 July 2026. Read against the consolidated text of Regulation (EU) 2024/1689 on EUR-Lex, as at 13 August 2026 (KST). This note will not be silently updated.
+**Citation.** The amending act is **Regulation (EU) 2026/1744** of the European Parliament and of the Council of 8 July 2026, OJ L, 2026/1744, 24.7.2026, ELI http://data.europa.eu/eli/reg/2026/1744/oj, in force 27 July 2026. Its Article 1, point (40) amends the **third paragraph of Article 113** of Regulation (EU) 2024/1689. **Article 113 has unnumbered paragraphs with lettered points; the house pinpoint form is "Article 113, third paragraph, point (c)", the form the amending act uses.** Regulation (EU) 2024/1689 itself also writes "Article 113(3), point (a)" (Article 111(1)), so that form is not an error (until 20 October 2026 this sentence called it incorrect). Amended point (c) provides that Chapter III, Sections 1, 2 and 3, with the exception of Article 6(5), apply from (i) 2 December 2027 for AI systems classified as high-risk pursuant to Article 6(2) and Annex III, and (ii) 2 August 2028 for those classified pursuant to Article 6(1) and Annex I. A new point (d) provides that Articles 102 to 110 apply from 27 July 2026. Read against the consolidated text of Regulation (EU) 2024/1689 on EUR-Lex, as at 13 August 2026 (KST). This note will not be silently updated.
 
 ---
 
-**Status: [✓ final] v1.2.7**
+**Status: [✓ final] v1.2.8**
 
 Final Liability rests with the Human.

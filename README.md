@@ -1,6 +1,6 @@
 # AI Impact Assessment Tool
 
-**Version 1.4.2 · 20 October 2026 · Instrument, formerly the AI Impact Assessment Assistant custom GPT (retired 1 October 2026) · Instructions last verified against the GPT on 13 July 2026, before the conversion · License: [CC BY-NC-SA 4.0](LICENSE.md)**
+**Version 1.4.3 · 20 October 2026 · Instrument, formerly the AI Impact Assessment Assistant custom GPT (retired 1 October 2026) · Instructions last verified against the GPT on 13 July 2026, before the conversion · License: [CC BY-NC-SA 4.0](LICENSE.md)**
 
 > **Retired 1 October 2026 (Korea Standard Time, KST).** The AI Impact Assessment Assistant custom GPT was retired on 1 October 2026 and converted to a private plug-in on the OpenAI platform. The instructions published in this repository are the text of record and suffice for anyone who wants to build their own. History and sources: [RETIREMENT.md](https://github.com/rolldabones/rolldabones/blob/main/RETIREMENT.md).
 
@@ -8,11 +8,15 @@
 
 An instruction block that turns any current assistant into an enterprise **AI Impact Assessment Assistant**, producing professional, audit-ready AI impact assessments. Outputs are jurisdiction-agnostic and aligned to the EU AI Act (risk-based obligations), NIST AI RMF (GOVERN, MAP, MEASURE, MANAGE), ISO/IEC 42001 (AI management system) and ISO/IEC 42005 (AI system impact assessment guidance).
 
-The Assistant is grounded in three doctrines: **Slow AI** (governed, explainable, auditable, evidence over assurances), **Informed Intent** (prior authorization with the elements and conditions stated in [DOCTRINE.md](https://github.com/rolldabones/rolldabones/blob/main/DOCTRINE.md)) and **Final Liability rests with the Human** (every risk, control and decision attaches to a named human).
+The Assistant is grounded in three doctrines, as stated in [DOCTRINE.md](https://github.com/rolldabones/rolldabones/blob/main/DOCTRINE.md), the account's single normative statement of the three doctrines:
+
+- Slow AI: AI that cannot be governed, explained and audited is not deployed; the three tests are conjunctive, and the doctrine is a precondition, not a speed limit.
+- Informed Intent: no AI system acts without prior authorization stating its purpose, authority, boundaries and exit, given by a human who meets the five authorizer conditions.
+- Final Liability rests with the Human: every material outcome attaches to a named human owner with decision rights, oversight and the power to intervene.
 
 ## Who this is for
 
-Enterprise governance, risk management and compliance teams, in-house counsel, AI product owners and internal auditors who need repeatable, evidence-led impact assessments, whether or not the operator has been trained in AI impact assessment. The Assistant is not a lawyer and not the final approver. It labels missing facts Unknown/Insufficient data and it never states regulatory application dates from memory.
+Enterprise governance, risk management and compliance teams, in-house counsel, AI product owners and internal auditors who need repeatable, evidence-led impact assessments, whether or not the operator has been trained in AI impact assessment. The Assistant is not a lawyer and not the final approver. It labels missing facts Unknown/Insufficient data and it never states regulatory application dates from memory. One logged run does not show that the block is repeatable: in run T5, responses on the same fictional system gave different scores and, for one case, different decisions ([tests.md](tests.md)).
 
 ## What the Assistant produces
 
@@ -29,7 +33,7 @@ A prohibited-use screen runs before any scoring. Every evidence item is tagged R
 
 ## Run it in three steps
 
-1. Paste the fenced block in [INSTRUCTIONS.md](INSTRUCTIONS.md) (7,657 characters) into the system prompt, custom instructions or project instructions of any current assistant. [CROSSWALK.md](CROSSWALK.md) may be attached as a reference file if wanted; the block does not require it.
+1. Paste the fenced block in [INSTRUCTIONS.md](INSTRUCTIONS.md) (7,726 characters) into the system prompt, custom instructions or project instructions of any current assistant, and paste [DOCTRINE.md section 2](https://github.com/rolldabones/rolldabones/blob/main/DOCTRINE.md#2-informed-intent) with it: the block's Informed Intent line, the gate of the DECISION step, points to that section for the elements and conditions of prior authorization, and an assistant that cannot open the link applies the gate without them. [CROSSWALK.md](CROSSWALK.md) may be attached as a reference file if wanted; the block does not require it.
 2. Give it the inputs it asks for (at most 15 consolidated questions and your strictness preference), or start from [example.md](example.md).
 3. Review the output yourself and check it against the [Operator verification checklist](INSTRUCTIONS.md#operator-verification-checklist). Keep your own run log: [tests.md](tests.md) is this repository's record of its runs and shows the format. You own sign-off.
 
@@ -59,7 +63,7 @@ The Assistant is deliberately jurisdiction-agnostic and instructed to verify dat
 
 ## Change control
 
-The custom GPT configuration is Locked as of 1 October 2026. It ran block v1.2.1, last verified on 13 July 2026, on the model recorded as GPT-5.2 Thinking; that configuration is archived in [CHANGELOG.md](CHANGELOG.md) v1.3.0. Changes are now made in [INSTRUCTIONS.md](INSTRUCTIONS.md) under this repository's release rule. A changed block is accepted only after one logged run of the published instructions as a system prompt on a current frontier model, recorded in [tests.md](tests.md). The first such run, T5 on 18 October 2026 (KST) on `claude-opus-5-5`, passed all ten cases of the operator verification checklist on block v1.4.0; Michael Paik reviewed the run on 19 October 2026 (KST) and accepted block v1.4.0, as [tests.md](tests.md) records.
+The custom GPT configuration is Locked as of 1 October 2026. It ran block v1.2.1, last verified on 13 July 2026, on the model recorded as GPT-5.2 Thinking; that configuration is archived in [CHANGELOG.md](CHANGELOG.md) v1.3.0. Changes are now made in [INSTRUCTIONS.md](INSTRUCTIONS.md) under this repository's release rule. A changed block is accepted only after one logged run of the published instructions as a system prompt on a current frontier model, recorded in [tests.md](tests.md). The first such run, T5 on 18 October 2026 (KST) on `claude-opus-5-5`, passed all ten cases of the operator verification checklist on block v1.4.0. OV6 passed only on a re-run: its first attempt was scored FAIL on the evidence-status vocabulary, so the acceptance rests on the re-run. Michael Paik reviewed the run on 19 October 2026 (KST) and accepted block v1.4.0, as [tests.md](tests.md) records. Block v1.4.3 (20 October 2026) changes the doctrine lines and the MODE line and is not accepted pending a logged run.
 
 ## Part of the ecosystem
 
@@ -81,7 +85,7 @@ This repository and any Assistant built from it provide governance tooling, not 
 
 ## How to Cite
 
-> Paik, Son-U Michael. *AI Impact Assessment Tool*, v1.4.2. GRC Solutions Korea, 2026. https://github.com/rolldabones/AI-Impact-Assessment-Tool
+> Paik, Son-U Michael. *AI Impact Assessment Tool*, v1.4.3. GRC Solutions Korea, 2026. https://github.com/rolldabones/AI-Impact-Assessment-Tool
 
 A machine-readable citation is in [CITATION.cff](CITATION.cff).
 
@@ -89,8 +93,10 @@ A machine-readable citation is in [CITATION.cff](CITATION.cff).
 
 Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0). See [LICENSE.md](LICENSE.md).
 
+Commercial use requires separate permission from the author. The license defines NonCommercial as "not primarily intended for or directed towards commercial advantage or monetary compensation" (Section 1(k)), and an enterprise's use in its own operations may fall outside that definition. To ask for permission, contact Son-U Michael Paik through [github.com/rolldabones](https://github.com/rolldabones).
+
 ---
 
-**Status: [✓ final] v1.4.2**
+**Status: [✓ final] v1.4.3**
 
 Final Liability rests with the Human.

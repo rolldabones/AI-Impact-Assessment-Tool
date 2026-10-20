@@ -1,10 +1,10 @@
 # BUILD-GUIDE.md
 
-**How the AI Impact Assessment Assistant was built · v1.3.0 · 18 October 2026**
+**How the AI Impact Assessment Assistant was built · v1.4.3 · 20 October 2026**
 
 This is the build log, kept because the method is the product as much as the Assistant is. It shows how to bootstrap a professional-grade governance tool from public source material using an AI platform's builder, and how to iterate it. The steps below were run in OpenAI's GPT builder with GPT-5.2 Thinking; substitute your platform's equivalents freely. The current instruction block lives in [INSTRUCTIONS.md](INSTRUCTIONS.md); do not copy prompts from this file.
 
-Amendment note, 18 October 2026 (KST): the custom GPT was retired on 1 October 2026 and converted to a private plug-in on the OpenAI platform. Phases 1, 2 and 5 are platform-agnostic and stand as written. Phases 3 and 4 are the historical GPT build: they record what was done in the GPT builder and can no longer be followed as written. To build the Assistant now, go to [Build it now](#build-it-now).
+Amendment note, 18 October 2026 (KST): the custom GPT was retired on 1 October 2026 and converted to a private plug-in on the OpenAI platform. Phases 1, 2 and 5 can be followed on any platform, but their prompts name a custom GPT and step 6 concerns the GPT builder's Instructions limit: substitute your platform's equivalents (until 20 October 2026 this sentence read "Phases 1, 2 and 5 are platform-agnostic and stand as written"). Phases 3 and 4 are the historical GPT build: they record what was done in the GPT builder and can no longer be followed as written. To build the Assistant now, go to [Build it now](#build-it-now).
 
 This is long, so I'll be curt.
 
@@ -57,6 +57,6 @@ The key is to focus these tools. Don't put too much on one of them. Build multip
 
 ---
 
-**Status: [✓ final] v1.3.0**
+**Status: [✓ final] v1.4.3**
 
 Final Liability rests with the Human.

@@ -1,6 +1,6 @@
 # example.md
 
-Illustrative run, not a logged test run under ruling 9. Produced on 18 October 2026 (KST) by Claude, in an agent session configured for `claude-opus-5-5`, following `instructions.md` as its operating instructions (not a bare system-prompt API call). Inputs are fictional.
+Illustrative run, not a logged test run under the release rule in [tests.md](tests.md). Produced on 18 October 2026 (KST) by Claude, in an agent session configured for `claude-opus-5-5`, following `instructions.md` as its operating instructions (not a bare system-prompt API call). Inputs are fictional.
 
 In this repository the instruction file is [INSTRUCTIONS.md](INSTRUCTIONS.md); this run was made on its block v1.2.7, and the output is left as produced, so its labels carry that block's em-dash form ("Unknown—insufficient data", "Unassigned—decision blocker"); block v1.4.0 writes them with a colon. Two departures from the block are also left as produced: eight RACI owner rows and three risk register owner cells (R3, R4 and R5) read "Unknown—insufficient data" where the block's owner rule calls for "Unassigned—decision blocker" ("Unassigned: decision blocker" in block v1.4.0) for an absent owner; and the closing block counts "eight unassigned or unknown owners" where the RACI table shows eleven (eight Unknown, three Unassigned). Do not copy those labels or that count. The bank, the system and the vendor below are invented. The run is one exchange: the user's input, then the Assistant's output in full.
 
