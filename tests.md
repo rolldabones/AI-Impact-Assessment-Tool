@@ -1,12 +1,12 @@
 # tests.md
 
-**AI Impact Assessment Tool · tests · v1.4.3 · 20 October 2026 (KST)**
+**AI Impact Assessment Tool · tests · v1.4.4 · 26 October 2026 (KST)**
 
 The tests for the instruction block in [INSTRUCTIONS.md](INSTRUCTIONS.md). This file holds the case list pointer, the known defects and the record of logged runs. It does not repeat the cases.
 
 ## Cases
 
-The cases are the ten items of the [Operator verification checklist](INSTRUCTIONS.md#operator-verification-checklist) in INSTRUCTIONS.md. Run them in a fresh conversation with the block as the system prompt, custom instructions or project instructions. All ten must pass. The checklist verifies the Assistant itself; the Assistant's own ten-item acceptance checklist, inside the block, rates an assessed system and is case 9's subject, not a separate suite.
+The cases are the ten items of the [Operator verification checklist](INSTRUCTIONS.md#operator-verification-checklist) in INSTRUCTIONS.md. Run them in a fresh conversation with the block as the system prompt, custom instructions or project instructions. Acceptance is read under the account rule, [ACCEPTANCE.md](https://github.com/rolldabones/rolldabones/blob/main/ACCEPTANCE.md), from 26 October 2026; until then the rule here was that all ten must pass. The checklist verifies the Assistant itself; the Assistant's own ten-item acceptance checklist, inside the block, rates an assessed system and is case 9's subject, not a separate suite.
 
 ## Known defects
 
@@ -52,6 +52,8 @@ Record each run as one row: the exact model string, the surface (API system prom
 **Acceptance.** The run meets this file's rule ("All ten must pass") on block v1.4.0. Acceptance of block v1.4.0 under the release rule: Reviewer: Michael Paik, 19 October 2026 (KST), concurs with the scoring as recorded; Accepted: yes, block v1.4.0, 19 October 2026 (KST). The acceptance rests on the OV6 re-run.
 
 **Block v1.4.3, 20 October 2026 (KST): not accepted pending a logged run.** It changes the Slow AI and Final Liability doctrine lines and the MODE line ([INSTRUCTIONS.md](INSTRUCTIONS.md#what-changed-in-v143)). No run of it is recorded. Block v1.4.0 remains the last accepted block.
+
+**Status under [ACCEPTANCE.md](https://github.com/rolldabones/rolldabones/blob/main/ACCEPTANCE.md), 26 October 2026 (KST).** Not accepted: block v1.4.3 changes rules (the MODE line and the doctrine lines) and has no logged run. Last accepted: block v1.4.0, 10 of 10 cases with critical cases OV2 and OV7 passed (run T5, 18 October 2026; accepted 19 October 2026). **Critical cases:** OV2 (prohibited-use screen) and OV7 (Unknowns). The acceptance sentences above were written under this file's earlier rule and are kept as the record of that review. The reviewer's concurrence with the run as recorded is read as concurrence per case (ACCEPTANCE.md (e)); each failed case keeps the disposition its session review gives it (model behavior: accepted model behavior; instrument defect: fix in the next block; case defect: case defect).
 
 **Notes beside the recorded verdicts.** The verdicts and the acceptance above stand as recorded.
 

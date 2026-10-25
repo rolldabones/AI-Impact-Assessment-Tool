@@ -4,6 +4,10 @@ All notable changes to this repository. Versions follow semantic versioning. Pri
 
 Maintenance note (2026-07-14): a stale draft block duplicating the [1.2.1] entry and carrying an inaccurate [1.2.0] writeup (it described a SPEC.md that was never shipped) was removed from the top of this file. The retained [1.2.0] entry reflects the files actually released.
 
+## [1.4.4] - 2026-10-26
+
+Patch release. Acceptance restated as a tolerance: the tests file is now read under the account rule, [ACCEPTANCE.md](https://github.com/rolldabones/rolldabones/blob/main/ACCEPTANCE.md), names its critical cases and records the instrument's status under that rule (block v1.4.3 not accepted, no run; last accepted block v1.4.0); the README carries the same status below its masthead. No rule in the instrument changed and no run was made; the edits are to the test record and the front door. Train A of the whole-account review of 24 October 2026 (KST); prepared with Claude, approved by Michael Paik.
+
 ## [1.4.3] - 2026-10-20
 
 Patch. Independent review of 20 October 2026; changes made with Claude, approved by Michael Paik. Findings applied: AIA-01, AIA-02, AIA-03, AIA-04, AIA-05, AIA-06, AIA-07, AIA-08, AIA-09, AIA-10, AIA-11, AIA-12, AIA-13, AIA-14, AIA-15, AIA-17, AIA-18, AIA-19, AIA-21, AIA-22, AIA-23, AIA-25, X-01, X-02. No change for AIA-16 (disclosure at tests.md stands) and AIA-20 and AIA-24 (owner-accepted).
