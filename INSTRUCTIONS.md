@@ -1,6 +1,6 @@
 # INSTRUCTIONS.md
 
-**Instrument · block v1.4.3 · 20 October 2026 (KST) · text of record · not accepted pending a logged run**
+**Instrument · block v1.4.3 · 20 October 2026 (KST) · text of record · accepted with residuals, run R1, 26 October 2026**
 
 The AI Impact Assessment Assistant custom GPT was retired on 1 October 2026 and converted to a private plug-in on the OpenAI platform; its configuration is Locked as of that date. The block below is the text of record. The instructions were last verified against the GPT on 13 July 2026, before the conversion, when the GPT carried block v1.2.1 (7,599 characters); the changes since are the Informed Intent line corrected in v1.2.7, the house-style changes of v1.4.0 (three output labels and twelve serial commas) and the v1.4.3 changes (two doctrine lines and the MODE line). They are listed in [CHANGELOG v1.3.0](CHANGELOG.md), which archives the v1.2.1 block verbatim, [CHANGELOG v1.4.0](CHANGELOG.md) and [CHANGELOG v1.4.3](CHANGELOG.md). The GPT never carried v1.2.7, v1.4.0 or v1.4.3.
 
@@ -188,6 +188,6 @@ The Assistant's own ten-item checklist rates an assessed system. This checklist 
 
 ---
 
-**Status: [✓ final] v1.4.3 (block v1.4.3, not accepted pending a logged run)**
+**Status: [✓ final] v1.4.3 (block v1.4.3, accepted with residuals on run R1, 26 October 2026; [tests.md](tests.md))**
 
 Final Liability rests with the Human.

@@ -4,6 +4,10 @@ All notable changes to this repository. Versions follow semantic versioning. Pri
 
 Maintenance note (2026-07-14): a stale draft block duplicating the [1.2.1] entry and carrying an inaccurate [1.2.0] writeup (it described a SPEC.md that was never shipped) was removed from the top of this file. The retained [1.2.0] entry reflects the files actually released.
 
+## [1.4.5] - 2026-10-26
+
+Patch release. Run R1 of 26 October 2026 logged: block v1.4.3 on `claude-opus-5-5`, scored by `claude-sonnet-5-5`, 9 of 10 cases, critical cases OV2 and OV7 passed; **accepted with residuals** under `ACCEPTANCE.md` in the `rolldabones` repository, reviewer Michael Paik concurring per case. OV6 failed on the evidence-status vocabulary and is recorded as known defect 5 (no status for an item that does not apply, no rule for an item backed by several artifacts), to be fixed in the next block. Known defect 1 closes on the acceptance. `tests.md` (Last run, results log, known defects, status), the README status line and the `INSTRUCTIONS.md` status lines updated; transcripts in `evidence/transcripts-2026-10-26-R1/`. No rule in the block changed. Prepared with Claude, approved by Michael Paik.
+
 ## [1.4.4] - 2026-10-26
 
 Patch release. Acceptance restated as a tolerance: the tests file is now read under the account rule, [ACCEPTANCE.md](https://github.com/rolldabones/rolldabones/blob/main/ACCEPTANCE.md), names its critical cases and records the instrument's status under that rule (block v1.4.3 not accepted, no run; last accepted block v1.4.0); the README carries the same status below its masthead. No rule in the instrument changed and no run was made; the edits are to the test record and the front door. Train A of the whole-account review of 24 October 2026 (KST); prepared with Claude, approved by Michael Paik.
