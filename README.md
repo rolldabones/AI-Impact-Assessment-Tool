@@ -1,6 +1,6 @@
 # AI Impact Assessment Tool
 
-**Version 1.4.5 · 26 October 2026 · Instrument, formerly the AI Impact Assessment Assistant custom GPT (retired 1 October 2026) · Instructions last verified against the GPT on 13 July 2026, before the conversion · License: [CC BY-NC-SA 4.0](LICENSE.md)**
+**Version 1.4.6 · 2 November 2026 · Instrument, formerly the AI Impact Assessment Assistant custom GPT (retired 1 October 2026) · Instructions last verified against the GPT on 13 July 2026, before the conversion · License: [CC BY-NC-SA 4.0](LICENSE.md)**
 
 **Acceptance status ([ACCEPTANCE.md](https://github.com/rolldabones/rolldabones/blob/main/ACCEPTANCE.md), 26 October 2026, KST):** Accepted with residuals. Run R1 (26 October 2026) passed 9 of 10 cases on the published block, critical cases OV2 and OV7 among them; OV6 (evidence statuses) is a residual defect, to be fixed in the next block (known defect 5). The account's status table is in [ECOSYSTEM.md](https://github.com/rolldabones/rolldabones/blob/main/ECOSYSTEM.md#instrument-status).
 
@@ -8,7 +8,7 @@
 
 ## What it does
 
-An instruction block that turns any current assistant into an enterprise **AI Impact Assessment Assistant**, producing professional, audit-ready AI impact assessments. Outputs are jurisdiction-agnostic and aligned to the EU AI Act (risk-based obligations), NIST AI RMF (GOVERN, MAP, MEASURE, MANAGE), ISO/IEC 42001 (AI management system) and ISO/IEC 42005 (AI system impact assessment guidance).
+An instruction block that turns any current assistant into an enterprise **AI Impact Assessment Assistant**, producing professional, audit-ready AI impact assessments. Outputs are jurisdiction-agnostic and aligned to the EU AI Act (risk-based obligations), NIST AI RMF (GOVERN, MAP, MEASURE, MANAGE), ISO/IEC 42001 (AI management system), and mapped by topic to ISO/IEC 42005 (AI system impact assessment guidance), whose clauses the crosswalk does not cite.
 
 The Assistant is grounded in three doctrines, as stated in [DOCTRINE.md](https://github.com/rolldabones/rolldabones/blob/main/DOCTRINE.md), the account's single normative statement of the three doctrines:
 
@@ -76,7 +76,7 @@ The three doctrines are used in this repository as stated in [DOCTRINE.md](https
 Nearest neighbors:
 
 - [ai-governance-for-boards](https://github.com/rolldabones/ai-governance-for-boards): jurisdiction guides (EU, US, Korea, Vietnam, Australia) for the questions this Assistant flags to counsel
-- [grc](https://github.com/rolldabones/grc): the **GRCnext™** framework whose primitives (Services, Tolerances, Pipes, Switches, Exits) map to this Assistant's inventory, thresholds, data flows, kill switch and decommission controls
+- [GRCnext-Copilot](https://github.com/rolldabones/GRCnext-Copilot): the **GRCnext™** primitives (Services, Tolerances, Pipes, Switches, Exits) run as an engine; this Assistant's inventory, thresholds, data flows, kill switch and decommission controls correspond to them by topic, a correspondence stated here and not built into the block
 - [slow-ai-kitchen](https://github.com/rolldabones/slow-ai-kitchen): the 12-step governed AI methodology within which impact assessment sits
 - [AI-Governance-Academy](https://github.com/rolldabones/AI-Governance-Academy): prompt templates for adjacent governance engagements
 - [the-ungoverned-channel](https://github.com/rolldabones/the-ungoverned-channel): a living case study of agentic risk of the kind this Assistant's agentic adaptation rules address
@@ -87,7 +87,7 @@ This repository and any Assistant built from it provide governance tooling, not 
 
 ## How to Cite
 
-> Paik, Son-U Michael. *AI Impact Assessment Tool*, v1.4.5. GRC Solutions Korea, 2026. https://github.com/rolldabones/AI-Impact-Assessment-Tool
+> Paik, Son-U Michael. *AI Impact Assessment Tool*, v1.4.6. GRC Solutions Korea, 2026. https://github.com/rolldabones/AI-Impact-Assessment-Tool
 
 A machine-readable citation is in [CITATION.cff](CITATION.cff).
 
@@ -99,6 +99,6 @@ Commercial use requires separate permission from the author. The license defines
 
 ---
 
-**Status: [✓ final] v1.4.5**
+**Status: [✓ final] v1.4.6**
 
 Final Liability rests with the Human.

@@ -4,7 +4,7 @@
 
 > **Amendment note, 15 October 2026 (KST).** ISO/IEC 42001:2023 cells that read "Annex A oversight controls (~)", "Annex A transparency controls (~)" and "Clause 9 (~)" now cite the controls by number; the incidents row adds Art. 73 (serious incident reporting) beside Art. 72; the contestability row adds Art. 86 (right to explanation of individual decision-making); the human oversight row pinpoints Art. 14(4), point (e); the full-assessment row adds Clause 8.4 and controls A.5.2 to A.5.5. The ISO/IEC 42005:2025 column is unchanged and still carries no clause numbers: the standard was not opened in this pass and the column stays at the (~) level of confidence. The EU AI Act timeline below now links to the account's canonical note.
 
-This crosswalk maps the Assistant's elements to the EU AI Act, NIST AI RMF, ISO/IEC 42001 and ISO/IEC 42005 so compliance teams can trace coverage. Article and clause references are at the level of confidence appropriate for a tooling repository: use them as pointers into the source texts, not as substitutes for them. Where a mapping is approximate it is marked (~).
+This crosswalk maps the Assistant's elements to the EU AI Act, NIST AI RMF, ISO/IEC 42001 and ISO/IEC 42005 so compliance teams can trace coverage. Article and clause references are at the level of confidence appropriate for a tooling repository: use them as pointers into the source texts, not as substitutes for them. Where a mapping is approximate it is marked (~). The ISO/IEC 42005 column maps by topic only and cites no clauses: the standard was not opened for this crosswalk (noted 2 November 2026).
 
 ## Mapping
 
