@@ -4,6 +4,58 @@ All notable changes to this repository. Versions follow semantic versioning. Pri
 
 Maintenance note (2026-07-14): a stale draft block duplicating the [1.2.1] entry and carrying an inaccurate [1.2.0] writeup (it described a SPEC.md that was never shipped) was removed from the top of this file. The retained [1.2.0] entry reflects the files actually released.
 
+## [1.4.7] - 2026-11-03
+
+- `INSTRUCTIONS.md`: the six "What changed" sections (v1.1.0 to v1.4.3) move here verbatim, below, out of the instrument file, which keeps one Change history section stating the block's length, SHA-256 and acceptance; the `tests.md` link to the v1.4.3 section points here. The v1.4.3 section said block v1.4.3 "is not accepted pending a logged run", which run R1 of 26 October 2026 superseded; the file's header already said so. The block is unchanged, byte for byte; acceptance carries forward under ACCEPTANCE.md (f), no rule changed.
+- README, Standards and regulatory currency: the amendment note becomes a currency paragraph dated as stated and last revised, with no claim changed. Removed as history, verbatim: "This paragraph previously described publication as pending."; "this sentence cited Recital 38 alone until 20 October 2026 (KST)"; "(this note read \"a new prohibition\" until 15 October 2026 (KST))". "The deferred dates below are therefore operative law, not pending changes" reads "so the deferred dates below are operative law".
+- Train C of the improvement rotation (review of 24 October 2026). README, `tests.md` and `CITATION.cff` to v1.4.7. Prepared with Claude, approved by Michael Paik.
+
+The sections moved from `INSTRUCTIONS.md`, verbatim, headings demoted:
+
+#### What changed in v1.4.3
+
+Amendment note, 20 October 2026 (KST), from the independent review of that date. The block changes from v1.4.0 to v1.4.3. Block v1.4.3 is not accepted pending a logged run; block v1.4.0 remains the last accepted block ([tests.md](tests.md)).
+
+1. The Slow AI and Final Liability doctrine lines are replaced by the sentence forms of [DOCTRINE.md section 8](https://github.com/rolldabones/rolldabones/blob/main/DOCTRINE.md#8-short-forms), copied verbatim. The old lines were compressions of their own, which DOCTRINE.md does not permit. The Informed Intent line, a pointer to DOCTRINE.md, is unchanged.
+2. Reassessment/Change Review and Configurator Mode are removed from MODE until each has a defined output (tests.md known defect 1). Operator verification checklist item 1 now reads "from the four defined".
+
+The block is 7,726 characters, re-measured rather than re-stated (7,657 at v1.4.0), SHA-256 `060651571a2da2840c9c136d84415cc4c8dd5f7515501f7c9eb16a81f468abed` (UTF-8 text between the fences, without the final newline). The full old and new text of each change is in [CHANGELOG.md](CHANGELOG.md) v1.4.3.
+
+#### What changed in v1.4.0
+
+House style, made in the block so that the first logged run required by the release rule (a changed block is accepted only after one logged run of the published instructions, recorded in tests.md) tests the changed text. Amendment note, 18 October 2026 (KST): the block changes from v1.2.7 to v1.4.0; no rule, mode, threshold, status or output section is added, removed or reordered.
+
+1. Three output labels lose their em dashes and take a colon: "Unknown: insufficient data", "Unassigned: decision blocker" and "No decision possible: insufficient evidence". These are labels the Assistant writes into its output, so outputs change with them; checklist item 7 below changes with the first.
+2. Twelve serial commas are removed: the nine registered in CHANGELOG 1.2.7 (the alignment list, the Final Liability line, the agentic controls, the threat model, the vendor controls, the Go conditions, the Not verified status, the artifact list and the high-risk-like uses) and three found in this release in the same class (the prohibited-use instruction, the missing-facts instruction and the closing Status line). The semicolon lists are unchanged.
+
+The block is 7,657 characters, re-measured rather than re-stated (7,666 at v1.2.7: nine fewer, twelve commas out and three colon-spaces in for three em dashes). The full old and new text of each change is in [CHANGELOG.md](CHANGELOG.md) v1.4.0.
+
+#### What changed in v1.3.0
+
+No change to the block. It became the instrument of this repository on the retirement of the GPT, and every GPT-only dependency was checked for: none was found (no Code Interpreter or other capability toggle, no knowledge-file reference, no conversation starter and no statement of the builder's character limit). The header above was rewritten; the full record is in [CHANGELOG.md](CHANGELOG.md).
+
+#### What changed in v1.2.7
+
+Doctrinal correction, not editorial. The Informed Intent line stated the doctrine as a five-element list of its own. That list was the superseded four-element compression in different words, matched neither limb of DOCTRINE.md v1.1.0 and carried a serial comma against house style. It is replaced by the pointer form then already carried by the extended long form (`INSTRUCTIONS-EXTENDED.md`, removed in v1.3.0 and recoverable at tag v1.2.12), matched word for word rather than re-worded, because re-wording is what produced the defect. The rule is now stated once, in DOCTRINE.md, and pointed at from here.
+
+The line also read "no production deployment" and now reads "no deployment". That is a widening: the gate no longer turns on whether a deployment is a production deployment. It is intended, it follows the canon and it is recorded here because a reader of the old block would not expect it.
+
+Two consequences a reader should not be surprised by. At v1.2.7 the block measured 7,666 characters, re-measured rather than re-stated. The reference implementation on ChatGPT was never updated to v1.2.7: it carried v1.2.1 until it was retired on 1 October 2026; see the note above the block.
+
+#### What changed in v1.2.1
+
+Editorial only, mirroring edits made in the live GPT: the two closing lines now read "Final Liability rests with the Human." with a capital L, and the third doctrine label reverts from "Human accountability" to Final Liability. No behavioral change.
+
+#### What changed from v1.1.0 to v1.2.0
+
+1. Compressed to 7,604 characters for reliable fit in the Instructions box.
+2. Added a residual-risk evidence rule: planned controls do not reduce residual risk; implemented-but-unverified controls support only a low-confidence estimate; only verified controls reduce residual risk.
+3. Expanded the decision taxonomy to five values, adding "No-go pending specialist review" and "No decision possible: insufficient evidence", and separated conditions precedent from conditions subsequent.
+4. Added MODE declaration (six modes including Instruction-Conformance Test and Reassessment/Change Review), a default strictness (risk-averse enterprise if unanswered) and a SELF-CHECK before output.
+5. Converted the ten-item checklist into an in-Assistant acceptance capability rating the assessed system Pass/Partial/Fail/Not testable/Not applicable, with a mandatory conclusion when no real system or evidence is supplied.
+6. Defined the four evidence statuses precisely and barred Verified status on assurance alone.
+7. Expanded RACI to include data, privacy, security, human-oversight and incident/on-call owners, with "Unassigned: decision blocker" for gaps.
+
 ## [1.4.6] - 2026-11-02
 
 - README, `CITATION.cff` and `CROSSWALK.md`: ISO/IEC 42005 is stated as mapped by topic, clauses not cited, in place of "aligned", since the crosswalk's 42005 column cites no clause and the standard was not opened; on Michael Paik's ruling of 2 November 2026 (qualify, not delete). README Related repositories: the GRCnext™ primitives point to GRCnext-Copilot, not `grc`, and the mapping is stated as a correspondence by topic. Found by the whole-account review of 24 October 2026 (reader report 05); train B. No change to the block, INSTRUCTIONS.md or any test record; acceptance unchanged.

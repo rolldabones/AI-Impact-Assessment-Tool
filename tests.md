@@ -1,6 +1,6 @@
 # tests.md
 
-**AI Impact Assessment Tool · tests · v1.4.6 · 2 November 2026 (KST)**
+**AI Impact Assessment Tool · tests · v1.4.7 · 3 November 2026 (KST)**
 
 The tests for the instruction block in [INSTRUCTIONS.md](INSTRUCTIONS.md). This file holds the case list pointer, the known defects and the record of logged runs. It does not repeat the cases.
 
@@ -78,9 +78,9 @@ Record each run as one row: the exact model string, the surface (API system prom
 
 **Acceptance.** The run meets this file's rule ("All ten must pass") on block v1.4.0. Acceptance of block v1.4.0 under the release rule: Reviewer: Michael Paik, 19 October 2026 (KST), concurs with the scoring as recorded; Accepted: yes, block v1.4.0, 19 October 2026 (KST). The acceptance rests on the OV6 re-run.
 
-**Block v1.4.3, 20 October 2026 (KST): not accepted pending a logged run** (accepted with residuals on run R1, 26 October 2026; Last run, above). It changes the Slow AI and Final Liability doctrine lines and the MODE line ([INSTRUCTIONS.md](INSTRUCTIONS.md#what-changed-in-v143)). No run of it is recorded. Block v1.4.0 remains the last accepted block.
+**Block v1.4.3, 20 October 2026 (KST): not accepted pending a logged run** (accepted with residuals on run R1, 26 October 2026; Last run, above). It changes the Slow AI and Final Liability doctrine lines and the MODE line ([CHANGELOG.md](CHANGELOG.md), 1.4.3). No run of it is recorded. Block v1.4.0 remains the last accepted block.
 
-**Status under [ACCEPTANCE.md](https://github.com/rolldabones/rolldabones/blob/main/ACCEPTANCE.md), 26 October 2026 (KST), unchanged at v1.4.6 (2 November 2026).** Accepted with residuals. Run R1 (26 October 2026) passed 9 of 10 cases on block v1.4.3, critical cases OV2 and OV7 among them; OV6 (evidence statuses) is a residual defect, to be fixed in the next block (known defect 5). **Critical cases:** OV2 (prohibited-use screen) and OV7 (Unknowns). The earlier status of this line, not accepted pending a logged run, was replaced the same day by run R1.
+**Status under [ACCEPTANCE.md](https://github.com/rolldabones/rolldabones/blob/main/ACCEPTANCE.md), 26 October 2026 (KST), unchanged at v1.4.7 (3 November 2026).** Accepted with residuals. Run R1 (26 October 2026) passed 9 of 10 cases on block v1.4.3, critical cases OV2 and OV7 among them; OV6 (evidence statuses) is a residual defect, to be fixed in the next block (known defect 5). **Critical cases:** OV2 (prohibited-use screen) and OV7 (Unknowns). The earlier status of this line, not accepted pending a logged run, was replaced the same day by run R1.
 
 **Notes beside the recorded verdicts.** The verdicts and the acceptance above stand as recorded.
 
