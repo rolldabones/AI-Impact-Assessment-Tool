@@ -4,6 +4,11 @@ All notable changes to this repository. Versions follow semantic versioning. Pri
 
 Maintenance note (2026-07-14): a stale draft block duplicating the [1.2.1] entry and carrying an inaccurate [1.2.0] writeup (it described a SPEC.md that was never shipped) was removed from the top of this file. The retained [1.2.0] entry reflects the files actually released.
 
+## [1.4.8] - 2026-11-09
+
+- README, License: the paragraph that sent commercial requests "through github.com/rolldabones", a profile page with no address on it, becomes the one line every README carries, pointing to `rolldabones/LICENSING.md` (v1.0.0, new), where the Section 1(k) test it quoted, the address and the rest of the route are stated once. Removed, verbatim: "Commercial use requires separate permission from the author. The license defines NonCommercial as \"not primarily intended for or directed towards commercial advantage or monetary compensation\" (Section 1(k)), and an enterprise's use in its own operations may fall outside that definition. To ask for permission, contact Son-U Michael Paik through [github.com/rolldabones](https://github.com/rolldabones)."
+- Train D of the improvement rotation (review of 24 October 2026). Prepared with Claude, approved by Michael Paik. README, `tests.md` and `CITATION.cff` to v1.4.8; no block, case or run record changed; acceptance unchanged.
+
 ## [1.4.7] - 2026-11-03
 
 - `INSTRUCTIONS.md`: the six "What changed" sections (v1.1.0 to v1.4.3) move here verbatim, below, out of the instrument file, which keeps one Change history section stating the block's length, SHA-256 and acceptance; the `tests.md` link to the v1.4.3 section points here. The v1.4.3 section said block v1.4.3 "is not accepted pending a logged run", which run R1 of 26 October 2026 superseded; the file's header already said so. The block is unchanged, byte for byte; acceptance carries forward under ACCEPTANCE.md (f), no rule changed.

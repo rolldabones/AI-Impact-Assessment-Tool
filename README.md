@@ -1,6 +1,6 @@
 # AI Impact Assessment Tool
 
-**Version 1.4.7 · 3 November 2026 · Instrument, formerly the AI Impact Assessment Assistant custom GPT (retired 1 October 2026) · Instructions last verified against the GPT on 13 July 2026, before the conversion · License: [CC BY-NC-SA 4.0](LICENSE.md)**
+**Version 1.4.8 · 9 November 2026 · Instrument, formerly the AI Impact Assessment Assistant custom GPT (retired 1 October 2026) · Instructions last verified against the GPT on 13 July 2026, before the conversion · License: [CC BY-NC-SA 4.0](LICENSE.md)**
 
 **Acceptance status ([ACCEPTANCE.md](https://github.com/rolldabones/rolldabones/blob/main/ACCEPTANCE.md), 26 October 2026, KST):** Accepted with residuals. Run R1 (26 October 2026) passed 9 of 10 cases on the published block, critical cases OV2 and OV7 among them; OV6 (evidence statuses) is a residual defect, to be fixed in the next block (known defect 5). The account's status table is in [ECOSYSTEM.md](https://github.com/rolldabones/rolldabones/blob/main/ECOSYSTEM.md#instrument-status).
 
@@ -87,7 +87,7 @@ This repository and any Assistant built from it provide governance tooling, not 
 
 ## How to Cite
 
-> Paik, Son-U Michael. *AI Impact Assessment Tool*, v1.4.7. GRC Solutions Korea, 2026. https://github.com/rolldabones/AI-Impact-Assessment-Tool
+> Paik, Son-U Michael. *AI Impact Assessment Tool*, v1.4.8. GRC Solutions Korea, 2026. https://github.com/rolldabones/AI-Impact-Assessment-Tool
 
 A machine-readable citation is in [CITATION.cff](CITATION.cff).
 
@@ -95,10 +95,10 @@ A machine-readable citation is in [CITATION.cff](CITATION.cff).
 
 Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0). See [LICENSE.md](LICENSE.md).
 
-Commercial use requires separate permission from the author. The license defines NonCommercial as "not primarily intended for or directed towards commercial advantage or monetary compensation" (Section 1(k)), and an enterprise's use in its own operations may fall outside that definition. To ask for permission, contact Son-U Michael Paik through [github.com/rolldabones](https://github.com/rolldabones).
+Commercial use, including a Client's use in its own operations, is set out in [LICENSING.md](https://github.com/rolldabones/rolldabones/blob/main/LICENSING.md).
 
 ---
 
-**Status: [✓ final] v1.4.7**
+**Status: [✓ final] v1.4.8**
 
 Final Liability rests with the Human.
