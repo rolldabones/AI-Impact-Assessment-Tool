@@ -4,6 +4,12 @@ All notable changes to this repository. Versions follow semantic versioning. Pri
 
 Maintenance note (2026-07-14): a stale draft block duplicating the [1.2.1] entry and carrying an inaccurate [1.2.0] writeup (it described a SPEC.md that was never shipped) was removed from the top of this file. The retained [1.2.0] entry reflects the files actually released.
 
+## [1.4.9] - 2026-11-10
+
+- README, Change control: the closing sentence said block v1.4.3 "is not accepted pending a logged run"; it now records run R1 (26 October 2026) and acceptance with residuals, OV6 being known defect 5, as the README status line, `tests.md` and ECOSYSTEM.md already did.
+- `tests.md`: the block v1.4.3 paragraph, which still read "No run of it is recorded. Block v1.4.0 remains the last accepted block" beside its own parenthesis recording run R1, is recast as history.
+- Train T-A of the improvement rotation (account review of 10 November 2026, High findings, rulings of Michael Paik of that day). Prepared with Claude, approved by Michael Paik. README, `tests.md` and `CITATION.cff` to v1.4.9; no block, case or run record changed; acceptance unchanged.
+
 ## [1.4.8] - 2026-11-09
 
 - README, License: the paragraph that sent commercial requests "through github.com/rolldabones", a profile page with no address on it, becomes the one line every README carries, pointing to `rolldabones/LICENSING.md` (v1.0.0, new), where the Section 1(k) test it quoted, the address and the rest of the route are stated once. Removed, verbatim: "Commercial use requires separate permission from the author. The license defines NonCommercial as \"not primarily intended for or directed towards commercial advantage or monetary compensation\" (Section 1(k)), and an enterprise's use in its own operations may fall outside that definition. To ask for permission, contact Son-U Michael Paik through [github.com/rolldabones](https://github.com/rolldabones)."

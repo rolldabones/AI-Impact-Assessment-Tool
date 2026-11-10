@@ -1,6 +1,6 @@
 # AI Impact Assessment Tool
 
-**Version 1.4.8 · 9 November 2026 · Instrument, formerly the AI Impact Assessment Assistant custom GPT (retired 1 October 2026) · Instructions last verified against the GPT on 13 July 2026, before the conversion · License: [CC BY-NC-SA 4.0](LICENSE.md)**
+**Version 1.4.9 · 10 November 2026 · Instrument, formerly the AI Impact Assessment Assistant custom GPT (retired 1 October 2026) · Instructions last verified against the GPT on 13 July 2026, before the conversion · License: [CC BY-NC-SA 4.0](LICENSE.md)**
 
 **Acceptance status ([ACCEPTANCE.md](https://github.com/rolldabones/rolldabones/blob/main/ACCEPTANCE.md), 26 October 2026, KST):** Accepted with residuals. Run R1 (26 October 2026) passed 9 of 10 cases on the published block, critical cases OV2 and OV7 among them; OV6 (evidence statuses) is a residual defect, to be fixed in the next block (known defect 5). The account's status table is in [ECOSYSTEM.md](https://github.com/rolldabones/rolldabones/blob/main/ECOSYSTEM.md#instrument-status).
 
@@ -65,7 +65,7 @@ The Assistant is deliberately jurisdiction-agnostic and instructed to verify dat
 
 ## Change control
 
-The custom GPT configuration is Locked as of 1 October 2026. It ran block v1.2.1, last verified on 13 July 2026, on the model recorded as GPT-5.2 Thinking; that configuration is archived in [CHANGELOG.md](CHANGELOG.md) v1.3.0. Changes are now made in [INSTRUCTIONS.md](INSTRUCTIONS.md) under this repository's release rule. A changed block is accepted only after one logged run of the published instructions as a system prompt on a current frontier model, recorded in [tests.md](tests.md). The first such run, T5 on 18 October 2026 (KST) on `claude-opus-5-5`, passed all ten cases of the operator verification checklist on block v1.4.0. OV6 passed only on a re-run: its first attempt was scored FAIL on the evidence-status vocabulary, so the acceptance rests on the re-run. Michael Paik reviewed the run on 19 October 2026 (KST) and accepted block v1.4.0, as [tests.md](tests.md) records. Block v1.4.3 (20 October 2026) changes the doctrine lines and the MODE line and is not accepted pending a logged run.
+The custom GPT configuration is Locked as of 1 October 2026. It ran block v1.2.1, last verified on 13 July 2026, on the model recorded as GPT-5.2 Thinking; that configuration is archived in [CHANGELOG.md](CHANGELOG.md) v1.3.0. Changes are now made in [INSTRUCTIONS.md](INSTRUCTIONS.md) under this repository's release rule. A changed block is accepted only after one logged run of the published instructions as a system prompt on a current frontier model, recorded in [tests.md](tests.md). The first such run, T5 on 18 October 2026 (KST) on `claude-opus-5-5`, passed all ten cases of the operator verification checklist on block v1.4.0. OV6 passed only on a re-run: its first attempt was scored FAIL on the evidence-status vocabulary, so the acceptance rests on the re-run. Michael Paik reviewed the run on 19 October 2026 (KST) and accepted block v1.4.0, as [tests.md](tests.md) records. Block v1.4.3 (20 October 2026) changed the doctrine lines and the MODE line. Run R1 (26 October 2026, KST) passed 9 of 10 cases on it, critical cases OV2 and OV7 among them, and block v1.4.3 is accepted with residuals under [ACCEPTANCE.md](https://github.com/rolldabones/rolldabones/blob/main/ACCEPTANCE.md), OV6 (evidence statuses) being known defect 5, as [tests.md](tests.md) records.
 
 ## Part of the ecosystem
 
@@ -87,7 +87,7 @@ This repository and any Assistant built from it provide governance tooling, not 
 
 ## How to Cite
 
-> Paik, Son-U Michael. *AI Impact Assessment Tool*, v1.4.8. GRC Solutions Korea, 2026. https://github.com/rolldabones/AI-Impact-Assessment-Tool
+> Paik, Son-U Michael. *AI Impact Assessment Tool*, v1.4.9. GRC Solutions Korea, 2026. https://github.com/rolldabones/AI-Impact-Assessment-Tool
 
 A machine-readable citation is in [CITATION.cff](CITATION.cff).
 
@@ -99,6 +99,6 @@ Commercial use, including a Client's use in its own operations, is set out in [L
 
 ---
 
-**Status: [✓ final] v1.4.8**
+**Status: [✓ final] v1.4.9**
 
 Final Liability rests with the Human.
