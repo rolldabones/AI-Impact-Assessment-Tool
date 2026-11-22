@@ -1,12 +1,10 @@
 # BUILD-GUIDE.md
 
-**How the AI Impact Assessment Assistant was built · v1.4.3 · 20 October 2026**
+**How the AI Impact Assessment Assistant was built · v1.5.0 · 23 November 2026**
 
 This is the build log, kept because the method is the product as much as the Assistant is. It shows how to bootstrap a professional-grade governance tool from public source material using an AI platform's builder, and how to iterate it. The steps below were run in OpenAI's GPT builder with GPT-5.2 Thinking; substitute your platform's equivalents freely. The current instruction block lives in [INSTRUCTIONS.md](INSTRUCTIONS.md); do not copy prompts from this file.
 
 Amendment note, 18 October 2026 (KST): the custom GPT was retired on 1 October 2026 and converted to a private plug-in on the OpenAI platform. Phases 1, 2 and 5 can be followed on any platform, but their prompts name a custom GPT and step 6 concerns the GPT builder's Instructions limit: substitute your platform's equivalents (until 20 October 2026 this sentence read "Phases 1, 2 and 5 are platform-agnostic and stand as written"). Phases 3 and 4 are the historical GPT build: they record what was done in the GPT builder and can no longer be followed as written. To build the Assistant now, go to [Build it now](#build-it-now).
-
-This is long, so I'll be curt.
 
 ## Phase 1: Source and scaffold
 
@@ -25,7 +23,7 @@ This is long, so I'll be curt.
 Historical. The GPT builder steps below were run before the retirement of 1 October 2026; [Build it now](#build-it-now) maps them to a current system prompt.
 
 7. Take the resulting prompt and paste it into Instructions on the Configure page. If it does not fit, compress: ask the model to preserve every rule while cutting prose, then verify behavior with the operator verification checklist. The compressed block is in [INSTRUCTIONS.md](INSTRUCTIONS.md). An uncompressed long form was kept beside it until v1.3.0, when it was removed as out of date; it is recoverable at tag v1.2.12.
-8. Name it (for example "AI Impact Assessment Assistant") and describe it (for example: "Produces professional, audit-ready AI impact assessments that are jurisdiction-agnostic and aligned to the EU AI Act, NIST AI RMF, ISO/IEC 42001 and ISO/IEC 42005."). Add a profile picture if you like. Turn ON Code Interpreter. Choose a reasoning-capable model. I chose GPT-5.2 Thinking. Press Create.
+8. Name it (for example "AI Impact Assessment Assistant") and describe it (for example: "Produces professional, audit-ready AI impact assessments that are jurisdiction-agnostic and aligned to the EU AI Act, NIST AI RMF, ISO/IEC 42001 and ISO/IEC 42005."; the description as published then, kept as history: ISO/IEC 42005 is now stated as mapped by topic, clauses not cited). Add a profile picture if you like. Turn ON Code Interpreter. Choose a reasoning-capable model. I chose GPT-5.2 Thinking. Press Create.
 9. Test it: "Run five self-tests with mock data to confirm that you are operating properly."
 10. Ask it to introduce itself: "Provide a concise explanation of your capabilities" or "How can we begin our work together?"
 
@@ -34,7 +32,7 @@ Historical. The GPT builder steps below were run before the retirement of 1 Octo
 Historical, like Phase 3. Improvement proposals now go into [INSTRUCTIONS.md](INSTRUCTIONS.md) under the repository's change control.
 
 11. Periodically go back into the Builder and, using the Create chat interface rather than the Configure page, ask: "How could this GPT be improved?" Decide whether to adopt its recommendations. Mine proposed, and I adopted: an up-front prohibited-use screen; a deterministic scoring rubric for the Threshold Gate; an Assumptions and Confidence section; evidence quality tags with a minimum-evidence-for-Go checklist; a system boundary and data flow narrative; a mini threat model for security; a vendor contract-controls checklist; SLI/SLO-driven monitoring; a Decision Record with RACI and explicit kill-switch authority; and an optional crosswalk appendix. All of these are now baked into the v1.1.0 instruction block rather than left as chat-level behavior.
-12. I then instructed: "Ask the User for preferred strictness and be able to provide responses appropriate to both the risk-averse enterprise and the move-fast-with-guardrails enterprise." It thought for a long time, probably because extended thinking was enabled. Fun to watch. It even kept going after an interim "Thank you." It finally completed the build-out.
+12. I then instructed: "Ask the User for preferred strictness and be able to provide responses appropriate to both the risk-averse enterprise and the move-fast-with-guardrails enterprise." It thought for a long time. It even kept going after an interim "Thank you." It finally completed the build-out.
 13. Update the custom GPT and re-test: "Please run ten extended self-tests using mock data, to confirm you are operating properly." Then run the [Operator verification checklist](INSTRUCTIONS.md#operator-verification-checklist), which replaces ad hoc self-tests with pass/fail criteria.
 14. I published the result as the AI Impact Assessment Assistant custom GPT. It was retired on 1 October 2026 and its link is struck; see [CHANGELOG.md](CHANGELOG.md) v1.3.0.
 
@@ -46,10 +44,10 @@ Historical, like Phase 3. Improvement proposals now go into [INSTRUCTIONS.md](IN
 
 The successor to the GPT build, for any current frontier model. It replaces Phases 3 and 4.
 
-1. Paste the fenced block in [INSTRUCTIONS.md](INSTRUCTIONS.md) as the system prompt, custom instructions or project instructions of your assistant (replaces steps 7 and 8). Name and model are your choice; no capability toggle is needed.
+1. Paste the fenced block in [INSTRUCTIONS.md](INSTRUCTIONS.md) as the system prompt, custom instructions or project instructions of your assistant, with [DOCTRINE.md section 2](https://github.com/rolldabones/rolldabones/blob/main/DOCTRINE.md#2-informed-intent) beside it, as the README's step 1 says (replaces steps 7 and 8). Name and model are your choice; no capability toggle is needed.
 2. Attach [CROSSWALK.md](CROSSWALK.md) as a reference file if wanted. The block does not depend on it.
 3. Run the [Operator verification checklist](INSTRUCTIONS.md#operator-verification-checklist) in a fresh conversation (replaces the self-tests of steps 9, 10 and 13).
-4. Log the run in your own run log, naming the model string and the date (replaces "Update the custom GPT"). A changed block is accepted only after one such run. [tests.md](tests.md) is this repository's own record of its runs; use its results-log row as the format.
+4. Log the run in your own run log, naming the model string and the date (replaces "Update the custom GPT"). A changed block is accepted only after one such run that meets [ACCEPTANCE.md](https://github.com/rolldabones/rolldabones/blob/main/ACCEPTANCE.md). [tests.md](tests.md) is this repository's own record of its runs; use its results-log row as the format.
 
 ## The lesson
 
@@ -57,6 +55,6 @@ The key is to focus these tools. Don't put too much on one of them. Build multip
 
 ---
 
-**Status: [✓ final] v1.4.3**
+**Status: [✓ final] v1.5.0**
 
 Final Liability rests with the Human.
