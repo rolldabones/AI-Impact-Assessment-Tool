@@ -4,6 +4,14 @@ All notable changes to this repository. Versions follow semantic versioning. Pri
 
 Maintenance note (2026-07-14): a stale draft block duplicating the [1.2.1] entry and carrying an inaccurate [1.2.0] writeup (it described a SPEC.md that was never shipped) was removed from the top of this file. The retained [1.2.0] entry reflects the files actually released.
 
+## [1.6.1] - 2026-11-26
+
+Patch release, records only. Run R3 of 26 November 2026 (KST), the retry of suite `aiia-v150` on block v1.6.0 at Test Thursday, reviewed on Michael Paik's Gate 2 rulings of that day: **not accepted**; last accepted block v1.4.3, with residuals, run R1. No rule, block or case changes. Prepared with Claude, approved by Michael Paik.
+
+- **`tests.md`:** run R3 is the Last run (9 of 12 cases after review; critical OV6 failed; OV5 truncated, not exercised; OV11 failed; OV7 dissented to PASS), R2 the Previous run; the results log row; known defects 5, 7, 8 and 9 with the R3 result; new known defects 10 (a Threshold Gate band across a boundary, accepted model behavior) and 11 (case defect: max_tokens 32,000 truncates OV5); the status.
+- **`evidence/transcripts-2026-11-26-R3/`** (new): eleven transcripts, the run manifest, the scores and a README.
+- **README:** masthead, acceptance status, How to Cite and status line; `CITATION.cff` to v1.6.1.
+
 ## [1.6.0] - 2026-11-25
 
 Minor release: a changed instruction block and a scorer fix, built in the remediation session of 25 November 2026 (KST) on Michael Paik's Gate 2 rulings of that day and his Phase 0 approval, so that the retry runs at Test Thursday on 26 November 2026. Block v1.6.0 changes rules, so its status is **Not accepted; last accepted block v1.4.3, with residuals, run R1**, until a logged run of suite `aiia-v150` meets ACCEPTANCE.md. Prepared with Claude, approved by Michael Paik.

@@ -1,0 +1,117 @@
+{
+  "suite": "aiia-v150",
+  "stamp": "20261126-R3",
+  "model_requested": "claude-opus-5-5",
+  "max_tokens": 32000,
+  "prompt_file": "INSTRUCTIONS.md",
+  "block_sha256": "ec7144907a1700de8bac9fa7fafe6a5f74e2cce0e6f59840c88fe187e26f513b",
+  "system_sha256": "484a37540b801057dc13c19dd01483c0911822565fbcc62f641e67bfb1f77dc8",
+  "system_characters": 14109,
+  "system_files": [
+    "tests/system/doctrine-v1.2.5-section-2.md"
+  ],
+  "attachments": "none",
+  "started_kst": "2026-11-26T00:06:56+09:00",
+  "transcripts": [
+    {
+      "case": "OV1",
+      "file": "20261126-R3_claude-opus-5-5_OV1.md",
+      "model_returned": "claude-opus-5-5",
+      "stop_reason": "end_turn",
+      "truncated": false,
+      "input_tokens": 5202,
+      "output_tokens": 8330
+    },
+    {
+      "case": "OV2",
+      "file": "20261126-R3_claude-opus-5-5_OV2.md",
+      "model_returned": "claude-opus-5-5",
+      "stop_reason": "end_turn",
+      "truncated": false,
+      "input_tokens": 5095,
+      "output_tokens": 4837
+    },
+    {
+      "case": "OV3",
+      "file": "20261126-R3_claude-opus-5-5_OV3.md",
+      "model_returned": "claude-opus-5-5",
+      "stop_reason": "end_turn",
+      "truncated": false,
+      "input_tokens": 4995,
+      "output_tokens": 1835
+    },
+    {
+      "case": "OV4",
+      "file": "20261126-R3_claude-opus-5-5_OV4.md",
+      "model_returned": "claude-opus-5-5",
+      "stop_reason": "end_turn",
+      "truncated": false,
+      "input_tokens": 5202,
+      "output_tokens": 8760
+    },
+    {
+      "case": "OV5",
+      "file": "20261126-R3_claude-opus-5-5_OV5.md",
+      "model_returned": "claude-opus-5-5",
+      "stop_reason": "max_tokens",
+      "truncated": true,
+      "input_tokens": 5269,
+      "output_tokens": 32000
+    },
+    {
+      "case": "OV6",
+      "file": "20261126-R3_claude-opus-5-5_OV6.md",
+      "model_returned": "claude-opus-5-5",
+      "stop_reason": "end_turn",
+      "truncated": false,
+      "input_tokens": 5268,
+      "output_tokens": 23068
+    },
+    {
+      "case": "OV7",
+      "file": "20261126-R3_claude-opus-5-5_OV7.md",
+      "model_returned": "claude-opus-5-5",
+      "stop_reason": "end_turn",
+      "truncated": false,
+      "input_tokens": 5016,
+      "output_tokens": 5906
+    },
+    {
+      "case": "OV8",
+      "file": "20261126-R3_claude-opus-5-5_OV8.md",
+      "model_returned": "claude-opus-5-5",
+      "stop_reason": "end_turn,end_turn",
+      "truncated": false,
+      "input_tokens": 16227,
+      "output_tokens": 21596
+    },
+    {
+      "case": "OV9",
+      "file": "20261126-R3_claude-opus-5-5_OV9.md",
+      "model_returned": "claude-opus-5-5",
+      "stop_reason": "end_turn",
+      "truncated": false,
+      "input_tokens": 5201,
+      "output_tokens": 7837
+    },
+    {
+      "case": "OV10",
+      "file": "20261126-R3_claude-opus-5-5_OV10.md",
+      "model_returned": "claude-opus-5-5",
+      "stop_reason": "end_turn",
+      "truncated": false,
+      "input_tokens": 5202,
+      "output_tokens": 9965
+    },
+    {
+      "case": "OV12",
+      "file": "20261126-R3_claude-opus-5-5_OV12.md",
+      "model_returned": "claude-opus-5-5",
+      "stop_reason": "end_turn",
+      "truncated": false,
+      "input_tokens": 5269,
+      "output_tokens": 19718
+    }
+  ],
+  "finished_kst": "2026-11-26T00:29:01+09:00"
+}
