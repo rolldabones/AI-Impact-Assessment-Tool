@@ -4,6 +4,19 @@ All notable changes to this repository. Versions follow semantic versioning. Pri
 
 Maintenance note (2026-07-14): a stale draft block duplicating the [1.2.1] entry and carrying an inaccurate [1.2.0] writeup (it described a SPEC.md that was never shipped) was removed from the top of this file. The retained [1.2.0] entry reflects the files actually released.
 
+## [1.6.0] - 2026-11-25
+
+Minor release: a changed instruction block and a scorer fix, built in the remediation session of 25 November 2026 (KST) on Michael Paik's Gate 2 rulings of that day and his Phase 0 approval, so that the retry runs at Test Thursday on 26 November 2026. Block v1.6.0 changes rules, so its status is **Not accepted; last accepted block v1.4.3, with residuals, run R1**, until a logged run of suite `aiia-v150` meets ACCEPTANCE.md. Prepared with Claude, approved by Michael Paik.
+
+**The block.** Block v1.6.0 is 11,054 characters, SHA-256 `ec7144907a1700de8bac9fa7fafe6a5f74e2cce0e6f59840c88fe187e26f513b` (block v1.5.0: 10,560 characters, `b887e5b63d4d04fd8ff028e8a6b955db7368736de0be2cad5d28a38fcb4c44f7`). The system prompt of suite `aiia-v150`, the block, one blank line and DOCTRINE.md section 2, is 14,109 characters, SHA-256 `484a37540b801057dc13c19dd01483c0911822565fbcc62f641e67bfb1f77dc8`.
+
+1. Known defect 5 (OV6, critical, failed run R2). EVIDENCE gains, after the rule on items that do not apply and several artifacts: "Template, one artifact per line, in the Prioritized Evidence Request List and in the evidence cell of the topic coverage; where several artifacts back one topic, give each its own row:" and three example lines: "Use-specific fairness test report: Requested", "Vendor email asserting bias testing: Provided" and "Agentic controls: No evidence item: not applicable (suggestion only; no tool access stated)". No status, rule or checklist item changes.
+2. Known defect 8 (OV7, critical, failed run R2). E. DECISION gains, after the decision values: "Where no authorization is supplied, record “Authorization: Unknown: insufficient data”; never state that none exists." The RACI label "Unassigned: decision blocker" is unchanged (Gate 2 Q3; the alternative label goes to the Gate 1 of 30 November 2026).
+
+**The scorer (known defect 9, case defect).** `tests/score_prompt_cases.py`: `gate_bands` reads each domain's band from the cell under the header "Rating" of the first table whose header row carries that cell, in place of the last Low, Medium or High in the row. Proved on the run R2 transcripts of OV1, OV4 and OV10 (`evidence/transcripts-2026-11-25-R2/`): the new code reads the printed Rating cell in 27 of 27 domain rows, each equal to the band its Score column gives under the block's ratings; the old code agreed in 18 of 27. A table with no Rating header yields no band. No case, pass condition or critical case changes; the suite stays `aiia-v150`.
+
+**Records.** `tests.md`: known defects 5 and 8 changed in block v1.6.0, 9 fixed with its proof, the defects' closing rule carried to block v1.6.0, the status. `INSTRUCTIONS.md`: masthead, size, digest and status. `tests/prompt-cases.md`: masthead. README: masthead, acceptance status, the size in How to use, How to Cite and status line; `CITATION.cff` to v1.6.0.
+
 ## [1.5.1] - 2026-11-25
 
 Patch release, records only. Run R2 of 25 November 2026 (KST), suite `aiia-v150` on block v1.5.0, the first Test Thursday session, reviewed on Michael Paik's rulings of that day: **not accepted**; last accepted block v1.4.3, with residuals, run R1. No rule, block or case changes. Prepared with Claude, approved by Michael Paik.

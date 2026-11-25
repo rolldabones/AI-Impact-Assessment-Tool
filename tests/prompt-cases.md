@@ -1,6 +1,6 @@
 # AI Impact Assessment Tool prompt cases
 
-**Part of AI-Impact-Assessment-Tool · suite `aiia-v150` for block v1.5.0 · v1.5.0 · 23 November 2026 (KST)**
+**Part of AI-Impact-Assessment-Tool · suite `aiia-v150` for block v1.6.0 · v1.6.0 · 25 November 2026 (KST)**
 
 The suite the instruction block in [`INSTRUCTIONS.md`](../INSTRUCTIONS.md) is run against: twelve cases, OV1 to OV12. OV1 to OV10 are the ten items of the [Operator verification checklist](../INSTRUCTIONS.md#operator-verification-checklist); OV11 and OV12 are added for repeatability and for the Informed Intent gate. Each run input is sent verbatim as a user turn in a fresh conversation; OV8 has a second turn, sent verbatim after the assistant's first reply. OV11 has no run input: it is scored jointly from the transcripts of OV1, OV4 and OV10, whose run inputs are byte-identical. The run record and the acceptance status are in [`tests.md`](../tests.md).
 

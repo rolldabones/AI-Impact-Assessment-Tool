@@ -1,10 +1,10 @@
 # INSTRUCTIONS.md
 
-**Instrument · block v1.5.0 · 23 November 2026 (KST) · text of record · not accepted; last accepted block v1.4.3, with residuals, run R1**
+**Instrument · block v1.6.0 · 25 November 2026 (KST) · text of record · not accepted; last accepted block v1.4.3, with residuals, run R1**
 
 The AI Impact Assessment Assistant custom GPT was retired on 1 October 2026 and converted to a private plug-in on the OpenAI platform; its configuration is Locked as of that date. The block below is the text of record. The instructions were last verified against the GPT on 13 July 2026, before the conversion, when the GPT carried block v1.2.1 (7,599 characters); the changes since are the Informed Intent line corrected in v1.2.7, the house-style changes of v1.4.0 (three output labels and twelve serial commas), the v1.4.3 changes (two doctrine lines and the MODE line) and the v1.5.0 changes (the Informed Intent line, the alignment line, scoring anchors for the Threshold Gate and an evidence rule for items that do not apply or rest on several artifacts). They are listed in [CHANGELOG v1.3.0](CHANGELOG.md), which archives the v1.2.1 block verbatim, [CHANGELOG v1.4.0](CHANGELOG.md), [CHANGELOG v1.4.3](CHANGELOG.md) and [CHANGELOG v1.5.0](CHANGELOG.md). The GPT never carried v1.2.7, v1.4.0, v1.4.3 or v1.5.0.
 
-How to use it: paste the fenced block, as it stands, into the system prompt, custom instructions or project instructions of any current assistant. It is 10,560 characters and needs no tool, attached file or platform feature to run. The **Informed Intent** line states the doctrine in its [DOCTRINE.md](https://github.com/rolldabones/rolldabones/blob/main/DOCTRINE.md) section 8 sentence form, which names the four elements and the five authorizer conditions without stating them; paste [DOCTRINE.md section 2](https://github.com/rolldabones/rolldabones/blob/main/DOCTRINE.md#2-informed-intent) alongside the block, because an assistant that cannot open the link applies the gate without them. Before relying on the output, run the [Operator verification checklist](#operator-verification-checklist) and record the run in [tests.md](tests.md).
+How to use it: paste the fenced block, as it stands, into the system prompt, custom instructions or project instructions of any current assistant. It is 11,054 characters and needs no tool, attached file or platform feature to run. The **Informed Intent** line states the doctrine in its [DOCTRINE.md](https://github.com/rolldabones/rolldabones/blob/main/DOCTRINE.md) section 8 sentence form, which names the four elements and the five authorizer conditions without stating them; paste [DOCTRINE.md section 2](https://github.com/rolldabones/rolldabones/blob/main/DOCTRINE.md#2-informed-intent) alongside the block, because an assistant that cannot open the link applies the gate without them. Before relying on the output, run the [Operator verification checklist](#operator-verification-checklist) and record the run in [tests.md](tests.md).
 
 ## The instruction block
 
@@ -75,6 +75,7 @@ Review data use, training rights, IP/indemnities, subprocessors, change notices,
 
 E. DECISION (INFORMED INTENT GATE)
 Use exactly one: Go; Go with conditions; No-go; No-go pending specialist review; No decision possible: insufficient evidence.
+Where no authorization is supplied, record “Authorization: Unknown: insufficient data”; never state that none exists.
 Go requires minimum evidence verified, no unresolved High residual risk, named owners/approver, recorded risk acceptance, operational monitoring, tested incident response, tested rollback/kill switch and revalidation triggers.
 Separate conditions precedent from conditions subsequent.
 
@@ -102,6 +103,10 @@ Use exactly one status:
 * Not verified: missing, inadequate, inaccessible, outdated or unsupported
   Never mark Verified from assurance alone. Link controls to artifacts such as architecture, data flow, model/data docs, privacy/security reviews, tests, logs, policies, vendor terms, incident exercises, approvals and change records.
   An item that does not apply is not an evidence item: write “No evidence item: not applicable” with the reason and give it no status. Where several artifacts back one row, list each artifact on its own line with its own status; never give one item two statuses.
+  Template, one artifact per line, in the Prioritized Evidence Request List and in the evidence cell of the topic coverage; where several artifacts back one topic, give each its own row:
+  Use-specific fairness test report: Requested
+  Vendor email asserting bias testing: Provided
+  Agentic controls: No evidence item: not applicable (suggestion only; no tool access stated)
 
 RACI
 Capture: business, system, model, data, risk, privacy, security, human-oversight, incident/on-call owners; kill-switch authority; deployment approver; periodic-review approver. If absent, use “Unassigned: decision blocker.”
@@ -141,7 +146,7 @@ Acronym used in the block: CSAM, child sexual abuse material.
 
 ## Change history
 
-The block is 10,560 characters, SHA-256 `b887e5b63d4d04fd8ff028e8a6b955db7368736de0be2cad5d28a38fcb4c44f7` (UTF-8 text between the fences, without the final newline): block v1.5.0, not accepted; last accepted block v1.4.3 (7,726 characters, SHA-256 `060651571a2da2840c9c136d84415cc4c8dd5f7515501f7c9eb16a81f468abed`), with residuals, run R1 of 26 October 2026 ([tests.md](tests.md)). Every change to the block, with its old and new text, is in [CHANGELOG.md](CHANGELOG.md); the notes on each change that stood here until v1.4.6 are kept there verbatim, under 1.4.7.
+The block is 11,054 characters, SHA-256 `ec7144907a1700de8bac9fa7fafe6a5f74e2cce0e6f59840c88fe187e26f513b` (UTF-8 text between the fences, without the final newline): block v1.6.0, not accepted; block v1.5.0 (10,560 characters, SHA-256 `b887e5b63d4d04fd8ff028e8a6b955db7368736de0be2cad5d28a38fcb4c44f7`) not accepted on run R2 of 25 November 2026; last accepted block v1.4.3 (7,726 characters, SHA-256 `060651571a2da2840c9c136d84415cc4c8dd5f7515501f7c9eb16a81f468abed`), with residuals, run R1 of 26 October 2026 ([tests.md](tests.md)). Every change to the block, with its old and new text, is in [CHANGELOG.md](CHANGELOG.md); the notes on each change that stood here until v1.4.6 are kept there verbatim, under 1.4.7.
 
 ## Operator verification checklist
 
@@ -160,6 +165,6 @@ The Assistant's own ten-item checklist rates an assessed system. This checklist 
 
 ---
 
-**Status: [✓ final] v1.5.0 (block v1.5.0, not accepted; last accepted block v1.4.3, with residuals, run R1; [tests.md](tests.md))**
+**Status: [✓ final] v1.6.0 (block v1.6.0, not accepted; last accepted block v1.4.3, with residuals, run R1; [tests.md](tests.md))**
 
 Final Liability rests with the Human.

@@ -25,7 +25,9 @@ Ported on 23 November 2026 (KST) from RedCap-01/tests/score_prompt_cases.py
 (v1.3.0), itself ported from GRCnext-Copilot/tests/score_prompt_cases.py
 (v2.7.0): the scorer's system text, the case pattern, multi-turn transcripts,
 the derived case and the code-read facts changed; the reading under
-ACCEPTANCE.md did not.
+ACCEPTANCE.md did not. Changed 25 November 2026 (KST), v1.6.0: the
+Threshold Gate band is read from the Rating column by its header (known
+defect 9).
 """
 
 import argparse
@@ -95,15 +97,29 @@ DOMAINS = [("harm to people", r"harm to people"), ("rights impacts", r"rights"),
 
 
 def gate_bands(resp: str) -> dict:
-    """The band of each Threshold Gate domain and of overall inherent risk, read by code from the first table
-    row naming the domain that carries a band word. A reader checks it against the transcript; None means
-    code found no such row."""
-    rows = [ln for ln in resp.splitlines() if ln.lstrip().startswith("|") and re.search(r"\b(Low|Medium|High)\b", ln)]
-    out = {}
-    for name, pat in DOMAINS:
-        row = next((r for r in rows if re.search(pat, r.split("|")[1] + r.split("|")[2] if r.count("|") > 3 else r, re.I)), None)
-        bands = re.findall(r"\b(Low|Medium|High)\b", row) if row else []
-        out[name] = bands[-1] if bands else None
+    """The band of each Threshold Gate domain, read by code from the cell under the header "Rating" of the first
+    table whose header row carries that cell, and of overall inherent risk. Until v1.6.0 the code took the last
+    Low, Medium or High in the row, which can fall in a rationale or Confidence cell (known defect 9). A reader
+    checks it against the transcript; None means code found no such table, row or band."""
+    cells = lambda ln: [c.strip() for c in ln.strip().strip("|").split("|")]
+    lines = resp.splitlines()
+    out = {name: None for name, _ in DOMAINS}
+    for i, ln in enumerate(lines):
+        if not ln.lstrip().startswith("|"):
+            continue
+        head = [re.sub(r"[*_`]", "", c).strip().lower() for c in cells(ln)]
+        if "rating" not in head:
+            continue
+        col, body = head.index("rating"), []
+        for row in lines[i + 1:]:
+            if not row.lstrip().startswith("|"):
+                break
+            body.append(cells(row))
+        for name, pat in DOMAINS:
+            row = next((c for c in body if len(c) > col and re.search(pat, " ".join(c[:2]), re.I)), None)
+            m = re.match(r"\W*(Low|Medium|High)\b", row[col], re.I) if row else None
+            out[name] = m.group(1).capitalize() if m else None
+        break
     m = re.search(r"overall inherent risk[^\n]*?\b(Low|Medium|High)\b", resp, re.I)
     out["overall inherent risk"] = m.group(1) if m else None
     return out

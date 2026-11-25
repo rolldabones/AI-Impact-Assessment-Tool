@@ -1,8 +1,8 @@
 # AI Impact Assessment Tool
 
-**Version 1.5.1 · 25 November 2026 · Instrument, formerly the AI Impact Assessment Assistant custom GPT (retired 1 October 2026) · Instructions last verified against the GPT on 13 July 2026, before the conversion · License: [CC BY-NC-SA 4.0](LICENSE.md)**
+**Version 1.6.0 · 25 November 2026 · Instrument, formerly the AI Impact Assessment Assistant custom GPT (retired 1 October 2026) · Instructions last verified against the GPT on 13 July 2026, before the conversion · License: [CC BY-NC-SA 4.0](LICENSE.md)**
 
-**Acceptance status at version 1.5.1 ([ACCEPTANCE.md](https://github.com/rolldabones/rolldabones/blob/main/ACCEPTANCE.md), 25 November 2026, KST):** Not accepted: block v1.5.0 changes rules (the Informed Intent line, scoring anchors for the Threshold Gate and the evidence rule), and run R2 (25 November 2026) of its suite, [tests/prompt-cases.md](tests/prompt-cases.md), passed 10 of 12 cases after review with two critical cases failed: OV6, evidence statuses (two artifacts given their statuses on one line), and OV7, an absence of authorization asserted that the input does not state. The Threshold Gate bands repeated across three samples. Last accepted: block v1.4.3, with residuals, run R1 (26 October 2026), which passed 9 of 10 cases, critical cases OV2 and OV7 among them. The account's status table is in [ECOSYSTEM.md](https://github.com/rolldabones/rolldabones/blob/main/ECOSYSTEM.md#instrument-status).
+**Acceptance status at version 1.6.0 ([ACCEPTANCE.md](https://github.com/rolldabones/rolldabones/blob/main/ACCEPTANCE.md), 25 November 2026, KST):** Not accepted: the published block changes rules (an evidence template, one artifact per line, and the record of an authorization not supplied as "Unknown: insufficient data") and has no logged run; the retry of its suite, [tests/prompt-cases.md](tests/prompt-cases.md), is due at Test Thursday on 26 November 2026. Run R2 (25 November 2026) of the block before it passed 10 of 12 cases after review, with the critical cases OV6 (evidence statuses) and OV7 (an absence of authorization asserted) failed. Last accepted: the block of run R1 (26 October 2026), with residuals, which passed 9 of 10 cases, critical cases OV2 and OV7 among them; [tests.md](tests.md) names each block by its version. The account's status table is in [ECOSYSTEM.md](https://github.com/rolldabones/rolldabones/blob/main/ECOSYSTEM.md#instrument-status).
 
 > **Retired 1 October 2026 (Korea Standard Time, KST).** The AI Impact Assessment Assistant custom GPT was retired on 1 October 2026 and converted to a private plug-in on the OpenAI platform. The instructions published in this repository are the text of record and suffice for anyone who wants to build their own. History and sources: [RETIREMENT.md](https://github.com/rolldabones/rolldabones/blob/main/RETIREMENT.md).
 
@@ -35,7 +35,7 @@ A prohibited-use screen runs before any scoring. Every evidence item is tagged R
 
 ## Run it in three steps
 
-1. Paste the fenced block in [INSTRUCTIONS.md](INSTRUCTIONS.md) (10,560 characters) into the system prompt, custom instructions or project instructions of any current assistant, and paste [DOCTRINE.md section 2](https://github.com/rolldabones/rolldabones/blob/main/DOCTRINE.md#2-informed-intent) with it: the block's Informed Intent line, the gate of the DECISION step, names the elements and conditions of prior authorization that the section states, and an assistant without that section applies the gate without them. [CROSSWALK.md](CROSSWALK.md) may be attached as a reference file if wanted; the block does not require it.
+1. Paste the fenced block in [INSTRUCTIONS.md](INSTRUCTIONS.md) (11,054 characters) into the system prompt, custom instructions or project instructions of any current assistant, and paste [DOCTRINE.md section 2](https://github.com/rolldabones/rolldabones/blob/main/DOCTRINE.md#2-informed-intent) with it: the block's Informed Intent line, the gate of the DECISION step, names the elements and conditions of prior authorization that the section states, and an assistant without that section applies the gate without them. [CROSSWALK.md](CROSSWALK.md) may be attached as a reference file if wanted; the block does not require it.
 2. Give it the inputs it asks for (at most 15 consolidated questions and your strictness preference), or start from [example.md](example.md).
 3. Review the output yourself and check it against the [Operator verification checklist](INSTRUCTIONS.md#operator-verification-checklist). Keep your own run log: [tests.md](tests.md) is this repository's record of its runs and shows the format. You own sign-off.
 
@@ -88,7 +88,7 @@ This repository and any Assistant built from it provide governance tooling, not 
 
 ## How to Cite
 
-> Paik, Son-U Michael. *AI Impact Assessment Tool*, v1.5.1. GRC Solutions Korea, 2026. https://github.com/rolldabones/AI-Impact-Assessment-Tool
+> Paik, Son-U Michael. *AI Impact Assessment Tool*, v1.6.0. GRC Solutions Korea, 2026. https://github.com/rolldabones/AI-Impact-Assessment-Tool
 
 A machine-readable citation is in [CITATION.cff](CITATION.cff).
 
@@ -100,6 +100,6 @@ Commercial use, including a Client's use in its own operations, is set out in [L
 
 ---
 
-**Status: [✓ final] v1.5.1**
+**Status: [✓ final] v1.6.0**
 
 Final Liability rests with the Human.
