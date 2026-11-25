@@ -1,8 +1,8 @@
 # AI Impact Assessment Tool
 
-**Version 1.5.0 · 23 November 2026 · Instrument, formerly the AI Impact Assessment Assistant custom GPT (retired 1 October 2026) · Instructions last verified against the GPT on 13 July 2026, before the conversion · License: [CC BY-NC-SA 4.0](LICENSE.md)**
+**Version 1.5.1 · 25 November 2026 · Instrument, formerly the AI Impact Assessment Assistant custom GPT (retired 1 October 2026) · Instructions last verified against the GPT on 13 July 2026, before the conversion · License: [CC BY-NC-SA 4.0](LICENSE.md)**
 
-**Acceptance status ([ACCEPTANCE.md](https://github.com/rolldabones/rolldabones/blob/main/ACCEPTANCE.md), 23 November 2026, KST):** Not accepted: block v1.5.0 changes rules (the Informed Intent line, scoring anchors for the Threshold Gate and the evidence rule) and has no logged run; its suite, [tests/prompt-cases.md](tests/prompt-cases.md), is due at the Test Thursday of 26 November 2026. Last accepted: block v1.4.3, with residuals, run R1 (26 October 2026), which passed 9 of 10 cases, critical cases OV2 and OV7 among them. The account's status table is in [ECOSYSTEM.md](https://github.com/rolldabones/rolldabones/blob/main/ECOSYSTEM.md#instrument-status).
+**Acceptance status at version 1.5.1 ([ACCEPTANCE.md](https://github.com/rolldabones/rolldabones/blob/main/ACCEPTANCE.md), 25 November 2026, KST):** Not accepted: block v1.5.0 changes rules (the Informed Intent line, scoring anchors for the Threshold Gate and the evidence rule), and run R2 (25 November 2026) of its suite, [tests/prompt-cases.md](tests/prompt-cases.md), passed 10 of 12 cases after review with two critical cases failed: OV6, evidence statuses (two artifacts given their statuses on one line), and OV7, an absence of authorization asserted that the input does not state. The Threshold Gate bands repeated across three samples. Last accepted: block v1.4.3, with residuals, run R1 (26 October 2026), which passed 9 of 10 cases, critical cases OV2 and OV7 among them. The account's status table is in [ECOSYSTEM.md](https://github.com/rolldabones/rolldabones/blob/main/ECOSYSTEM.md#instrument-status).
 
 > **Retired 1 October 2026 (Korea Standard Time, KST).** The AI Impact Assessment Assistant custom GPT was retired on 1 October 2026 and converted to a private plug-in on the OpenAI platform. The instructions published in this repository are the text of record and suffice for anyone who wants to build their own. History and sources: [RETIREMENT.md](https://github.com/rolldabones/rolldabones/blob/main/RETIREMENT.md).
 
@@ -18,7 +18,7 @@ The Assistant is grounded in three doctrines, as stated in [DOCTRINE.md](https:/
 
 ## Who this is for
 
-Enterprise governance, risk management and compliance teams, in-house counsel, AI product owners and internal auditors who need repeatable, evidence-led impact assessments, whether or not the operator has been trained in AI impact assessment. The Assistant is not a lawyer and not the final approver. It labels missing facts "Unknown: insufficient data" and it never states regulatory application dates from memory. One logged run does not show that the block is repeatable: in runs T5 and R1, responses on the same fictional system gave different scores and, in T5, different decisions ([tests.md](tests.md)). Block v1.5.0 adds scoring anchors for each Threshold Gate domain, and suite case OV11 measures the spread across three runs on one input; until a logged run of it, repeatability is untested.
+Enterprise governance, risk management and compliance teams, in-house counsel, AI product owners and internal auditors who need repeatable, evidence-led impact assessments, whether or not the operator has been trained in AI impact assessment. The Assistant is not a lawyer and not the final approver. It labels missing facts "Unknown: insufficient data" and it never states regulatory application dates from memory. One logged run does not show that the block is repeatable: in runs T5 and R1, responses on the same fictional system gave different scores and, in T5, different decisions ([tests.md](tests.md)). The current block adds scoring anchors for each Threshold Gate domain, and suite case OV11 measures the spread across three runs on one input: in run R2 (25 November 2026) every domain kept its band across the three.
 
 ## What the Assistant produces
 
@@ -88,7 +88,7 @@ This repository and any Assistant built from it provide governance tooling, not 
 
 ## How to Cite
 
-> Paik, Son-U Michael. *AI Impact Assessment Tool*, v1.5.0. GRC Solutions Korea, 2026. https://github.com/rolldabones/AI-Impact-Assessment-Tool
+> Paik, Son-U Michael. *AI Impact Assessment Tool*, v1.5.1. GRC Solutions Korea, 2026. https://github.com/rolldabones/AI-Impact-Assessment-Tool
 
 A machine-readable citation is in [CITATION.cff](CITATION.cff).
 
@@ -100,6 +100,6 @@ Commercial use, including a Client's use in its own operations, is set out in [L
 
 ---
 
-**Status: [✓ final] v1.5.0**
+**Status: [✓ final] v1.5.1**
 
 Final Liability rests with the Human.

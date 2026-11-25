@@ -4,6 +4,14 @@ All notable changes to this repository. Versions follow semantic versioning. Pri
 
 Maintenance note (2026-07-14): a stale draft block duplicating the [1.2.1] entry and carrying an inaccurate [1.2.0] writeup (it described a SPEC.md that was never shipped) was removed from the top of this file. The retained [1.2.0] entry reflects the files actually released.
 
+## [1.5.1] - 2026-11-25
+
+Patch release, records only. Run R2 of 25 November 2026 (KST), suite `aiia-v150` on block v1.5.0, the first Test Thursday session, reviewed on Michael Paik's rulings of that day: **not accepted**; last accepted block v1.4.3, with residuals, run R1. No rule, block or case changes. Prepared with Claude, approved by Michael Paik.
+
+- **`tests.md`:** run R2 is the Last run (10 of 12 cases after review; critical OV6 and OV7 failed; OV11 dissented to PASS), R1 the Previous run; the results log row; known defects 5 and 7 with the R2 result; new known defects 8 (the gate asserts that no authorization exists) and 9 (case defect: the scoring code misreads the Threshold Gate table); the status.
+- **`evidence/transcripts-2026-11-25-R2/`** (new): eleven transcripts, the run manifest, the scores and a README.
+- **README:** masthead, acceptance status, the repeatability sentence (the bands repeated in run R2), How to Cite and status line; `CITATION.cff` to v1.5.1.
+
 ## [1.5.0] - 2026-11-23
 
 Minor release: a changed instruction block, a suite with literal run inputs and its harness. Rotation slot of 23 November 2026 (cycle 3, register row 4), worked to Michael Paik's Gate 1 rulings of that day (rows R30 to R36), every recommendation approved as written. Block v1.5.0 changes rules, so its status is **Not accepted; last accepted block v1.4.3, with residuals, run R1**, until a logged run of suite `aiia-v150` meets ACCEPTANCE.md; that run is due at the Test Thursday of 26 November 2026.
