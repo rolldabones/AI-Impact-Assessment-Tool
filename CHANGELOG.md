@@ -4,6 +4,14 @@ All notable changes to this repository. Versions follow semantic versioning. Pri
 
 Maintenance note (2026-07-14): a stale draft block duplicating the [1.2.1] entry and carrying an inaccurate [1.2.0] writeup (it described a SPEC.md that was never shipped) was removed from the top of this file. The retained [1.2.0] entry reflects the files actually released.
 
+## [1.6.2] - 2026-11-26
+
+Final release: the archived edition. On Michael Paik's ruling of 26 November 2026, recorded in [DISPOSITION.md](https://github.com/rolldabones/rolldabones/blob/main/DISPOSITION.md): the repository is archived in place as a dated edition and receives no corrections after this release. Prepared with Claude, approved by Michael Paik.
+
+- **README:** the archive banner under the title, with the edition date, the version to cite and where the maintained work is. Each acceptance line reads "Last test"; the status it states is unchanged, and no known defect is removed. The line says where the run record and the transcripts are and that they are frozen at this tag.
+- Nothing is removed, renamed or moved, and every other file is unchanged byte for byte.
+- README and `CITATION.cff` to v1.6.2.
+
 ## [1.6.1] - 2026-11-26
 
 Patch release, records only. Run R3 of 26 November 2026 (KST), the retry of suite `aiia-v150` on block v1.6.0 at Test Thursday, reviewed on Michael Paik's Gate 2 rulings of that day: **not accepted**; last accepted block v1.4.3, with residuals, run R1. No rule, block or case changes. Prepared with Claude, approved by Michael Paik.
